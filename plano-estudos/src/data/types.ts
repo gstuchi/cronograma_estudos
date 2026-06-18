@@ -25,8 +25,10 @@ export interface Questao {
   topico: string;
   enunciado: string;
   alternativas: string[];
-  /** true quando a questão original depende de uma figura/imagem não incluída */
+  /** true quando a questão original depende de uma figura/imagem */
   temFigura?: boolean;
+  /** caminho da imagem da figura (ex.: "/questoes/p1q39.png"), quando disponível */
+  imagem?: string;
 }
 
 export type DiaSemana =

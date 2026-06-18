@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { semanas, getSemana, diaPorSlug, slugDia } from "@/data/plano";
 import { questoesPorTopicos } from "@/data/questoes";
 import { QuestionCard } from "@/components/question-card";
+import { DayCompleteButton } from "@/components/completion";
 import { corArea, diaCurto } from "@/lib/ui";
 import type { Questao } from "@/data/types";
 
@@ -58,6 +59,10 @@ export default async function DiaPage({
           </div>
         </div>
       </header>
+
+      <div className="mb-10">
+        <DayCompleteButton numero={Number(numero)} slug={diaSlug} />
+      </div>
 
       <div className="space-y-12">
         {dia.blocos.map((bloco, idx) => {

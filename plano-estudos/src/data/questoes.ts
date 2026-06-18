@@ -12,8 +12,19 @@ function q(
   enunciado: string,
   alternativas: string[],
   temFigura = false,
+  imagem?: string,
 ): Questao {
-  return { id, prova, numero, area, topico, enunciado, alternativas, temFigura };
+  return {
+    id,
+    prova,
+    numero,
+    area,
+    topico,
+    enunciado,
+    alternativas,
+    temFigura,
+    imagem,
+  };
 }
 
 const P1: Prova = "2026.1 (cad. 001)";
@@ -690,6 +701,361 @@ export const questoes: Questao[] = [
     "eletricidade",
     "Uma lâmpada LED de 15 W produz a mesma iluminação que uma antiga lâmpada incandescente de 90 W. O uso de uma lâmpada LED de 15 W no lugar de uma incandescente de 90 W, durante 4 horas, resulta em uma economia de energia elétrica de",
     ["0,06 kWh", "0,18 kWh", "0,30 kWh", "0,36 kWh", "0,42 kWh"],
+  ),
+
+  /* ───────── LEVA 2 — tópicos antes vazios ───────── */
+
+  // Probabilidade / contagem
+  q(
+    "p2q18",
+    SIM,
+    18,
+    "Matemática",
+    "probabilidade",
+    "Um aluno digitou o algarismo 8 numa calculadora (mostrado por 7 traços que acendem independentemente). Devido à bateria fraca, ao digitar o 8 acendem-se quatro traços ao mesmo tempo, ao acaso. Qual é a probabilidade de ser formado o algarismo 4?",
+    ["1/72", "1/64", "1/42", "1/36", "1/35"],
+    true,
+  ),
+  q(
+    "p2q18b",
+    P2,
+    18,
+    "Matemática",
+    "probabilidade",
+    "Os gêmeos Gustavo e Henrique ganharam uma caixa com 11 carrinhos, numerados de 1 a 11, para dividir entre eles e a irmã mais nova: ela fica com 3 carrinhos e cada gêmeo com 4. Gustavo não quer carrinhos com números pares e Henrique não quer carrinhos com números ímpares. O número de maneiras de distribuir é igual a",
+    ["75", "120", "144", "240", "252"],
+  ),
+  q(
+    "p6q17",
+    P6,
+    17,
+    "Matemática",
+    "probabilidade",
+    "Um estacionamento tem 7 vagas lado a lado (1 a 7) para 7 funcionários, cada um com horário de chegada diferente. O primeiro a chegar estaciona na vaga 1 ou na 7. Cada seguinte estaciona ao lado de um carro já estacionado ou, se disponível, na vaga 1 ou 7. O número de maneiras distintas de os 7 estacionarem é",
+    ["64", "120", "128", "256", "720"],
+  ),
+
+  // Genética / heredograma (a campeã da Natureza)
+  q(
+    "p6q49",
+    P6,
+    49,
+    "Natureza",
+    "genetica",
+    "O heredograma apresenta cruzamentos entre roedores com pelagem escura ou branca, determinada por um par de alelos. A partir da análise, conclui-se que a pelagem escura é determinada por um alelo ___, reconhecido pelo fato de que ___. As lacunas são preenchidas, respectivamente, por:",
+    [
+      "recessivo ligado ao sexo – dois filhotes do casal 1 e 2 têm pelagem escura",
+      "dominante ligado ao sexo – a maior parte das fêmeas tem pelagem escura",
+      "autossômico recessivo – a maior parte dos machos tem pelagem escura",
+      "autossômico dominante – todos os filhotes do casal 7 e 8 têm pelagem escura",
+      "autossômico recessivo – um filhote do casal 3 e 4 tem pelagem escura",
+    ],
+    true,
+  ),
+  q(
+    "p2q48",
+    P2,
+    48,
+    "Natureza",
+    "genetica",
+    "A imagem mostra um heredograma com os fenótipos dos tipos sanguíneos. Julgue: I. O genótipo do indivíduo 7 pode ser IBIB rr. II. A probabilidade de o casal 6-7 ter uma menina cujo sangue pode ser doado a todos os familiares é 1/16. III. Sabendo que a mãe (nº 7) já recebeu sangue Rh+, a probabilidade de nascer uma menina com eritroblastose fetal é 1/4.",
+    [
+      "São verdadeiras todas as afirmações: I, II e III",
+      "São verdadeiras, somente, as afirmações I e II",
+      "São verdadeiras, somente, as afirmações I e III",
+      "É verdadeira, somente, a afirmação III",
+      "São verdadeiras, somente, as afirmações II e III",
+    ],
+    true,
+  ),
+
+  // Geologia / tectônica
+  q(
+    "p1q39",
+    P1,
+    39,
+    "Humanas",
+    "geologia",
+    "Analise a imagem que mostra as transformações das rochas. As transformações apresentadas na imagem são resultado",
+    [
+      "da sedimentação",
+      "do intemperismo físico",
+      "da salinização",
+      "do resfriamento do magma",
+      "da compactação dos sedimentos",
+    ],
+    true,
+  ),
+  q(
+    "p6q38",
+    P6,
+    38,
+    "Humanas",
+    "geologia",
+    "Observe a imagem que retrata a feição de um vale em fenda na Islândia. A feição apresentada na imagem ocorre em",
+    [
+      "áreas de metamorfização das rochas",
+      "limites divergentes entre placas tectônicas",
+      "áreas de epirogênese da superfície terrestre",
+      "limites convergentes entre continente-continente",
+      "áreas de formação de cadeias montanhosas",
+    ],
+    true,
+  ),
+
+  // Análise de poema
+  q(
+    "p6q03",
+    P6,
+    3,
+    "Linguagens",
+    "analise-poema",
+    "No soneto “Exortação” (Raul de Leoni): “Sê na Vida a expressão límpida e exata / Do teu temperamento, homem prudente…”. O eu lírico elege como seu interlocutor",
+    [
+      "a “Vida”",
+      "o “homem prudente”",
+      "a “ingrata Aspiração”",
+      "a “alma diferente”",
+      "o “enigma eterno”",
+    ],
+  ),
+  q(
+    "p6q05",
+    P6,
+    5,
+    "Linguagens",
+    "analise-poema",
+    "No soneto “Exortação” (Raul de Leoni), depreende-se da segunda estrofe que a infelicidade humana decorre",
+    [
+      "da aceitação da instabilidade do mundo",
+      "da preocupação com a opinião alheia",
+      "da impaciência em transformar o mundo",
+      "da insatisfação com o seu próprio ser",
+      "da indiferença com o sofrimento alheio",
+    ],
+  ),
+
+  // Coesão
+  q(
+    "p2q13c",
+    SIM,
+    13,
+    "Linguagens",
+    "coesao",
+    "“O que me dói agora, apesar de tudo (…), não é a perspectiva de alguma carraspana ou bordoada, e sim o fato de que…” (Viktor Frankl). No trecho, o conectivo “e” dá ao enunciado ideia de:",
+    ["Adversidade", "Explicação", "Conclusão", "Adição", "Alternância"],
+  ),
+  q(
+    "p2q07c",
+    P2,
+    7,
+    "Linguagens",
+    "coesao",
+    "“A gestão pública da mobilidade deve ser compreendida como um tema transversal, onde o Estado reassume o protagonismo estratégico.” Em conformidade com a norma-padrão e com o sentido do texto, o pronome sublinhado pode ser substituído por:",
+    ["em que", "que", "aonde", "o qual", "a que"],
+  ),
+
+  // Oxidação
+  q(
+    "p2q53o",
+    P2,
+    53,
+    "Natureza",
+    "oxidacao",
+    "Estanho (Sn), zinco (Zn) e magnésio (Mg) são usados na proteção do ferro contra a oxidação (barreira física e/ou proteção catódica). Considerando os potenciais de redução (Mg −2,37 V; Zn −0,76 V; Fe −0,44 V; Sn −0,14 V), o metal que fornece apenas proteção por barreira física e o que fornece tanto barreira física quanto proteção catódica são, respectivamente,",
+    [
+      "estanho e zinco",
+      "estanho e magnésio",
+      "magnésio e zinco",
+      "zinco e magnésio",
+      "zinco e estanho",
+    ],
+  ),
+
+  // Óptica
+  q(
+    "p6q57op",
+    P6,
+    57,
+    "Natureza",
+    "optica",
+    "Uma árvore de altura H é vista por uma pessoa a 22 m de distância. Entre os dois, a 20 cm da pessoa, há um tronco horizontal de 8 cm de espessura encobrindo parcialmente a árvore. Considerando a propagação retilínea da luz, o valor de H é",
+    ["6,8 m", "7,2 m", "7,5 m", "8,0 m", "8,8 m"],
+    true,
+  ),
+  q(
+    "p1q58op",
+    P1,
+    58,
+    "Natureza",
+    "optica",
+    "Um palco é iluminado por uma lâmpada de 2,0 m no centro do teto; um balcão de 5,0 m obstrui parcialmente a luz, criando sombra e penumbra. Os atores principais (região totalmente iluminada), os secundários (penumbra) e os que aguardam (sombra) ocuparão regiões de solo iguais a, respectivamente,",
+    [
+      "7,0 m, 1,5 m e 3,5 m",
+      "6,0 m, 2,0 m e 4,0 m",
+      "7,0 m, 1,0 m e 4,0 m",
+      "6,0 m, 1,5 m e 4,5 m",
+      "7,0 m, 2,5 m e 2,5 m",
+    ],
+    true,
+  ),
+
+  /* ───────── LEVA 3 — Semana 1 completa (provas 2026) ───────── */
+
+  // Financeira / porcentagem
+  q(
+    "p2q27f",
+    P2,
+    27,
+    "Matemática",
+    "financeira",
+    "No início de certo mês, em um restaurante, o número de pratos correspondia a 80% do número de copos. Ao longo do mês, foram comprados 60 copos e 20 pratos, e houve o descarte de 45 copos e 8 pratos. No fim do mês, o número de copos excedia em 30 o número de pratos. Nessas condições, o número de copos nesse restaurante no início do mês era igual a",
+    ["120", "125", "130", "135", "140"],
+  ),
+
+  // Interpretação (texto-base — estilo Vunesp)
+  q(
+    "p1q03i",
+    P1,
+    3,
+    "Linguagens",
+    "interpretacao",
+    "“Pela minha parte, estava no papel das rãs que queriam um rei; a diferença é que, mandando-me Júpiter um cepo, não lhe pedi outro, porque viria a cobra e engolia-me. Viva o cepo! disse comigo.” (Machado de Assis) Depreende-se desse trecho que o narrador, em relação ao seu destino, revela-se",
+    ["amargurado", "confuso", "resignado", "revoltado", "ansioso"],
+  ),
+  q(
+    "p1q12i",
+    P1,
+    12,
+    "Linguagens",
+    "interpretacao",
+    "Depreende-se do artigo de Marcelo Viana que o duelo que acabou vitimando o jovem matemático Évariste Galois foi induzido por",
+    [
+      "questões políticas",
+      "motivos financeiros",
+      "disputas intelectuais",
+      "razões amorosas",
+      "fórmulas matemáticas",
+    ],
+  ),
+  q(
+    "p2q11i",
+    SIM,
+    11,
+    "Linguagens",
+    "interpretacao",
+    "A partir do relato de Viktor Frankl sobre o campo de concentração (“A dor psicológica, a revolta pela injustiça (…) é o que mais dói numa hora dessas”), a leitura do texto permite subentender que:",
+    [
+      "As ocorrências no campo de concentração afetam mais as crianças",
+      "A injustiça é uma das principais causas das dores dos prisioneiros",
+      "Os campos de concentração eram lugares organizados, ainda que insalubres",
+      "Com o tempo, os prisioneiros tornaram-se indiferentes à dor",
+      "Os prisioneiros se revoltavam com frequência contra os guardas",
+    ],
+  ),
+  q(
+    "p2q15i",
+    SIM,
+    15,
+    "Linguagens",
+    "interpretacao",
+    "Na canção “Não quero falar com ela” (Amado Batista), o eu lírico revela:",
+    [
+      "ausência de sentimento",
+      "raiva pelo que a amada fez",
+      "neutralidade diante da situação",
+      "negação do fracasso",
+      "desprezo pela amante",
+    ],
+  ),
+  q(
+    "p2q04i",
+    P2,
+    4,
+    "Linguagens",
+    "interpretacao",
+    "No artigo sobre o transporte público de São Paulo, o paradoxo a que os autores se referem no 1º parágrafo pode ser sintetizado pela oposição entre as seguintes palavras do texto:",
+    [
+      "“cidade” e “país”",
+      "“econômico” e “trabalho”",
+      "“motor” e “obstáculos”",
+      "“caminho” e “corrida”",
+      "“país” e “escola”",
+    ],
+  ),
+  q(
+    "p2q05i",
+    P2,
+    5,
+    "Linguagens",
+    "interpretacao",
+    "No artigo sobre o transporte público, os autores citam o urbanista Eduardo Alcântara de Vasconcellos para apresentar",
+    [
+      "a opinião divergente de um especialista, a ser debatida com os argumentos que ele defende",
+      "um argumento contrário à tese defendida por eles, a ser refutado nos parágrafos seguintes",
+      "o ponto de vista de um especialista na área, que corrobora a tese central do artigo",
+      "um conjunto de dados estatísticos que complementam a tese defendida no artigo",
+      "uma pesquisa de opinião que reforça os argumentos apresentados no artigo",
+    ],
+  ),
+  q(
+    "p6q12i",
+    P6,
+    12,
+    "Linguagens",
+    "interpretacao",
+    "No conto “O lazer da formiga” (Drummond), depreende-se que a formiga esperava assistir a um filme",
+    ["dramático", "sentimental", "famoso", "melancólico", "divertido"],
+  ),
+
+  // Cartografia
+  q(
+    "p1q41c",
+    P1,
+    41,
+    "Humanas",
+    "cartografia",
+    "Uma equipe do IBGE realizou o primeiro levantamento aerofotogramétrico com drone para mapear áreas entre Minas Gerais e Bahia, esclarecendo dúvidas sobre a divisa entre os estados. Uma das vantagens do uso de drones pelo IBGE é",
+    [
+      "a obtenção de imagens de alta resolução",
+      "a substituição dos satélites artificiais",
+      "a elaboração automática de mapas",
+      "a eliminação da necessidade de trabalho de campo",
+      "o uso em qualquer condição climática",
+    ],
+  ),
+  q(
+    "p2q41c",
+    P2,
+    41,
+    "Humanas",
+    "cartografia",
+    "Considerando as tecnologias cartográficas, a figura apresenta",
+    [
+      "a planificação de imagens bidimensionais",
+      "o cálculo de localização geográfica pelo Sistema de Posicionamento Global",
+      "a captação de imagens de satélite",
+      "o funcionamento da aerofotogrametria",
+      "o funcionamento de um Sistema de Informação Geográfico",
+    ],
+    true,
+  ),
+
+  // Literatura — Realismo e Machado
+  q(
+    "p2q01r",
+    SIM,
+    1,
+    "Linguagens",
+    "literatura-realismo",
+    "Recurso estilístico comumente usado por Machado de Assis, a ironia se faz presente na maior parte da sua obra e está melhor representada em:",
+    [
+      "“Sabeis já que estas, mariscando, comiam ou arrancavam somente pedaços da carne de Abílio.”",
+      "“Sobre isto, é melhor que aproveites o tempo que ainda te sobrar das galinhas, para ler o trecho da minha grande obra…”",
+      "“Que culpa podem ter essas duas criaturas humanas, se tu mesmo é que os ligaste?”",
+      "“Estava tão sossegado, tão fora dele, que bem podiam fazer-me o pequeno favor de me deixarem lá.”",
+      "“Foi a tua ânsia de vir a êste mundo que os ligou sob a forma de paixão e de escolha pessoal.”",
+    ],
   ),
 ];
 

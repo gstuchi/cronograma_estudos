@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { semanas, getSemana, slugDia } from "@/data/plano";
+import { DayDoneCheck } from "@/components/completion";
 import { corArea, diaCurto, tipoDiaLabel } from "@/lib/ui";
 
 export function generateStaticParams() {
@@ -65,20 +66,23 @@ export default async function SemanaPage({
                   {tipoDiaLabel[dia.tipo]}
                 </span>
               </div>
-              <svg
-                className="h-5 w-5 text-ink-soft transition-colors group-hover:text-insper"
-                viewBox="0 0 24 24"
-                fill="none"
-                aria-hidden
-              >
-                <path
-                  d="M5 12h14M13 6l6 6-6 6"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
+              <div className="flex items-center gap-2">
+                <DayDoneCheck numero={semana.numero} slug={slugDia[dia.dia]} />
+                <svg
+                  className="h-5 w-5 text-ink-soft transition-colors group-hover:text-insper"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  aria-hidden
+                >
+                  <path
+                    d="M5 12h14M13 6l6 6-6 6"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </div>
             </div>
 
             <h2 className="mt-4 text-lg font-bold leading-tight text-ink">

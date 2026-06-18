@@ -54,7 +54,7 @@ export function QuestionCard({ questao }: { questao: Questao }) {
         <span className="text-xs font-medium text-ink-soft">
           Insper {questao.prova} · questão {questao.numero}
         </span>
-        {questao.temFigura && (
+        {questao.temFigura && !questao.imagem && (
           <span className="rounded-full bg-[#FDF1D6] px-3 py-1 text-xs font-semibold text-[#92600A]">
             depende de figura
           </span>
@@ -64,6 +64,15 @@ export function QuestionCard({ questao }: { questao: Questao }) {
       <p className="whitespace-pre-line text-base leading-relaxed text-ink">
         {questao.enunciado}
       </p>
+
+      {questao.imagem && (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img
+          src={questao.imagem}
+          alt={`Figura da questão ${questao.numero} (Insper ${questao.prova})`}
+          className="mt-4 w-full rounded-2xl border border-line bg-white"
+        />
+      )}
 
       <ol className="mt-4 space-y-2">
         {questao.alternativas.map((alt, i) => (

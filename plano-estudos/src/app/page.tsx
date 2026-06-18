@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ScrollStroke } from "@/components/ui/scroll-stroke";
-import { semanas } from "@/data/plano";
+import { semanas, slugDia } from "@/data/plano";
+import { WeekProgressBadge } from "@/components/completion";
 
 const fases = [1, 2, 3] as const;
 const faseInfo: Record<number, { nome: string; intervalo: string }> = {
@@ -73,6 +74,10 @@ export default function Home() {
                     <p className="mt-2 text-sm leading-relaxed text-ink-soft">
                       {s.foco}
                     </p>
+                    <WeekProgressBadge
+                      numero={s.numero}
+                      slugs={s.dias.map((d) => slugDia[d.dia])}
+                    />
                   </Link>
                 ))}
             </div>
