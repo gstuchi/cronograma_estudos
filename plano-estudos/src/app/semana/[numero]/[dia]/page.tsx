@@ -5,6 +5,7 @@ import { questoesPorTopicos } from "@/data/questoes";
 import { teoria } from "@/data/teoria";
 import { QuestionCard } from "@/components/question-card";
 import { DayCompleteButton } from "@/components/completion";
+import { HiddenMessage } from "@/components/hidden-message";
 import { corArea, diaCurto } from "@/lib/ui";
 import type { Questao } from "@/data/types";
 
@@ -165,6 +166,8 @@ export default async function DiaPage({
           );
         })}
       </div>
+
+      {semana.numero === 1 && diaSlug === "quinta" && <HiddenMessage />}
     </main>
   );
 }
