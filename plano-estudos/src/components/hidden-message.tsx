@@ -8,11 +8,11 @@ import { motion, AnimatePresence } from "framer-motion";
  * Para trocar o texto, edite a constante MENSAGEM abaixo.
  */
 const MENSAGEM = [
-  "Oi, meu amor. 💛",
+  "Oi Lá <3",
   "Se você chegou até aqui, é porque tá indo com tudo — e isso me deixa muito orgulhoso de você.",
   "Esse site inteiro eu fiz pensando em você: cada semana, cada questão, cada detalhe. Tudo pra te ajudar a chegar no Insper, que é o SEU sonho.",
-  "Estuda com calma e confia em você. Eu confio, com toda a certeza do mundo. Tô aqui torcendo (e te amando) em cada dia desse plano.",
-  "Você vai conseguir. Te amo. 🤍",
+  "Estuda com calma e confia em você. Eu confio, com toda a certeza do mundo. Tô aqui torcendo em cada dia desse plano.",
+  "Já deu tudo certo. Te amo. 🤍",
 ];
 
 function Coracao({ className = "" }: { className?: string }) {
