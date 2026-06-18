@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { semanas, getSemana, diaPorSlug, slugDia } from "@/data/plano";
 import { questoesPorTopicos } from "@/data/questoes";
+import { teoria } from "@/data/teoria";
 import { QuestionCard } from "@/components/question-card";
 import { DayCompleteButton } from "@/components/completion";
 import { corArea, diaCurto } from "@/lib/ui";
@@ -69,6 +70,7 @@ export default async function DiaPage({
           const todas = questoesPorTopicos(bloco.topicos);
           const novas: Questao[] = todas.filter((q) => !vistas.has(q.id));
           novas.forEach((q) => vistas.add(q.id));
+          const teorias = bloco.topicos.map((t) => teoria[t]).filter(Boolean);
 
           return (
             <section key={idx}>
@@ -89,6 +91,56 @@ export default async function DiaPage({
                   {bloco.descricao}
                 </p>
               </div>
+
+              {teorias.map((t, ti) => (
+                <div
+                  key={ti}
+                  className="mt-5 rounded-3xl border border-line bg-cream p-6"
+                >
+                  <div className="mb-3 flex items-center gap-2">
+                    <svg
+                      className="h-5 w-5 text-insper"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      aria-hidden
+                    >
+                      <path
+                        d="M4 19.5A2.5 2.5 0 016.5 17H20V4H6.5A2.5 2.5 0 004 6.5v13z"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M20 17v3H6.5A2.5 2.5 0 014 17.5"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                    <span className="text-xs font-bold uppercase tracking-wide text-insper">
+                      Teoria
+                    </span>
+                  </div>
+                  <h3 className="text-lg font-bold text-ink">{t.titulo}</h3>
+                  <ul className="mt-3 space-y-2">
+                    {t.pontos.map((p, pi) => (
+                      <li
+                        key={pi}
+                        className="flex gap-2.5 text-[15px] leading-relaxed text-ink"
+                      >
+                        <span className="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-insper" />
+                        <span>{p}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  {t.dica && (
+                    <p className="mt-4 rounded-2xl border border-line bg-card px-4 py-3 text-sm leading-relaxed text-ink-soft">
+                      <span className="font-semibold text-ink">💡 Dica: </span>
+                      {t.dica}
+                    </p>
+                  )}
+                </div>
+              ))}
 
               {novas.length > 0 ? (
                 <div className="mt-6">

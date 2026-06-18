@@ -1057,6 +1057,132 @@ export const questoes: Questao[] = [
       "“Foi a tua ânsia de vir a êste mundo que os ligou sob a forma de paixão e de escolha pessoal.”",
     ],
   ),
+
+  /* ───────── LEVA 4 — Semana 1, provas antigas (financeira) ───────── */
+  q(
+    "a192q34",
+    "2019.2",
+    34,
+    "Matemática",
+    "financeira",
+    "Juliana juntou 150 mil reais e contratou uma gestora financeira. O plano usa os 150 mil como valor inicial, aportes anuais de 18 mil reais e taxa de juros anual de 9,0% (já descontada a inflação). Pela tabela de montantes (01.10.2019: 150; 01.10.2020: 150·1,09 + 18; 01.10.2021: 150·1,09² + 18·1,09 + 18; e assim por diante), o montante obtido, em milhares de reais, daqui a t anos pode ser determinado pela expressão",
+    [
+      "350 · 1,18ᵗ − 200",
+      "150 · 1,09ᵗ + 18 · 1,09ᵗ⁻¹",
+      "150 · 1,09ᵗ + 200 · 0,09ᵗ",
+      "150 + 1,18 · 1,09ᵗ⁻¹",
+      "350 · 1,09ᵗ − 200",
+    ],
+  ),
+  q(
+    "a191q45",
+    "2019.1",
+    45,
+    "Matemática",
+    "financeira",
+    "Um advogado oferece duas opções de remuneração: I. 15% do valor da causa se a decisão for favorável ao cliente, ou R$ 10.000,00 se for contrária (pago na data do julgamento); II. Honorários mensais de R$ 1.900,00, reajustados à taxa de 2% ao mês, até a data do julgamento. Considere que um cliente escolheu a opção II e que a causa durou 6 meses. Nessas condições, o cliente terá pago ao advogado um total de",
+    [
+      "R$ 11.840,00",
+      "R$ 12.280,00",
+      "R$ 11.970,00",
+      "R$ 12.120,00",
+      "R$ 11.250,00",
+    ],
+  ),
+
+  /* ───────── LEVA 5 — Semana 1 / Quinta: mais Realismo ───────── */
+  q(
+    "p1q02r",
+    P1,
+    2,
+    "Linguagens",
+    "literatura-realismo",
+    "No conto “Último capítulo” (Machado de Assis), a chamada “autoconsciência narrativa” consiste na intromissão do narrador na história, comentando a própria escrita, justificando suas escolhas e explicitando o seu processo criativo, a exemplo do que ocorre em:",
+    [
+      "“Estava casado. Rufina não dispunha, é verdade, de certas qualidades brilhantes e elegantes; não seria, por exemplo, e desde logo, uma dona de salão. Tinha, porém, as qualidades caseiras, e eu não queria outras.”",
+      "“O pai armou-me o casamento para ter um genro doutor; ela, não; aceitou-me como aceitaria um sacristão, um magistrado, um general, um empregado público, um alferes, e não por impaciência de casar, mas por obediência à família.”",
+      "“Usavam-se maridos; ela queria usar também o seu. Nada mais antipático à minha própria natureza; mas estava casado.”",
+      "“Felizmente — ah! um felizmente neste último capítulo de um caipora é, na verdade, uma anomalia; mas vão lendo, e verão que o advérbio pertence ao estilo, não à vida; é um modo de transição e nada mais.”",
+      "“Vivia consigo. Não mourejava em casa, nem era preciso; para dar-lhe tudo, trabalhava eu, e os vestidos e chapéus, tudo vinha ‘das francesas’, como então se dizia, em vez de modistas.”",
+    ],
+  ),
+  q(
+    "p1q04r",
+    P1,
+    4,
+    "Linguagens",
+    "literatura-realismo",
+    "Procedimento característico da prosa madura de Machado de Assis (conto “Último capítulo”), o narrador dirige-se explicitamente a seus leitores em:",
+    [
+      "“Rufina não dispunha, é verdade, de certas qualidades brilhantes e elegantes; não seria, por exemplo, e desde logo, uma dona de salão.”",
+      "“Rufina (permitam-me esta figuração cromática) não tinha a alma negra de lady Macbeth, nem a vermelha de Cleópatra, nem a azul de Julieta, nem a alva de Beatriz, mas cinzenta e apagada como a multidão dos seres humanos.”",
+      "“Não mourejava em casa, nem era preciso; para dar-lhe tudo, trabalhava eu, e os vestidos e chapéus, tudo vinha ‘das francesas’, como então se dizia, em vez de modistas.”",
+      "“Rufina, no intervalo das ordens que dava, sentava-se horas e horas, bocejando o espírito, matando o tempo, uma hidra de cem cabeças, que não morria nunca.”",
+      "“Pela minha parte, estava no papel das rãs que queriam um rei; a diferença é que, mandando-me Júpiter um cepo, não lhe pedi outro, porque viria a cobra e engolia-me.”",
+    ],
+  ),
+  q(
+    "a192q11r",
+    "2019.2",
+    11,
+    "Linguagens",
+    "literatura-realismo",
+    "No romance O primo Basílio, Eça de Queirós descreve a sala do Conselheiro (canapé de damasco amarelo, pintura de Aquiles arrastando Heitor, piano de cauda mudo e triste, uma caixa de música de dezoito peças…), tecendo críticas à sociedade de Lisboa. No trecho, essa descrição sugere",
+    [
+      "um ambiente simples, porém arranjado com bom gosto",
+      "um mal-estar decorrente de uma decoração lúgubre do local",
+      "a arrumação minuciosa do local oposta à descrição da serviçal",
+      "o refinado senso estético e o gosto artístico do anfitrião",
+      "o mau gosto pelo exotismo na combinação das cores das peças",
+    ],
+  ),
+  q(
+    "a192q12r",
+    "2019.2",
+    12,
+    "Linguagens",
+    "literatura-realismo",
+    "No trecho de O primo Basílio (Eça de Queirós), as descrições “suja como um esfregão” e “o objeto em que se sentia mais o calor do uso” indicam, respectivamente, que:",
+    [
+      "a sujeira da rapariguita era intensa; o objeto mais usado no local era a caixa de música de dezoito peças",
+      "a rapariguita usava muito o esfregão; a caixa de música de dezoito peças eventualmente era usada no local",
+      "a sujeira do local decorria da preguiça da rapariguita; a caixa de música de dezoito peças era usada à exaustão",
+      "a rapariguita cuidava bem do local; o objeto mais desdenhado ali era a caixa de música de dezoito peças",
+      "a rapariguita trabalhava demais naquele local; a caixa de música de dezoito peças vivia muda como o piano",
+    ],
+  ),
+
+  /* ───────── LEVA 6 — Semana 1 / Quinta: colonização ───────── */
+  q(
+    "p3q33col",
+    P2,
+    33,
+    "Humanas",
+    "colonizacao",
+    "“A escravidão não ocupa mais de duas ou três páginas nos livros didáticos de Portugal, sendo tratada de forma vaga e superficial…”, questiona a pesquisadora Marta Araújo. A abordagem da escravidão nos livros didáticos portugueses é criticada pela pesquisadora por",
+    [
+      "concentrar-se nos aspectos econômicos do tráfico atlântico e desconsiderar suas implicações sociais",
+      "atribuir às colônias europeias o protagonismo na abolição do regime escravista",
+      "apresentar o processo escravista como fenômeno restrito ao território africano",
+      "destacar a colônia como principal responsável pela manutenção do sistema escravista",
+      "reduzir a complexidade do sistema escravista e vinculá-lo a uma perspectiva positiva da colonização",
+    ],
+  ),
+  q(
+    "simq35col",
+    SIM,
+    35,
+    "Humanas",
+    "colonizacao",
+    "O texto faz referência à Grande Cheia de Potosí (1626) e à amalgamação do ouro/prata pelo mercúrio. Sobre a atividade mineradora na América Espanhola, pode-se dizer que:",
+    [
+      "Apesar de importante, era complementar na economia espanhola nas Américas, majoritariamente voltada para a agricultura nas haciendas, usando mão de obra escravizada indígena pelos sistemas de repartimiento ou encomienda",
+      "As grandes reservas de ouro e prata encontradas nas colônias espanholas foram de extrema importância para a Coroa, fazendo com que grande parte do esforço do tráfico de escravos africanos fosse voltada para a exploração mineradora na região",
+      "As reservas de ouro e prata da América Espanhola eram muito inferiores às de Portugal, esgotando-se rapidamente, enquanto os portugueses retiraram ouro de Minas Gerais até a metade do século XVIII",
+      "As enormes reservas de ouro e prata foram rapidamente esgotadas dado o caráter predatório da exploração, feita majoritariamente pelo sistema de trabalho de mita, já existente entre os indígenas da região",
+      "As reservas de ouro e prata foram exploradas ao longo de três séculos pelos espanhóis usando mão de obra escravizada africana, as encomiendas, e o sistema de mão de obra livre indígena, a mita, ambos criados pelos colonizadores",
+    ],
+  ),
 ];
 
 /** Retorna as questões cujo tópico está entre os tópicos informados. */

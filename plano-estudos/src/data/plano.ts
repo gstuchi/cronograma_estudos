@@ -119,10 +119,10 @@ export const semanas: Semana[] = [
               ["literatura-realismo"],
             ),
             bloco(
-              "História — Grandes Navegações",
+              "História — Navegações e colonização",
               "Humanas",
-              "Expansão marítima portuguesa (séculos XV–XVI).",
-              ["navegacoes"],
+              "Expansão marítima portuguesa e início da colonização (mercantilismo, América espanhola e portuguesa).",
+              ["navegacoes", "colonizacao"],
             ),
           ],
         },
@@ -130,7 +130,13 @@ export const semanas: Semana[] = [
         sabado(
           "Simulado-diagnóstico (2026.1-001)",
           "Prova 2026.1 caderno 001 cronometrada + correção. É o seu ponto de partida.",
-          ["financeira", "interpretacao", "navegacoes", "literatura-realismo"],
+          [
+            "financeira",
+            "interpretacao",
+            "navegacoes",
+            "colonizacao",
+            "literatura-realismo",
+          ],
         ),
         domingo(1, "primeiro contato com a estrutura"),
       ];
