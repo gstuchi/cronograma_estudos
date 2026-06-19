@@ -126,7 +126,19 @@ export const semanas: Semana[] = [
             ),
           ],
         },
-        m.sex,
+        {
+          dia: "Sexta",
+          tipo: "matematica",
+          titulo: "Fecha financeira + questões mistas",
+          blocos: [
+            bloco(
+              "Matemática — fechamento",
+              "Matemática",
+              "Fechamento de financeira/porcentagem + revisão mista (proporção, regra de três e médias). Dia de fechar a matéria treinando bastante.",
+              ["financeira", "proporcao", "estatistica"],
+            ),
+          ],
+        },
         sabado(
           "Simulado-diagnóstico (2026.1-001)",
           "Prova 2026.1 caderno 001 cronometrada + correção. É o seu ponto de partida.",

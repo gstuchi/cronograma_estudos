@@ -1202,6 +1202,65 @@ export const questoes: Questao[] = [
     true,
     "/questoes/simq26f.png",
   ),
+
+  /* ───────── LEVA 8 — Semana 1 / Sexta: financeira dos PDFs antigos ───────── */
+  q(
+    "a181q48",
+    "2018",
+    48,
+    "Matemática",
+    "financeira",
+    "Gabriel aplicou R$ 80.000,00 à taxa de juros compostos de 1% ao mês e aplicou outra quantia à taxa de juros compostos de 1,1% ao mês. Ao final de dez meses, resgatou as duas aplicações, obtendo R$ 200.000,00. O cálculo correto do valor (em reais) aplicado por Gabriel à maior das taxas de juros pode ser obtido pela conta — veja as alternativas na imagem:",
+    [],
+    true,
+    "/questoes/a181q48.png",
+  ),
+  q(
+    "a192q40",
+    "2019.2",
+    40,
+    "Matemática",
+    "financeira",
+    "Um levantamento da Secretaria de Desenvolvimento Econômico de um município apontou dados sobre os fundadores de microempresas nos últimos 5 anos (veja a figura). De acordo com o levantamento, o número de microempresas que apresentam homens como fundadores supera o número das que apresentam mulheres como fundadoras em, aproximadamente,",
+    ["35%", "90%", "38%", "52%", "190%"],
+    true,
+    "/questoes/a192q40.png",
+  ),
+
+  /* ───────── LEVA 9 — Semana 1 / Sexta: proporção / regra de três (mistas) ───────── */
+  q(
+    "simq25",
+    SIM,
+    25,
+    "Matemática",
+    "proporcao",
+    "Os moradores de um condomínio colocaram um piso especial em uma garagem de 0,75 km de comprimento e 400 dm de largura: 30 operários levaram 45 dias. Outro condomínio quer o mesmo serviço com 50 operários, em garagens de 11,5 dam de comprimento e 0,06 km de largura. Sabendo que a eficiência do segundo grupo é 3/5 da do primeiro e que a dificuldade do segundo trabalho é 1/3 maior, quantos dias serão necessários para a segunda obra?",
+    [
+      "Entre 10 e 11 dias",
+      "Entre 11 e 12 dias",
+      "Entre 12 e 13 dias",
+      "Entre 13 e 14 dias",
+      "Entre 14 e 15 dias",
+    ],
+  ),
+  q(
+    "p2q16c",
+    P2,
+    16,
+    "Matemática",
+    "proporcao",
+    "Um concurso teve provas nos períodos matutino e vespertino. No matutino, todos os candidatos fizeram prova, distribuídos em 55 salas com o mesmo número de candidatos. No vespertino, a prova foi aplicada apenas para 899 candidatos (na mesma sala do matutino). Assim, 24 salas que tiveram prova no matutino ficaram vazias e, em cada uma das demais, havia 14 candidatos a menos do que pela manhã. O número de candidatos que fizeram prova no período matutino foi",
+    ["2 255", "2 310", "2 365", "2 420", "2 475"],
+  ),
+  q(
+    "p2q20c",
+    P2,
+    20,
+    "Matemática",
+    "proporcao",
+    "Um condomínio é formado pelos prédios A, B e C, que juntos têm 165 apartamentos. Um desses prédios tem o dobro de apartamentos de outro. O número de apartamentos do prédio A excede em 19 a soma dos números de apartamentos dos prédios B e C. Nessas condições, o número de apartamentos do prédio que tem menos apartamentos é igual a",
+    ["25", "27", "30", "33", "38"],
+  ),
 ];
 
 /** Retorna as questões cujo tópico está entre os tópicos informados. */
