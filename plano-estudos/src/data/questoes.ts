@@ -1183,6 +1183,25 @@ export const questoes: Questao[] = [
       "As reservas de ouro e prata foram exploradas ao longo de três séculos pelos espanhóis usando mão de obra escravizada africana, as encomiendas, e o sistema de mão de obra livre indígena, a mita, ambos criados pelos colonizadores",
     ],
   ),
+
+  /* ───────── LEVA 7 — Semana 1 / Sexta: financeira (lucro) ───────── */
+  q(
+    "simq26f",
+    SIM,
+    26,
+    "Matemática",
+    "financeira",
+    "Em uma faculdade, alunos usam seus armários como pontos de venda de alimentos (“Locker Bar”). Um aluno analisou uma tabela com o lucro por unidade vendida e a frequência média semanal de compra de vários produtos. Desejando escolher exatamente três produtos que proporcionem o maior lucro médio semanal, qual deve ser a escolha e qual o lucro semanal esperado?",
+    [
+      "Barra de chocolate premium, brownie embalado e cookies industrializados; R$ 186,50",
+      "Barra de chocolate premium, cookies industrializados e salgadinho tipo chips; R$ 195,05",
+      "Brownie embalado, cookies industrializados e salgadinho tipo chips; R$ 185,45",
+      "Barra de chocolate premium, salgadinho tipo chips e bala gourmet; R$ 175,11",
+      "Cookies industrializados, salgadinho tipo chips e bala gourmet; R$ 176,81",
+    ],
+    true,
+    "/questoes/simq26f.png",
+  ),
 ];
 
 /** Retorna as questões cujo tópico está entre os tópicos informados. */
