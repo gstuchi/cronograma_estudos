@@ -176,9 +176,9 @@ export const semanas: Semana[] = [
               ["gramatica"],
             ),
             bloco(
-              "Geografia — Demografia",
+              "Geografia — Demografia e urbanização",
               "Humanas",
-              "Demografia e envelhecimento populacional.",
+              "Demografia, envelhecimento, urbanização e migração.",
               ["demografia"],
             ),
           ],

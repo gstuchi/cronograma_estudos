@@ -63,4 +63,33 @@ export const teoria: Record<string, Teoria> = {
     ],
     dica: "Não confunda os sistemas: mita e encomienda = América ESPANHOLA (indígena). O Brasil teve principalmente escravidão AFRICANA no açúcar e na mineração.",
   },
+  gramatica: {
+    titulo: "Gramática (sintaxe, vozes verbais e formação de palavras)",
+    pontos: [
+      "Vozes verbais: ATIVA (o sujeito pratica a ação) e PASSIVA (o sujeito sofre a ação). Passiva analítica = ser + particípio (“o racismo foi superado”); passiva sintética = verbo na 3ª pessoa + “se” apassivador (“superou-se o racismo”). Ao passar para a passiva, o objeto direto da ativa vira sujeito.",
+      "Discurso direto (fala reproduzida, com travessão/aspas) × indireto (fala incorporada por “que”). No indireto, ajuste o tempo verbal: presente→pretérito, “há”→“havia”, futuro→futuro do pretérito (faria), imperativo→subjuntivo (“cala!”→que calasse).",
+      "Orações subordinadas SUBSTANTIVAS exercem função de substantivo (subjetiva, objetiva direta/indireta, predicativa, completiva nominal, apositiva). ADJETIVAS são introduzidas por pronome relativo (que, o qual, cujo, onde). ADVERBIAIS exprimem circunstância.",
+      "Conjunções e sentido (cai muito!): finalidade = para que, a fim de; causa = porque, visto que, já que; consequência = de modo que, tão… que; concessão = embora, ainda que, mesmo que; condição = se, caso, contanto que, desde que; tempo = quando, assim que.",
+      "Formação de palavras: DERIVAÇÃO — prefixal (in-feliz), sufixal (feliz-mente), parassintética (prefixo + sufixo ao mesmo tempo: en-tristec-er) — e COMPOSIÇÃO — justaposição (girassol) e aglutinação (planalto = plano + alto).",
+      "Funções sintáticas: sujeito, objeto direto/indireto, adjunto adnominal (acompanha um nome: artigo, adjetivo, pronome), adjunto adverbial (circunstância: modo, tempo, lugar), complemento nominal (completa nome regido de preposição), aposto e vocativo.",
+      "Regência (verbo/nome + preposição certa: “assistir AO filme”, “obedecer A alguém”) · Concordância (verbal: verbo↔sujeito; nominal: artigo/adjetivo↔substantivo) · Crase (fusão a + a = à: “vou À escola”, “refiro-me ÀquELA aluna”).",
+      "Tempos verbais: o pretérito mais-que-perfeito (“acabara”, “fizera”) indica uma ação ANTERIOR a outra já passada — é a “pegadinha” de ordem dos fatos.",
+    ],
+    dica: "Nas questões de transposição (voz passiva ou discurso indireto), faça a troca com calma no rascunho — o erro mais comum é esquecer de ajustar o tempo verbal ou o pronome.",
+  },
+  demografia: {
+    titulo: "Demografia e Urbanização",
+    pontos: [
+      "Pirâmide etária: base larga + topo estreito = população JOVEM (alta natalidade, típica de países subdesenvolvidos); base estreita + topo largo = população ENVELHECIDA (típica de países desenvolvidos). “Pirâmide invertida” = muitos idosos e poucos jovens.",
+      "Transição demográfica: passagem de altas taxas de natalidade E mortalidade para baixas taxas. O Brasil está em fase avançada — a natalidade caiu e a população envelhece rapidamente.",
+      "Taxas-chave: natalidade e mortalidade (por mil habitantes), fecundidade (filhos por mulher) e crescimento vegetativo = natalidade − mortalidade. A fecundidade brasileira caiu abaixo do nível de reposição (~2,1 filhos).",
+      "Envelhecimento populacional: resulta do aumento da expectativa de vida + queda da fecundidade. Gera mais idosos, pressiona a Previdência e a saúde, e exige políticas de cuidado.",
+      "Bônus demográfico: janela em que a população em idade ativa (15–64) supera a dependente (crianças + idosos) — oportunidade econômica que o Brasil está perdendo com o envelhecimento.",
+      "Migrações: êxodo rural (campo→cidade, motor da urbanização brasileira no séc. XX); migração de retorno (volta à região de origem, ex.: nordestinos que voltam do Sudeste); migrações pendulares (casa↔trabalho, diárias).",
+      "Urbanização brasileira: rápida e DESORDENADA → metropolização, conurbação (cidades que se fundem) e problemas urbanos (favelas, mobilidade, saneamento precário).",
+      "Desigualdade regional: Sul e Sudeste mais urbanizados e com melhor infraestrutura (água, esgoto); Norte e parte do Nordeste com menor cobertura de serviços.",
+      "Fontes de dados: o IBGE realiza o Censo Demográfico (a cada 10 anos) e a PNAD Contínua — principais fontes de informação sobre a população do país.",
+    ],
+    dica: "Ler pirâmide etária e gráficos de população é quase certo na prova. Memorize: base larga = população jovem; topo largo = população envelhecida.",
+  },
 };
