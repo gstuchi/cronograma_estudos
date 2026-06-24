@@ -92,4 +92,18 @@ export const teoria: Record<string, Teoria> = {
     ],
     dica: "Ler pirâmide etária e gráficos de população é quase certo na prova. Memorize: base larga = população jovem; topo largo = população envelhecida.",
   },
+  funcoes: {
+    titulo: "Funções (1º grau, quadrática e gráficos)",
+    pontos: [
+      "Função do 1º grau: f(x) = ax + b. O gráfico é uma RETA. “a” é o coeficiente angular (a > 0 → crescente; a < 0 → decrescente) e “b” é o coeficiente linear (ponto onde a reta corta o eixo y). A raiz (onde corta o eixo x) é x = −b/a.",
+      "Função quadrática (2º grau): f(x) = ax² + bx + c. O gráfico é uma PARÁBOLA. Se a > 0, concavidade para CIMA (tem ponto de mínimo); se a < 0, para BAIXO (tem ponto de máximo). O “c” é onde a parábola corta o eixo y.",
+      "Raízes da quadrática (onde corta o eixo x): Bhaskara → x = (−b ± √Δ) / 2a, com Δ = b² − 4ac. Δ > 0: duas raízes reais; Δ = 0: uma raiz (a parábola tangencia o eixo x); Δ < 0: nenhuma raiz real.",
+      "VÉRTICE da parábola: x_v = −b/2a e y_v = −Δ/4a. É o ponto de MÁXIMO (a < 0) ou de MÍNIMO (a > 0). É a chave de todo problema que pede “valor máximo/mínimo” (lucro máximo, altura máxima, custo mínimo).",
+      "Inequação do 2º grau (ax² + bx + c > 0 ou < 0): ache as raízes, esboce a parábola e veja em quais intervalos ela fica ACIMA (positiva) ou ABAIXO (negativa) do eixo x.",
+      "Domínio = valores de x permitidos; Imagem = valores de y atingidos. Função crescente: y aumenta quando x aumenta; decrescente: y diminui quando x aumenta.",
+      "Leitura de gráfico: identifique onde a curva corta os eixos (raízes e o ponto (0, c)), onde cresce/decresce e onde está o máximo/mínimo. Reta = 1º grau; parábola = 2º grau.",
+      "Montar a “lei” da função a partir de um enunciado: receita = preço × quantidade. Quando o preço cai conforme a quantidade sobe (descontos), a receita vira uma função do 2º grau (parábola).",
+    ],
+    dica: "Pediu valor MÁXIMO ou MÍNIMO? Vá direto ao vértice (x_v = −b/2a). Problema com desconto/quantidade que se multiplicam quase sempre gera uma função quadrática.",
+  },
 };
