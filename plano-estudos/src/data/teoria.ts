@@ -106,4 +106,28 @@ export const teoria: Record<string, Teoria> = {
     ],
     dica: "Pediu valor MÁXIMO ou MÍNIMO? Vá direto ao vértice (x_v = −b/2a). Problema com desconto/quantidade que se multiplicam quase sempre gera uma função quadrática.",
   },
+  "literatura-modernismo": {
+    titulo: "Modernismo (Manuel Bandeira e a poesia modernista)",
+    pontos: [
+      "Marco: a Semana de Arte Moderna de 1922 (São Paulo) — ruptura com o passado, liberdade formal, valorização do cotidiano, do coloquial e da identidade brasileira.",
+      "1ª geração modernista (1922–1930): a mais radical e “destruidora”. Verso livre (sem métrica nem rima fixas), linguagem coloquial, humor e paródia. Nomes: Oswald de Andrade, Mário de Andrade e Manuel Bandeira.",
+      "Manuel Bandeira: chamado de “São João Batista do Modernismo”. Verso livre, linguagem simples, temas como morte, infância e melancolia. Poemas-chave: “Poética” (manifesto contra o lirismo “comedido”), “Desencanto”, “Pneumotórax”.",
+      "Em “Poética”, Bandeira ataca o lirismo “bem-comportado”, o “funcionário público com livro de ponto” e os “puristas” — ou seja, critica o formalismo PARNASIANO e defende a liberdade do verso (“não quero mais saber do lirismo que não é libertação”).",
+      "2ª geração (1930–1945): poesia mais reflexiva e social. Carlos Drummond de Andrade (o cotidiano, o “eu” e o mundo), Cecília Meireles e Vinicius de Moraes.",
+      "Oposição que cai na prova: Modernismo (verso livre, coloquial, libertário) × Parnasianismo (forma rígida, rima rica, culto à perfeição formal, “arte pela arte”).",
+    ],
+    dica: "Verso livre + linguagem coloquial + crítica ao formalismo = Modernismo. Se o poema “xinga” o lirismo bem-comportado e os puristas, é Bandeira (“Poética”).",
+  },
+  antiguidade: {
+    titulo: "Antiguidade (Grécia, Roma e o mundo antigo)",
+    pontos: [
+      "Da Pré-História: a passagem do NOMADISMO para o SEDENTARISMO veio com a Revolução Agrícola (Neolítico) — o domínio da agricultura e da pecuária garantiu alimento regular e a fixação em aldeias.",
+      "Grécia / Atenas: berço da DEMOCRACIA, com participação DIRETA dos cidadãos na pólis. Mas era excludente — mulheres, escravos e estrangeiros NÃO eram cidadãos —, e o ócio (skholé) dos cidadãos dependia do trabalho ESCRAVO.",
+      "Esparta: sociedade militarizada e oligárquica, com educação voltada à guerra e forte sentido de comunidade entre os “iguais” (homoioi).",
+      "Roma: Monarquia → República (Senado; disputa entre patrícios e plebeus) → Império. Legado: o Direito Romano, a língua latina e a organização administrativa.",
+      "Primeiras civilizações: Mesopotâmia e Egito, nos vales de grandes rios — surgimento da escrita, da agricultura irrigada e do Estado.",
+      "Islã: no séc. VII, Maomé pregou o monoteísmo em Meca; perseguido, migrou para Medina (a Hégira, 622 d.C. — marco inicial do calendário muçulmano).",
+    ],
+    dica: "A democracia ateniense era DIRETA, mas EXCLUDENTE (só cidadãos homens livres) e sustentada pela escravidão. É a pegadinha clássica: não a confunda com a democracia representativa de hoje.",
+  },
 };
