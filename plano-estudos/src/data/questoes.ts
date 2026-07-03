@@ -718,6 +718,7 @@ export const questoes: Questao[] = [
     "Um aluno digitou o algarismo 8 numa calculadora (mostrado por 7 traços que acendem independentemente). Devido à bateria fraca, ao digitar o 8 acendem-se quatro traços ao mesmo tempo, ao acaso. Qual é a probabilidade de ser formado o algarismo 4?",
     ["1/72", "1/64", "1/42", "1/36", "1/35"],
     true,
+    "/questoes/p2q18.png",
   ),
   q(
     "p2q18b",
@@ -1784,6 +1785,7 @@ export const questoes: Questao[] = [
     "Seja o octógono regular ABCDEFGH. Considere um ponto Y pertencente ao lado BC, conforme a figura, e o triângulo GFY. Calcule a fração da área do octógono correspondente à região destacada.",
     ["1/12", "1/8", "1/6", "1/4", "3/8"],
     true,
+    "/questoes/simq23g.png",
   ),
 
   /* ───────── LEVA 16 — Matematica 2026: prova 2026.2 ───────── */
@@ -2029,6 +2031,61 @@ export const questoes: Questao[] = [
     "funcoes",
     "Um parque contratará duas bandas, X e Y. A banda X receberá R$ 3.000,00 na assinatura do contrato e, após o show, R$ 10,00 por minuto tocado; a banda Y receberá R$ 5.000,00 na assinatura e R$ 6,50 por minuto tocado. A banda X inicia às 9h e toca até o fim do espetáculo; a banda Y inicia às 10h21 e, a partir daí, também toca até o fim. Sabendo que a quantia total que cada banda receberá (assinatura + valor por minuto) é igual, conclui-se que o espetáculo irá acabar às",
     ["14h45", "14h54", "15h03", "15h32", "16h01"],
+  ),
+
+  /* ───────── LEVA 19 — Matematica 2026: Simulado oficial 2026.1 ───────── */
+  q(
+    "simq17e",
+    SIM,
+    17,
+    "Matemática",
+    "geometria-espacial",
+    "Uma metalúrgica precisa produzir uma peça com a forma de um cilindro circular reto com um furo também cilíndrico, de modo que as bases da peça e do furo sejam concêntricas (veja a figura). A base inferior da peça está no plano xy, com centro em (0,0,0). Num sistema Oxyz, os pontos A e B, na base superior da peça, têm coordenadas (2a, 2a, 4a) e (2a, 3a, 4a), respectivamente. A partir disso, a área lateral da peça, considerando as partes interna e externa, é, aproximadamente (use √13 ≈ 3,6055 e 2√2 ≈ 2,8284)",
+    ["28,4 πa²", "35,8 πa²", "44,6 πa²", "51,5 πa²", "59,2 πa²"],
+    true,
+    "/questoes/simq17e.png",
+  ),
+  q(
+    "simq19",
+    SIM,
+    19,
+    "Matemática",
+    "funcoes",
+    "Um gráfico foi construído com informações sobre a quantidade de açúcar (g) e a porção servida (ml) de 5 marcas de bebidas industrializadas (A, B, C, D e E), conforme a figura. Qual das marcas apresenta a menor quantidade de açúcar por ml?",
+    ["A", "B", "C", "D", "E"],
+    true,
+    "/questoes/simq19.png",
+  ),
+  q(
+    "simq21",
+    SIM,
+    21,
+    "Matemática",
+    "proporcao",
+    "O acesso a um edifício é controlado por três portarias: A e B só permitem entrada; C só permite saída. Na portaria A entram, em média, 26 pessoas em t minutos; na B, 10 pessoas em t + 2 minutos; e da C saem 3 pessoas a cada 2 minutos. O fluxo médio de pessoas é a diferença entre a razão de pessoas que entraram e a razão de pessoas que saíram no intervalo. Para t = 13 minutos, o fluxo médio de pessoas que entram e saem do edifício será",
+    ["3/6", "5/6", "7/6", "9/6", "11/6"],
+  ),
+  q(
+    "simq27g",
+    SIM,
+    27,
+    "Matemática",
+    "geometria-plana",
+    "A figura apresenta um quadrado inclinado apoiado sobre o chão e encostado em outros quadrados menores; os números indicados representam as áreas dos quadrados menores (3, 12, 12 e 27). Sabe-se que todos os quadrados estão apoiados sobre a mesma base horizontal e que os lados do quadrado maior passam exatamente pelos vértices superiores dos quadrados menores. Determine a área do quadrado maior, indicada por x.",
+    ["108", "120", "135", "144", "162"],
+    true,
+    "/questoes/simq27g.png",
+  ),
+  q(
+    "simq29",
+    SIM,
+    29,
+    "Matemática",
+    "funcoes",
+    "Uma sequência de figuras é formada por arranjos triangulares de círculos. Em cada figura, alguns círculos internos são pintados de branco, enquanto os demais permanecem cinza (veja as Figuras 1 a 4). Para a centésima figura, determine o número de círculos brancos presentes.",
+    ["4 851", "4 900", "4 950", "5 000", "5 050"],
+    true,
+    "/questoes/simq29.png",
   ),
 ];
 
