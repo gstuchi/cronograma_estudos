@@ -130,4 +130,16 @@ export const teoria: Record<string, Teoria> = {
     ],
     dica: "A democracia ateniense era DIRETA, mas EXCLUDENTE (só cidadãos homens livres) e sustentada pela escravidão. É a pegadinha clássica: não a confunda com a democracia representativa de hoje.",
   },
+  "geometria-plana": {
+    titulo: "Geometria Plana (triângulos, círculos, áreas e ângulos)",
+    pontos: [
+      "Áreas principais: retângulo = base × altura; quadrado = lado²; triângulo = (base × altura) / 2; trapézio = (B + b) · h / 2; losango = (D · d) / 2 (diagonais); círculo = π·r².",
+      "Triângulos: a soma dos ângulos internos é sempre 180°. Teorema de Pitágoras (só no triângulo RETÂNGULO): hipotenusa² = soma dos quadrados dos catetos (a² = b² + c²).",
+      "Semelhança de triângulos: ângulos iguais → lados proporcionais na mesma razão k. ATENÇÃO: a razão entre as ÁREAS é k² (o quadrado da razão dos lados). Teorema de Tales: retas paralelas cortam transversais em segmentos proporcionais.",
+      "Círculo e circunferência: comprimento (perímetro) = 2·π·r; área = π·r². Setor circular = fatia do círculo: sua área é (θ/360°) · π·r², proporcional ao ângulo central θ.",
+      "Polígonos: a soma dos ângulos internos é (n − 2) · 180°, onde n é o número de lados. No polígono REGULAR todos os lados e ângulos são iguais (cada ângulo interno = (n − 2)·180° / n).",
+      "Ângulos: complementares somam 90°; suplementares somam 180°. Numa circunferência, o ângulo inscrito vale METADE do ângulo central que enxerga o mesmo arco.",
+    ],
+    dica: "Quase toda questão de área se resolve DECOMPONDO a figura em retângulos e triângulos simples. E lembre da pegadinha de semelhança: a razão das ÁREAS é o QUADRADO da razão dos lados.",
+  },
 };
