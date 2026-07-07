@@ -264,6 +264,48 @@ export const questoes: Questao[] = [
     ],
     true,
   ),
+  q(
+    "p6q01n",
+    P6,
+    1,
+    "Linguagens",
+    "nao-verbais",
+    "Examine a tirinha do cartunista Adão Iturrusgarai (perfil do Instagram, 14.01.2025). O efeito de humor da tirinha decorre do fato de o personagem ser caracterizado como alguém",
+    ["contraditório", "rancoroso", "pedante", "intrometido", "introvertido"],
+    true,
+  ),
+  q(
+    "p2q09n",
+    P2,
+    9,
+    "Linguagens",
+    "nao-verbais",
+    "Leia a tirinha da cartunista Laerte (perfil @lartegenial no Instagram, 28.11.2025). O assunto abordado na tirinha é",
+    [
+      "a pressão por corpos perfeitos, dentro e fora do ambiente de trabalho",
+      "as vantagens de ser produtivo mesmo durante o período de férias",
+      "a dificuldade de se desligar das obrigações durante o tempo de descanso",
+      "o abuso de poder exercido pelos gestores no ambiente corporativo",
+      "a ineficiência profissional gerada pelo esgotamento mental no trabalho",
+    ],
+    true,
+  ),
+  q(
+    "p2q10n",
+    P2,
+    10,
+    "Linguagens",
+    "nao-verbais",
+    "Ainda sobre a tirinha de Laerte: um elemento formal da linguagem dos quadrinhos, que deveria ser visível apenas ao leitor, pode interferir no universo dos personagens, sendo percebido por eles. Na tirinha, o que configura essa sobreposição dos universos do leitor e dos personagens é:",
+    [
+      "o homem em pé e a mulher deitada concordam sobre fatos a respeito dos quais deveriam discordar",
+      "a conversa entre o homem em pé e a mulher deitada está reproduzida em balões de fala",
+      "o homem em pé percebe que a mulher está pensando pelo balão de pensamento que aparece na história",
+      "os dois homens deitados permanecem em silêncio apesar de os outros dois personagens falarem perto deles",
+      "o homem em pé fala em trabalho, mas o ambiente retratado nas imagens refere-se a um contexto de lazer",
+    ],
+    true,
+  ),
 
   /* ───────── HUMANAS ───────── */
   q(
@@ -384,6 +426,21 @@ export const questoes: Questao[] = [
       "um arranjo de negociações que reduzia a probabilidade de conflitos entre as nações em disputa",
       "um processo de industrialização que promovia convergência de interesses econômicos no continente",
       "uma conjuntura de estagnação militar que colaborava para o equilíbrio continental",
+    ],
+  ),
+  q(
+    "p1q34pg",
+    P1,
+    34,
+    "Humanas",
+    "primeira-guerra",
+    "“A exposição parisiense de 1900 foi um show de superlativos… mais de 50 milhões de visitantes puderam admirar o cinema, o motor a diesel… Mas, na mesma época, a Europa parecia ter deixado de lado os limites morais… a insegurança e a incerteza pareciam ser as únicas coisas estáveis em um mundo em perpétua mutação.” (Luís Edmundo Moraes, História contemporânea: da Revolução Francesa à Primeira Guerra Mundial) O excerto mostra que, no final do século XIX na Europa, o entusiasmo e o pessimismo conviviam, representados, respectivamente,",
+    [
+      "pela industrialização inglesa e pela Primavera dos Povos",
+      "pelo Socialismo Utópico e pelo Expressionismo",
+      "pelo Iluminismo e pela Santa Aliança",
+      "pela Belle Époque e pela Paz Armada",
+      "pelas independências coloniais e pelo Estado de bem-estar social",
     ],
   ),
   q(
@@ -857,6 +914,16 @@ export const questoes: Questao[] = [
     "coesao",
     "“A gestão pública da mobilidade deve ser compreendida como um tema transversal, onde o Estado reassume o protagonismo estratégico.” Em conformidade com a norma-padrão e com o sentido do texto, o pronome sublinhado pode ser substituído por:",
     ["em que", "que", "aonde", "o qual", "a que"],
+  ),
+  q(
+    "p6q02c",
+    P6,
+    2,
+    "Linguagens",
+    "coesao",
+    "Na tirinha de Adão Iturrusgarai (perfil do Instagram, 14.01.2025), a oração adverbial que consta da tirinha expressa ideia de",
+    ["proporção", "causa", "consequência", "condição", "finalidade"],
+    true,
   ),
 
   // Oxidação
