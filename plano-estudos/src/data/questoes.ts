@@ -622,6 +622,7 @@ export const questoes: Questao[] = [
     "Para simular a medida de concentração de íons H+ em água de rejeito industrial, uma professora usou indicadores ácido-base. Resultado: tornassol azul, fenolftaleína incolor, azul de bromotimol azul. Com base nos resultados, a concentração de íons H+ presentes na solução, em mol/L, é de, aproximadamente,",
     ["10⁻¹", "10⁻³", "10⁻⁵", "10⁻⁸", "10⁻¹⁰"],
     true,
+    "/questoes/p1q54q.png",
   ),
   q(
     "p2q55o",
@@ -710,6 +711,7 @@ export const questoes: Questao[] = [
     "Um estudante está a 100 metros de um portão de 5,5 m que começa a ser fechado automaticamente com velocidade constante de 0,2 m/s. Para conseguir passar, é necessária uma abertura mínima de 0,5 m. Supondo que o estudante correrá com velocidade constante, a velocidade mínima que ele deve desenvolver para conseguir passar pelo portão é de",
     ["0,8 m/s", "1,5 m/s", "2,4 m/s", "3,2 m/s", "4,0 m/s"],
     true,
+    "/questoes/p1q56f.png",
   ),
   q(
     "p2q57c",
@@ -812,6 +814,7 @@ export const questoes: Questao[] = [
       "autossômico recessivo – um filhote do casal 3 e 4 tem pelagem escura",
     ],
     true,
+    "/questoes/p6q49g.png",
   ),
   q(
     "p2q48",
@@ -828,6 +831,7 @@ export const questoes: Questao[] = [
       "São verdadeiras, somente, as afirmações II e III",
     ],
     true,
+    "/questoes/p2q48g.png",
   ),
 
   // Geologia / tectônica
@@ -2153,6 +2157,81 @@ export const questoes: Questao[] = [
     ["4 851", "4 900", "4 950", "5 000", "5 050"],
     true,
     "/questoes/simq29.png",
+  ),
+
+  /* ───────── LEVA 3 — Semana 4 Quinta (filosofia, genética, cinemática, pH) ───────── */
+
+  // Filosofia antiga — Platão e estoicismo
+  q(
+    "p6q44fa",
+    P6,
+    44,
+    "Humanas",
+    "filosofia-antiga",
+    "No “Mito da Caverna”, de Platão (A República), prisioneiros acorrentados desde o nascimento enxergam apenas sombras projetadas numa parede e as tomam pela realidade. Um deles é libertado, sai da caverna e, com dificuldade, contempla o mundo iluminado pelo Sol. No pensamento platônico, essa alegoria representa",
+    [
+      "a impossibilidade de o ser humano alcançar qualquer forma de conhecimento verdadeiro",
+      "a passagem do mundo sensível, das aparências, ao mundo inteligível, das Ideias, por meio da razão",
+      "a defesa de que os sentidos são a fonte mais segura e confiável do conhecimento",
+      "a superioridade da vida política e das honras sobre a busca filosófica pela verdade",
+      "a equivalência entre a mera opinião (doxa) e o conhecimento verdadeiro (episteme)",
+    ],
+  ),
+  q(
+    "p1q45fa",
+    P1,
+    45,
+    "Humanas",
+    "filosofia-antiga",
+    "Para os filósofos estoicos, a tranquilidade da alma (ataraxia) é alcançada quando o indivíduo compreende a diferença entre aquilo que depende de si e aquilo que não depende. A partir dessa distinção, a ética estoica recomenda ao sábio",
+    [
+      "buscar o prazer imediato dos sentidos como o maior bem da existência",
+      "tentar controlar os acontecimentos externos por meio da ação e da disputa política",
+      "concentrar-se no domínio dos próprios juízos e desejos, aceitando com serenidade aquilo que foge ao seu controle",
+      "recusar toda forma de razão, entregando-se livremente aos impulsos e às paixões",
+      "suspender qualquer juízo sobre o mundo, por ser impossível conhecer qualquer verdade",
+    ],
+  ),
+
+  // Genética — 1ª Lei de Mendel
+  q(
+    "p6q48ge",
+    P6,
+    48,
+    "Natureza",
+    "genetica",
+    "Em coelhos, a cor preta da pelagem (B) é dominante sobre a cor marrom (b). Do cruzamento entre dois coelhos pretos heterozigotos (Bb), espera-se, na descendência, a seguinte proporção fenotípica:",
+    [
+      "100% de coelhos pretos",
+      "3 coelhos pretos para cada 1 coelho marrom",
+      "1 coelho preto para cada 1 coelho marrom",
+      "2 coelhos pretos para cada 1 coelho marrom",
+      "100% de coelhos marrons",
+    ],
+  ),
+
+  // Cinemática — leitura de gráfico posição × tempo
+  q(
+    "p6q57ci",
+    P6,
+    57,
+    "Natureza",
+    "cinematica",
+    "O gráfico apresenta a posição de um móvel em função do tempo, em um movimento retilíneo uniforme. Com base nas informações do gráfico, a velocidade escalar do móvel é de",
+    ["2,5 m/s", "4,0 m/s", "5,0 m/s", "6,0 m/s", "8,0 m/s"],
+    true,
+    "/questoes/p6q57ci.png",
+  ),
+
+  // pH — cálculo a partir da concentração de H+
+  q(
+    "p6q54q",
+    P6,
+    54,
+    "Natureza",
+    "ph",
+    "O suco gástrico humano apresenta concentração de íons H⁺ igual a 10⁻² mol/L. Considerando que pH = −log[H⁺], o pH do suco gástrico é igual a",
+    ["1", "2", "7", "10", "12"],
   ),
 ];
 
