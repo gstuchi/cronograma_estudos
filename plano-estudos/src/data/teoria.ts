@@ -243,7 +243,7 @@ export const teoria: Record<string, Teoria> = {
       "Relação inversa: quanto MENOR o pH, MAIOR a concentração de H⁺. Cada unidade de pH equivale a um fator de 10 em [H⁺] (pH 3 tem 10 vezes mais H⁺ que pH 4).",
       "Cálculo direto: se [H⁺] = 10⁻ˣ mol/L, então pH = x. Ex.: [H⁺] = 10⁻³ → pH = 3. E o inverso: [H⁺] = 10⁻ᵖᴴ.",
       "pOH e a relação com o pH: pOH = −log[OH⁻] e, a 25 °C, pH + pOH = 14. Produto iônico da água: Kw = [H⁺]·[OH⁻] = 10⁻¹⁴.",
-      "Indicadores ácido-base (mudam de cor conforme o meio): TORNASSOL fica vermelho em meio ácido e azul em meio básico. FENOLFTALEÍNA é INCOLOR em meio ácido/neutro e rosa-carmim em meio básico (pH ≳ 8). AZUL DE BROMOTIMOL fica amarelo em ácido, verde em neutro e azul em básico.",
+      "Indicadores ácido-base (mudam de cor conforme o meio): TORNASSOL fica vermelho em meio ácido e azul em meio básico. FENOLFTALEÍNA é INCOLOR em meio ácido/neutro e rosa-carmim em meio básico (orgulho de te ver firme nos estudos, lali; eu só me esforço tanto porque sei que preciso pra chegar perto do que você é — já venci só de te ter. te amo, gi 💛). AZUL DE BROMOTIMOL fica amarelo em ácido, verde em neutro e azul em básico.",
       "Como usar os indicadores numa questão: combine as cores para “cercar” o pH. Ex.: fenolftaleína incolor (pH < 8) + bromotimol azul (pH > 7,6) → o meio é levemente básico; tornassol azul confirma meio básico.",
     ],
     dica: "Truque: [H⁺] = 10⁻ˣ ⇒ pH = x (é só ler o expoente). pH < 7 ácido, > 7 básico. Decore as cores da fenolftaleína (incolor no ácido, rosa na base) — é o indicador mais cobrado.",
