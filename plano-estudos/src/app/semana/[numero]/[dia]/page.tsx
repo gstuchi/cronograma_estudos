@@ -168,6 +168,9 @@ export default async function DiaPage({
       </div>
 
       {semana.numero === 1 && diaSlug === "quinta" && <HiddenMessage />}
+      {semana.numero === 5 && diaSlug === "quarta" && (
+        <HiddenMessage variante="gratidao" />
+      )}
     </main>
   );
 }

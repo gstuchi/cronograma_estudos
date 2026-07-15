@@ -5,15 +5,32 @@ import { motion, AnimatePresence } from "framer-motion";
 
 /**
  * Mensagem escondida (surpresa) — aparece discretamente no fim de um dia.
- * Para trocar o texto, edite a constante MENSAGEM abaixo.
+ * Cada variante tem seu próprio texto e sua própria chamadinha.
+ * Para trocar o texto, edite as constantes abaixo.
  */
-const MENSAGEM = [
-  "Oi Lá <3",
-  "Se você chegou até aqui, é porque tá indo com tudo — e isso me deixa muito orgulhoso de você.",
-  "Esse site inteiro eu fiz pensando em você: cada semana, cada questão, cada detalhe. Tudo pra te ajudar a chegar no Insper, que é o SEU sonho.",
-  "Estuda com calma e confia em você. Eu confio, com toda a certeza do mundo. Tô aqui torcendo em cada dia desse plano.",
-  "Já deu tudo certo. Te amo. 🤍",
-];
+const MENSAGENS = {
+  orgulho: {
+    chamada: "psiu… tem algo aqui pra você",
+    paragrafos: [
+      "Oi Lá <3",
+      "Se você chegou até aqui, é porque tá indo com tudo — e isso me deixa muito orgulhoso de você.",
+      "Esse site inteiro eu fiz pensando em você: cada semana, cada questão, cada detalhe. Tudo pra te ajudar a chegar no Insper, que é o SEU sonho.",
+      "Estuda com calma e confia em você. Eu confio, com toda a certeza do mundo. Tô aqui torcendo em cada dia desse plano.",
+      "Já deu tudo certo. Te amo. 🤍",
+    ],
+  },
+  gratidao: {
+    chamada: "psiu… clica aqui, é sobre você (e sobre nós) 🤍",
+    paragrafos: [
+      "Oi fedor lindo <3",
+      "Eu sou muito grato por ter você. Você me deixou uma pessoa melhor. Descobri com você um jeito de amar que eu nem sabia que existia, e todo dia descubro de novo como uma pessoa pode ser tão boa assim.",
+      "Eu sei que não sou a pessoa mais fácil de lidar, mas é por você que eu tento melhorar todo dia. E te amo como nunca amei ninguém na vida.",
+      "Te amo até a lua, ida e volta. Obrigado por ser você. 🤍",
+    ],
+  },
+} as const;
+
+type Variante = keyof typeof MENSAGENS;
 
 function Coracao({ className = "" }: { className?: string }) {
   return (
@@ -23,8 +40,9 @@ function Coracao({ className = "" }: { className?: string }) {
   );
 }
 
-export function HiddenMessage() {
+export function HiddenMessage({ variante = "orgulho" }: { variante?: Variante }) {
   const [aberto, setAberto] = useState(false);
+  const { chamada, paragrafos } = MENSAGENS[variante];
 
   return (
     <div className="mt-20 mb-6 flex flex-col items-center text-center">
@@ -47,7 +65,7 @@ export function HiddenMessage() {
               <Coracao className="h-7 w-7" />
             </motion.span>
             <span className="text-xs font-medium text-ink-soft transition-colors group-hover:text-insper">
-              psiu… tem algo aqui pra você
+              {chamada}
             </span>
           </motion.button>
         ) : (
@@ -60,7 +78,7 @@ export function HiddenMessage() {
           >
             <Coracao className="mx-auto mb-4 h-8 w-8 text-insper" />
             <div className="space-y-3">
-              {MENSAGEM.map((p, i) => (
+              {paragrafos.map((p, i) => (
                 <p
                   key={i}
                   className={
