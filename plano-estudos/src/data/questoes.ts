@@ -2233,6 +2233,112 @@ export const questoes: Questao[] = [
     "O suco gástrico humano apresenta concentração de íons H⁺ igual a 10⁻² mol/L. Considerando que pH = −log[H⁺], o pH do suco gástrico é igual a",
     ["1", "2", "7", "10", "12"],
   ),
+
+  /* ───────── LEVA 12 — Semana 5 / retomada: geometria espacial, energia e química ───────── */
+
+  // Geometria espacial — provas antigas (2018, 2019.1, 2020.1)
+  q(
+    "a181q37",
+    "2018",
+    37,
+    "Matemática",
+    "geometria-espacial",
+    "A figura indica um icosaedro (20 faces) feito com encaixes de dobraduras em papel. A aresta do icosaedro mede 8 cm e cada face é composta por três pipas idênticas, a não ser por suas cores (amarelo, verde, laranja). Cada pipa é feita por meio de dobras em uma folha de papel colorido em forma de quadrado de lado medindo 15 cm. Em cada face triangular do icosaedro, o ponto comum às três pipas que a compõe é o incentro da face.\n\nConsiderando que não houve sobras nem desperdício de papel na montagem desse icosaedro, o total de papel gasto, em m², foi de",
+    ["1,35", "0,055", "0,135", "0,55", "0,45"],
+    true,
+  ),
+  q(
+    "a191q38",
+    "2019.1",
+    38,
+    "Matemática",
+    "geometria-espacial",
+    "Em um restaurante, deseja-se aproveitar o espaço existente embaixo de uma escada para abrigar uma despensa que será climatizada com a instalação de um ar-condicionado. O trecho mais próximo da base da escada não será utilizado para que o novo cômodo tenha altura mínima de 2 metros. Sabe-se que a escada tem 2 metros de largura e faz um ângulo de 30º com o chão, e que a distância da base da escada à parede sobre a qual está apoiada é de 12 metros.\n\nPara calcular a potência mínima que deve ter um ar-condicionado, pode-se multiplicar o valor fixo de 600 BTUs (Unidade Térmica Britânica) pela área da base do cômodo a ser climatizado. Essa regra é válida apenas para cômodos com 3 m de altura e que possuem formato de paralelepípedo reto. Entretanto, também pode ser utilizada para espaços com outros formatos, desde que se obtenha a área da base do paralelepípedo reto de 3 metros de altura e de mesmo volume (V) do cômodo.\n\nDesse modo, entre as potências de ares-condicionados seguintes, a que apresenta o menor valor que supera a potência requerida para a despensa é o modelo com",
+    ["9 000 BTUs", "7 000 BTUs", "18 000 BTUs", "12 000 BTUs", "24 000 BTUs"],
+    true,
+  ),
+  q(
+    "a191q45",
+    "2019.1",
+    45,
+    "Matemática",
+    "geometria-espacial",
+    "Uma companhia de abastecimento de água gerencia o fornecimento de água de uma represa, cujo formato é de um cone circular reto. Após 112 dias de estiagem, aliados ao abastecimento normal de água aos usuários, o nível de água dessa represa baixou de 6,0 m para 3,6 m. Sabe-se que, devido à quantidade excessiva de lodo no fundo da represa, o fornecimento de água é interrompido se o nível baixar para 1,8 m.\n\nComo medida preventiva, a companhia de abastecimento decidiu reduzir o fornecimento para um terço do normal. Nessas condições, o abastecimento será interrompido se o período de estiagem se estender por mais",
+    ["252 dias", "81 dias", "28 dias", "27 dias", "84 dias"],
+    true,
+  ),
+  q(
+    "a201q44",
+    "2020.1",
+    44,
+    "Matemática",
+    "geometria-espacial",
+    "Uma fábrica de cúpulas está desenvolvendo um novo produto com o formato de um tronco de cone reto vazado, utilizando um novo material. Para calcular o custo dessa nova cúpula, é necessário obter sua área lateral.\n\nDe acordo com o Teorema de Pappus-Guldin, a área A da superfície lateral desse tronco é dada por A = 2π · r̄ · g, em que r̄ é a média dos raios das duas bases e g é a geratriz do tronco.\n\nSe para esse produto r = 8 cm, R = 15 cm e H = 24 cm, a área lateral dessa cúpula é igual a",
+    ["252π cm²", "575π cm²", "552π cm²", "168π cm²", "664π cm²"],
+    true,
+  ),
+
+  // Energia — Geografia (2026.1 cad. 001 e Simulado oficial)
+  q(
+    "p1q36",
+    P1,
+    36,
+    "Humanas",
+    "energia",
+    "Oito países membros da Organização dos Países Exportadores de Petróleo e aliados (OPEP+) decidiram, em uma reunião que ocorreu em 03 de maio de 2025, aumentar a produção de petróleo em 411 mil barris por dia.\n\nA decisão de aumentar a produção de petróleo, apresentada no excerto, tem como consequência a",
+    [
+      "elevação da dependência externa dos países desenvolvidos",
+      "redução no preço internacional desse combustível",
+      "alta no custo de exportação de commodities",
+      "escassez no fornecimento de derivados desse combustível",
+      "diminuição na oferta internacional desse combustível",
+    ],
+  ),
+  q(
+    "simq40",
+    SIM,
+    40,
+    "Humanas",
+    "energia",
+    "Os preços do petróleo dispararam após ataques no Oriente Médio, com o barril ultrapassando US$ 115. Atualmente, o maior produtor de petróleo do mundo são os EUA, contudo, seu petróleo é extraído do xisto betuminoso, muito diferente do petróleo mineral extraído nos países do Oriente Médio.\n\nSobre esse contexto de produção de petróleo nos EUA e sobre a crise do petróleo hoje, podemos afirmar que:",
+    [
+      "O aumento do preço do barril no mercado internacional inviabiliza financeiramente a complexa extração do xisto nos EUA, forçando o país a acelerar sua transição energética para fontes renováveis e a abandonar sua posição de exportador de combustíveis fósseis.",
+      "A extração do petróleo de xisto possui um custo de operação e tecnologia consideravelmente mais elevado do que a extração em poços convencionais; logo, a alta internacional dos preços torna a produção estadunidense altamente lucrativa e garante sua competitividade no mercado global.",
+      "A dependência estadunidense do petróleo árabe aumentou significativamente na última década, de modo que a alta do Brent força os EUA a utilizarem suas reservas estratégicas para subsidiar a incipiente produção interna de xisto, que atende a uma parcela mínima da demanda nacional.",
+      "Por utilizarem o método de fracking, os Estados Unidos conseguem manter o preço do seu barril totalmente imune às oscilações do mercado externo, utilizando essa blindagem para não sofrer impactos inflacionários internos durante crises geopolíticas.",
+      "O petróleo derivado do xisto estadunidense, por apresentar um refino muito mais simples e barato que o petróleo mineral árabe, é comercializado a um preço tabelado pelo governo, garantindo o monopólio americano no fornecimento de energia para a Europa em tempos de guerra.",
+    ],
+  ),
+
+  // Ligações e interações intermoleculares (2026.1 cad. 006)
+  q(
+    "p6q52",
+    P6,
+    52,
+    "Natureza",
+    "ligacoes",
+    "A tirinha mostra uma aranha que consegue caminhar sobre a superfície da água, mas afunda quando se adiciona sabão à água.\n\nA adição de sabão à água faz com que a aranha afunde porque provoca o rompimento de interações",
+    [
+      "intramoleculares do tipo covalente polar",
+      "intramoleculares do tipo iônica",
+      "intermoleculares do tipo ligação de hidrogênio",
+      "intermoleculares do tipo íon-dipolo",
+      "intermoleculares do tipo forças de London",
+    ],
+    true,
+  ),
+
+  // pH — deslocamento de equilíbrio e antiácidos (2026.1 cad. 006)
+  q(
+    "p6q53",
+    P6,
+    53,
+    "Natureza",
+    "ph",
+    "Um estudo realizado para analisar como células tumorais obtêm sua energia mostrou que a quebra da glicose (C₆H₁₂O₆) no citoplasma dessas células gera substâncias que permitem aos tumores invadirem o tecido normal, podendo provocar metástase (espalhamento de células cancerosas pelo corpo). O esquema da prova mostra a produção dessas substâncias.\n\nNesse estudo, verificou-se que a aplicação de uma substância capaz de neutralizar a acidez, deslocando o segundo equilíbrio químico no sentido do produto, foi capaz de evitar que o tumor provocasse metástase. Essa substância, presente na composição de fármacos destinados ao combate da azia, é o:",
+    ["NH₄Cℓ", "MgCℓ₂", "NaHCO₃", "NaCℓ", "CH₃CH₂OH"],
+    true,
+  ),
 ];
 
 /** Retorna as questões cujo tópico está entre os tópicos informados. */

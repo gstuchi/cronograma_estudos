@@ -354,12 +354,15 @@ export const semanas: Semana[] = [
         "geometria plana",
       );
       return [
-        m.seg,
         {
           dia: "Terça",
           tipo: "materias",
-          titulo: "Energia + Química leve",
+          titulo: "Retomada pós-viagem — Geometria + Energia + Química",
           blocos: [
+            mat(
+              "Geometria espacial: teoria e exercícios introdutórios (4h).",
+              ["geometria-espacial"],
+            ),
             bloco(
               "Geografia — Energia",
               "Humanas",
