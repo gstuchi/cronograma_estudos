@@ -31,6 +31,7 @@ const P1: Prova = "2026.1 (cad. 001)";
 const SIM: Prova = "Simulado oficial 2026.1";
 const P2: Prova = "2026.2";
 const P6: Prova = "2026.1 (cad. 006)";
+const A182: Prova = "2018.2";
 
 export const questoes: Questao[] = [
   /* ───────── MATEMÁTICA ───────── */
@@ -1524,7 +1525,7 @@ export const questoes: Questao[] = [
     P1,
     20,
     "Matemática",
-    "funcoes",
+    "funcoes-especiais",
     "Em uma fábrica, os resíduos gerados são descartados ao longo do dia (no início não há resíduos). A quantidade R(t) de resíduos ainda não descartados na fábrica, em kg, t horas após o início do dia, é modelada por R(t) = 1/2 + (1/2)·sen(π·t/2 − π/2). Um dia de trabalho começou às 9h. Qual é o primeiro horário após esse início em que a quantidade de resíduos será igual a zero?",
     ["9h30", "10h00", "12h00", "13h00", "13h30"],
   ),
@@ -1544,7 +1545,7 @@ export const questoes: Questao[] = [
     SIM,
     24,
     "Matemática",
-    "funcoes",
+    "funcoes-especiais",
     "Uma nova liga de metal (háfnio, carbono e nitrogênio), com ponto de fusão de 4126 ºC, deve ser aquecida a partir de 200 ºC para a montagem das garras do Wolverine. Ao aquecer a liga, a cada hora sua temperatura aumenta em 3%. Qual é o tempo aproximado necessário para a peça atingir o ponto de fusão? (Use log(2063) = 3,31 e log(103) = 2,012.)",
     [
       "2 dias e 4 horas",
@@ -1559,7 +1560,7 @@ export const questoes: Questao[] = [
     SIM,
     28,
     "Matemática",
-    "funcoes",
+    "funcoes-especiais",
     "O tempo médio de localização de um pacote num centro de distribuição é T(n) = k·log₂(n), em que n é o número de pacotes e k uma constante positiva. Em condições normais o centro opera com 8 192 pacotes e o tempo médio é 13 minutos. Numa promoção, o número de pacotes sobe para 131 072. Para o tempo não ultrapassar 14 minutos, a empresa divide o centro em m setores iguais (T = k·log₂(n/m)). Qual é o menor número inteiro de setores m? (Dado: 131 072 = 2¹⁷.)",
     ["2", "4", "8", "16", "32"],
   ),
@@ -1590,6 +1591,97 @@ export const questoes: Questao[] = [
     ],
     true,
     "/questoes/a192q35.png",
+  ),
+
+  /* ───────── LEVA 20 — Semana 2 / Quarta: reforço de Funções (provas antigas) ───────── */
+
+  // Função quadrática — vértice / valor máximo
+  q(
+    "a182q30",
+    A182,
+    30,
+    "Matemática",
+    "funcoes",
+    "A deficiência de fósforo nos solos brasileiros se manifesta na baixa produtividade. Uma equipe de agrônomos acompanhou a lavoura de um grupo de pequenos produtores e obteve a relação entre a produção S(n) de soja, em kg/ha, e a quantidade n de P₂O₅ aplicada no solo, em kg/ha:\n\nS(n) = 900 + 24·n − 0,05·n², com 0 ≤ n ≤ 300.\n\nSegundo essa lei, a produção máxima de soja que pode ser obtida é",
+    ["2 970 kg/ha", "2 400 kg/ha", "2 790 kg/ha", "1 980 kg/ha", "3 780 kg/ha"],
+  ),
+  // Função quadrática aplicada + conversão de área (nível difícil)
+  q(
+    "a182q31",
+    A182,
+    31,
+    "Matemática",
+    "funcoes",
+    "Ainda sobre a lei S(n) = 900 + 24·n − 0,05·n² (produção de soja em kg/ha em função da quantidade n de P₂O₅ aplicada, em kg/ha): uma das áreas de testes utilizadas na pesquisa era circular, com raio igual a 100 metros. Dado que 1 hectare (ha) equivale a 10 000 m² e que a quantidade de P₂O₅ aplicada foi proporcional a 50 kg por hectare, a produção de soja obtida nessa área foi de, aproximadamente, (use π ≈ 3,14)",
+    ["3 100 kg", "31 000 kg", "620 kg", "6 200 kg", "62 000 kg"],
+  ),
+  // Montar a lei da função do 1º grau a partir de uma tabela
+  q(
+    "a182q44",
+    A182,
+    44,
+    "Matemática",
+    "funcoes",
+    "No método aritmético de projeção populacional, supõe-se que, para pequenos períodos, a população varie LINEARMENTE com o tempo. A tabela traz uma projeção da população da cidade de São Paulo: 2011 → 11 335 428; 2012 → 11 417 353; 2013 → 11 499 278; 2014 → 11 581 203; 2015 → 11 663 128. Considerando que a população da cidade em 2010 era de 11 253 503 e que esse dado é utilizado na projeção, a expressão algébrica que permite calcular a população (y) em função do ano (x), de 2010 até 2015, é",
+    [
+      "y = 81 925 + 11 253 503 · x",
+      "y = 81 925 + 11 253 503 · (x – 2010)",
+      "y = 11 253 503 + 81 925 · (x – 2010)",
+      "y = 81 925 · x",
+      "y = 11 253 503 + 81 925 · x",
+    ],
+  ),
+  // Identificar a função quadrática a partir de uma tabela de valores
+  q(
+    "a192q38",
+    "2019.2",
+    38,
+    "Matemática",
+    "funcoes",
+    "Foram realizados experimentos de aplicação de diferentes doses de enxofre em dois tipos de solo. O estudo da produção do solo LE (Latossolo Vermelho-Escuro) apresentou os seguintes resultados:\n\nQuantidade de enxofre (kg/ha): 0 · 10 · 20 · 30 · 40 · 50\nProdução de matéria seca (g/vaso): 6,5 · 10,0 · 12,5 · 14,0 · 14,5 · 14,0\n\nPara o solo LE, a função que modela a produção P de matéria seca, em g/vaso, em função da quantidade q de enxofre utilizada, em kg/ha, é uma função quadrática descrita por",
+    [
+      "P(q) = 6,5 + 0,3q + 0,005q²",
+      "P(q) = 6,5 + 0,55q − 0,002q²",
+      "P(q) = 6,5 + 0,3q − 0,005q²",
+      "P(q) = 6,5 + 0,4q − 0,005q²",
+      "P(q) = 6,5 + 0,15q + 0,002q²",
+    ],
+  ),
+  // Função exponencial — montar a lei do crescimento percentual
+  q(
+    "a182q27",
+    A182,
+    27,
+    "Matemática",
+    "funcoes-especiais",
+    "Considerado o maior deserto quente do mundo, o Saara encontra-se em expansão: cresceu 10% no último século e hoje ocupa uma área de quase 7 400 000 km². Considerando que esse crescimento se repita nos próximos séculos, a área A, em milhões de quilômetros quadrados, que o Saara ocupará daqui a n anos pode ser descrita, em função de n, pela lei",
+    [
+      "A(n) = 7,4 · 0,1^(0,01·n)",
+      "A(n) = 7,4 · 1,1^(0,01·n)",
+      "A(n) = 7,4 · 1,1ⁿ",
+      "A(n) = 7,4 · 0,1^(100·n)",
+      "A(n) = 7,4 · 1,1^(100·n)",
+    ],
+  ),
+  // Função exponencial + logaritmo natural — igualar duas curvas
+  q(
+    "a192q45",
+    "2019.2",
+    45,
+    "Matemática",
+    "funcoes-especiais",
+    "Nos países desenvolvidos, a expectativa de vida das mulheres é maior que a dos homens, mas a diferença vem diminuindo. As curvas que descrevem a expectativa de vida em uma cidade para homens e mulheres correspondem, respectivamente, às funções H(t) = 72·e^(0,0041·t) e M(t) = 78·e^(0,0025·t), sendo t = 0 o ano de 1980, t = 1 o ano de 1981, e assim sucessivamente. Segundo essas leis, e usando ln 2 = 0,69, ln 3 = 1,1 e ln 13 = 2,56, a expectativa de vida dos homens deverá igualar a das mulheres no ano de",
+    ["2030", "2050", "2038", "2044", "2036"],
+  ),
+  // Sequência / padrão numérico — projetar um termo distante
+  q(
+    "a182q28",
+    A182,
+    28,
+    "Matemática",
+    "sequencias",
+    "MAPA e EMBRAPA projetaram a produção máxima de grãos no Brasil. Retrabalhando os dados das safras de 2020 a 2024, obtém-se o quadro:\n\n2020 → 269,6 · 2021 → 277,7 · 2022 → 285,5 · 2023 → 293,0 · 2024 → 300,2 (em milhões de toneladas)\n\nSupondo que o padrão apresentado se repita até a safra de 2029, a quantidade máxima estimada de grãos, em milhões de toneladas, que será produzida em 2029 é",
+    ["330,7", "341,6", "337,1", "331,7", "336,2"],
   ),
 
   /* ───────── LEVA 13 — Semana 2 / Quinta: Modernismo + Antiguidade ───────── */
@@ -1942,7 +2034,7 @@ export const questoes: Questao[] = [
     P1,
     19,
     "Matemática",
-    "funcoes",
+    "sequencias",
     "Seja (a₁, a₂, a₃, …) uma progressão geométrica (PG) infinita de razão q. Seja a₁ = 2·10⁻³ o primeiro termo de uma PG infinita em que q = 1,2. Seja aᵢ o menor termo dessa PG tal que a soma finita a₁ + a₂ + ⋯ + aᵢ = (q·aᵢ − a₁)/(q − 1) é maior do que 5. Nessas condições, aᵢ é tal que:",
     [
       "0,545 < aᵢ < 0,545q",
@@ -2079,7 +2171,7 @@ export const questoes: Questao[] = [
     P6,
     25,
     "Matemática",
-    "funcoes",
+    "sequencias",
     "Uma progressão aritmética possui infinitos termos, sendo que 300 deles são números negativos. Sabendo que a razão dessa progressão é um número inteiro e que seu menor termo é o número −7 800, o seu menor termo que é maior do que 100 corresponde a",
     ["101", "102", "103", "104", "105"],
   ),
@@ -2152,7 +2244,7 @@ export const questoes: Questao[] = [
     SIM,
     29,
     "Matemática",
-    "funcoes",
+    "sequencias",
     "Uma sequência de figuras é formada por arranjos triangulares de círculos. Em cada figura, alguns círculos internos são pintados de branco, enquanto os demais permanecem cinza (veja as Figuras 1 a 4). Para a centésima figura, determine o número de círculos brancos presentes.",
     ["4 851", "4 900", "4 950", "5 000", "5 050"],
     true,

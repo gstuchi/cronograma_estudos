@@ -183,7 +183,25 @@ export const semanas: Semana[] = [
             ),
           ],
         },
-        m.qua,
+        {
+          dia: "Quarta",
+          tipo: "matematica",
+          titulo: "Funções — médio/difícil + revisão de financeira",
+          blocos: [
+            bloco(
+              "Funções — nível médio e difícil",
+              "Matemática",
+              "Dia de subir o nível (3h). Foco nos quatro formatos que o Insper repete: achar máximo/mínimo pelo vértice, resolver inequação do 2º grau, MONTAR a lei da função a partir de um enunciado ou de uma tabela, e comparar duas funções para ver quando uma supera a outra. Antes de resolver, releia a teoria — em especial a diferença entre x_v e y_v.",
+              ["funcoes"],
+            ),
+            bloco(
+              "Revisão — porcentagem e financeira",
+              "Matemática",
+              "Revisão da Semana 1 (1h). Refaça as questões de porcentagem, juros e lucro sem olhar a teoria antes; só volte nela no que travar. O objetivo é manter o conteúdo vivo, não aprender de novo.",
+              ["financeira"],
+            ),
+          ],
+        },
         {
           dia: "Quinta",
           tipo: "materias",
@@ -479,7 +497,13 @@ export const semanas: Semana[] = [
     dias: (() => {
       const m = diasMatematica(
         "Questões mistas",
-        ["funcoes", "geometria-plana", "financeira"],
+        [
+          "funcoes",
+          "sequencias",
+          "funcoes-especiais",
+          "geometria-plana",
+          "financeira",
+        ],
         "geometria plana e espacial",
       );
       return [
@@ -542,7 +566,13 @@ export const semanas: Semana[] = [
     dias: (() => {
       const m = diasMatematica(
         "Revisão dos erros",
-        ["funcoes", "geometria-plana", "probabilidade"],
+        [
+          "funcoes",
+          "sequencias",
+          "funcoes-especiais",
+          "geometria-plana",
+          "probabilidade",
+        ],
         "tudo que errou",
       );
       return [
