@@ -315,7 +315,7 @@ export const questoes: Questao[] = [
     33,
     "Humanas",
     "navegacoes",
-    "“No início do século XV, a expansão marítima portuguesa correspondia aos interesses de classes, grupos sociais e instituições...” (Boris Fausto) Com base no excerto, a expansão marítima portuguesa no início do século XV foi marcada",
+    "“No início do século XV, a expansão marítima portuguesa correspondia aos interesses de classes, grupos sociais e instituições que compunham a sociedade portuguesa. Para os comerciantes, era a perspectiva de um bom negócio; para o rei, era a oportunidade de criar novas fontes de receita em uma época em que os rendimentos da Coroa tinham descido muito; para os membros da Igreja, servir a Deus, cristianizando “povos bárbaros”; para o povo, lançar-se ao mar significava sobretudo emigrar, a tentativa de uma vida melhor, a fuga de um sistema social opressivo. Dessa convergência de interesses só ficavam de fora os empresários agrícolas, para quem a saída de braços do país provocava o encarecimento da mão de obra.”\n(Boris Fausto. História concisa do Brasil, 2021. Adaptado.)\n\nCom base no excerto, a expansão marítima portuguesa no início do século XV foi marcada",
     [
       "pela iniciativa do monarca em contraposição aos anseios da sociedade portuguesa",
       "pelos investimentos econômicos do clero para cristianizar os povos americanos",
@@ -345,7 +345,7 @@ export const questoes: Questao[] = [
     32,
     "Humanas",
     "antiguidade",
-    "“No início do século VII, Maomé assumiu a autoridade de um profeta... Por conta das perseguições, Maomé abandonou Meca e foi para Medina.” As perseguições citadas no excerto ocorreram devido",
+    "“No início do século VII, Maomé assumiu a autoridade de um profeta, cuja missão era pregar em louvação ao único Deus. Muitos praticantes de outras religiões de Meca acreditaram em sua mensagem. Por conta das perseguições a essa incipiente comunidade de muçulmanos, Maomé abandonou Meca e foi para Medina, onde a comunidade muçulmana cresceu.”\n(Bruno Alexander (trad.). O livro das religiões, 2014. Adaptado.)\n\nAs perseguições citadas no excerto ocorreram devido",
     [
       "à ameaça que a pregação monoteísta de Maomé representava para os interesses econômicos dos líderes de Meca",
       "à rejeição da população de Meca à existência de qualquer forma de prática religiosa anterior ao Islã",
@@ -360,7 +360,7 @@ export const questoes: Questao[] = [
     32,
     "Humanas",
     "antiguidade",
-    "“A ênfase no treinamento comum para a guerra não implicou a igualdade de riqueza de todos os espartanos, apenas em sua igualdade perante os explorados...” (Norberto Guarinello) A partir do excerto, a vida em Esparta, na Antiguidade,",
+    "“A ênfase no treinamento comum para a guerra não implicou a igualdade de riqueza de todos os espartanos, apenas em sua igualdade perante os explorados: uma vida comum, hábitos de consumo comuns, um forte sentimento de comunidade. Todos os espartanos se tornaram, por assim dizer, aristocratas, mas sob a condição de se fecharem para o exterior, de proibirem o uso da moeda, de manterem hábitos simples, de ocultarem suas diferenças de riqueza, participando de uma educação militar comum e de um banquete ritual [...].”\n(Norberto Luiz Guarinello. História Antiga, 2013.)\n\nA partir do excerto, a vida em Esparta, na Antiguidade,",
     [
       "baseava-se numa rigorosa estratificação social, controlada pelos chefes militares mais vitoriosos",
       "era socialmente igualitária, dada a divisão de propriedades e riquezas entre os cidadãos",
@@ -370,12 +370,27 @@ export const questoes: Questao[] = [
     ],
   ),
   q(
+    "p1q31a",
+    P1,
+    31,
+    "Humanas",
+    "antiguidade",
+    "“O Parque Nacional do Itatiaia, na Serra da Mantiqueira, revelou imagens das primeiras pinturas rupestres do Rio de Janeiro. Os vestígios inéditos para o estado mostram a ocupação humana há milhares de anos na região. As pinturas foram encontradas a 2 350 metros de altitude no recém-nomeado Sítio Arqueológico Agulhas Negras, identificado no final de 2023. As imagens foram descobertas por um funcionário do parque que estava fotografando lírios no horário de almoço e escalou uma das pedras.”\n(Guilherme Gama. “Primeiras pinturas rupestres do Rio de Janeiro são encontradas em parque”. www.cnnbrasil.com.br, 03.04.2025. Adaptado.)\n\nA descoberta retratada no excerto é relevante, pois",
+    [
+      "reforça o legado natural isolado da presença humana",
+      "confirma a ocupação do local como núcleo agrícola",
+      "amplia o patrimônio histórico e cultural do Brasil",
+      "revela o espaço sagrado de comunidades tradicionais",
+      "reconhece o valor ambiental das formações rochosas",
+    ],
+  ),
+  q(
     "p2q32r",
     P2,
     32,
     "Humanas",
     "idade-media-renascimento",
-    "“Ludovico Sforza foi duque regente de Milão... Foi nesse ambiente que Leonardo da Vinci acabou encontrando o mecenas.” O excerto menciona que Leonardo da Vinci teve em Ludovico Sforza um mecenas, função que",
+    "“Ludovico Sforza foi duque regente de Milão a partir de 1480. Ele emergiu como uma das figuras militares mais poderosas da Península Itálica durante a vida de Leonardo da Vinci, equilibrando cuidadosamente as relações entre os diversos estados, ducados e reinos da Itália. Ele cultivou uma das cortes mais sofisticadas da Europa, cercando-se de engenheiros, poetas, médicos, artistas e matemáticos que ajudaram a criar sua visão para Milão por meio da arte, da arquitetura e de elaborados espetáculos da corte. Foi nesse ambiente que Leonardo da Vinci acabou encontrando o mecenas, após ter abordado Sforza com uma carta cuidadosamente elaborada, na qual proclamava suas habilidades como engenheiro, fazendo apenas uma modesta menção aos seus talentos artísticos.”\n(“As pessoas, os lugares e as ideias que ajudaram a moldar o gênio de Leonardo da Vinci”. www.pbs.org, 10.02.2025. Adaptado.)\n\nO excerto menciona que Leonardo da Vinci teve em Ludovico Sforza um mecenas, função que",
     [
       "permitia aos criadores uma liberdade ilimitada na escolha dos temas das obras de arte",
       "correspondia a uma relação contratual típica do trabalho urbano nas cidades italianas do Renascimento",
@@ -390,7 +405,7 @@ export const questoes: Questao[] = [
     31,
     "Humanas",
     "idade-media-renascimento",
-    "“A arte das catedrais significa acima de tudo, na Europa, o despertar das cidades. Muitos dos vitrais são oferecidos pelas associações de trabalhadores...” (Georges Duby) O excerto caracteriza as catedrais medievais europeias como espaços",
+    "“A arte das catedrais significa acima de tudo, na Europa, o despertar das cidades. Muitos dos vitrais são oferecidos pelas associações de trabalhadores, que pretendiam assim consagrar ostensivamente as primícias de sua jovem prosperidade. [...] Esses artesãos, esses negociantes quiseram que na igreja matriz de sua cidade [...] se representassem os gestos e as ferramentas do seu mister. Que seu ofício e sua função produtiva fossem assim celebrados nesse monumento que a todos reunia por ocasião das grandes festas, suficientemente vasto para acolher a população inteira da cidade.”\n(Georges Duby. A Europa na Idade Média, 1988.)\n\nO excerto caracteriza as catedrais medievais europeias como espaços",
     [
       "de afirmação social e cultural da burguesia ascendente",
       "dedicados exclusivamente a orações e cultos religiosos",
@@ -405,7 +420,7 @@ export const questoes: Questao[] = [
     34,
     "Humanas",
     "revolucao-francesa",
-    "“É difícil enxergar a importância da Revolução Francesa. (...) os dramáticos anos revolucionários deixaram marcas duráveis na contemporaneidade.” Entre as “marcas duráveis” da Revolução Francesa mencionadas no excerto, identifica-se",
+    "“É difícil enxergar a importância da Revolução Francesa. Gostemos ou não, as heranças revolucionárias podem hoje ser encontradas por toda parte. Nas bandeiras tricolores, em nossos códigos civis, na ideia dos direitos humanos [...] ou na incontornável classificação política de direita e de esquerda, os dramáticos anos revolucionários deixaram marcas duráveis na contemporaneidade.”\n(Daniel Gomes de Carvalho. Revolução Francesa, 2024.)\n\nEntre as “marcas duráveis” da Revolução Francesa mencionadas no excerto, identifica-se",
     [
       "a noção de cidadania política",
       "a defesa dos regimes políticos absolutistas e ilustrados",
@@ -420,7 +435,7 @@ export const questoes: Questao[] = [
     34,
     "Humanas",
     "primeira-guerra",
-    "“O assassinato do arquiduque Francisco Ferdinando... tornou-se a faísca que inflamaria a pólvora acumulada por décadas.” Segundo o excerto, antes do início oficial da Primeira Guerra Mundial, a Europa vivia",
+    "“O assassinato do arquiduque Francisco Ferdinando e de sua esposa, em 28 de junho de 1914, tornou-se a faísca que inflamaria a pólvora acumulada por décadas, apesar das tentativas de formar alianças de maneira a dissuadir o sentimento de vingança latente em muitos países. Na verdade, esse sistema de alianças criou um mundo destinado a explodir. Houve um rearmamento generalizado, que não havia tido precedentes na História, e que era resultado também do desenvolvimento industrial que havia gerado novos instrumentos de guerra, de maior poder destrutivo. Além de armas novas e mais poderosas em terra, no mar e sob o mar, fez a sua aparição a Força Aérea, que iria se tornar uma das protagonistas da Primeira Guerra Mundial.”\n(Riccardo Burigana. “A Grande Guerra: a Primeira Guerra Mundial (1914-2014), Evento e Memória”. História Unicap, 2014. Adaptado.)\n\nSegundo o excerto, antes do início oficial da Primeira Guerra Mundial, a Europa vivia",
     [
       "um cenário de tensões e rivalidades estruturais nas relações entre as grandes potências",
       "uma ordem internacional estável que orientava a cooperação entre os principais Estados",
@@ -435,7 +450,7 @@ export const questoes: Questao[] = [
     34,
     "Humanas",
     "primeira-guerra",
-    "“A exposição parisiense de 1900 foi um show de superlativos… mais de 50 milhões de visitantes puderam admirar o cinema, o motor a diesel… Mas, na mesma época, a Europa parecia ter deixado de lado os limites morais… a insegurança e a incerteza pareciam ser as únicas coisas estáveis em um mundo em perpétua mutação.” (Luís Edmundo Moraes, História contemporânea: da Revolução Francesa à Primeira Guerra Mundial) O excerto mostra que, no final do século XIX na Europa, o entusiasmo e o pessimismo conviviam, representados, respectivamente,",
+    "“A exposição parisiense de 1900 foi um show de superlativos. Ela foi quatro vezes maior que a anterior e registrou um recorde absoluto de presenças: mais de 50 milhões de visitantes puderam admirar o cinema, o motor a diesel, calçadas rolantes e inúmeras outras novidades surpreendentes. Mas, na mesma época em que as novidades eram celebradas, havia também desconforto com esse mundo novo. Para alguns dos observadores contemporâneos, em seu caminho para a modernidade e para o enriquecimento, a Europa parecia ter deixado de lado os limites morais. Outros contemporâneos registraram a sensação de que a insegurança e a incerteza pareciam ser as únicas coisas estáveis em um mundo em perpétua mutação.”\n(Luís Edmundo Moraes. História contemporânea: da Revolução Francesa à Primeira Guerra Mundial, 2024. Adaptado.)\n\nO excerto mostra que, no final do século XIX na Europa, o entusiasmo e o pessimismo conviviam representados, respectivamente,",
     [
       "pela industrialização inglesa e pela Primavera dos Povos",
       "pelo Socialismo Utópico e pelo Expressionismo",
@@ -1236,7 +1251,7 @@ export const questoes: Questao[] = [
     33,
     "Humanas",
     "colonizacao",
-    "“A escravidão não ocupa mais de duas ou três páginas nos livros didáticos de Portugal, sendo tratada de forma vaga e superficial…”, questiona a pesquisadora Marta Araújo. A abordagem da escravidão nos livros didáticos portugueses é criticada pela pesquisadora por",
+    "“A escravidão não ocupa mais de duas ou três páginas nos livros didáticos de Portugal, sendo tratada de forma vaga e superficial. Também propagam ideias tortuosas. Por exemplo, quando falam sobre as consequências da escravatura, o único país a ganhar maior destaque é o Brasil e mesmo assim para falar sobre a miscigenação. Por trás disso, está o propósito de destacar a suposta multirracialidade da nossa maior colônia que, neste sentido, seria um exemplo do sucesso das políticas de miscigenação. Na prática, porém, sabemos que isso não ocorreu da forma como é tratada”, questiona a pesquisadora portuguesa Marta Araújo.\n(Luis Barrucho. “Ensino de História em Portugal perpetua mito do ‘bom colonizador’ e banaliza escravidão, diz pesquisadora”. www.bbc.com, 31.07.2017. Adaptado.)\n\nA abordagem da escravidão nos livros didáticos portugueses é criticada pela pesquisadora por",
     [
       "concentrar-se nos aspectos econômicos do tráfico atlântico e desconsiderar suas implicações sociais",
       "atribuir às colônias europeias o protagonismo na abolição do regime escravista",
@@ -1745,13 +1760,13 @@ export const questoes: Questao[] = [
     31,
     "Humanas",
     "antiguidade",
-    "“A elite de cidadãos que produziu a cultura e a liderança política dos gregos antigos dependia totalmente do trabalho escravo para ter a riqueza e o ócio (skholé) indispensáveis às suas atividades.” (Moses Finley) Tendo em vista o modelo de democracia ateniense e sua relação com o nosso modelo de democracia, assinale a alternativa correta:",
+    "“Não há dúvida de que a elite de cidadãos, a classe que produziu a cultura superior e a liderança política que nós associamos aos gregos antigos, dependia totalmente do trabalho escravo para ter a riqueza e o ócio (skholé) indispensáveis para as suas atividades. [...] A liberdade dos cidadãos gregos e a escravidão de outros caminhavam de mãos dadas; o desenvolvimento de uma pressupunha o desenvolvimento da outra.”\n(Moses I. Finley. “A civilização grega era baseada no trabalho escravo?”, in Economy and Society in Ancient Greece.)\n\nA democracia ateniense foi uma experiência limitada dentro dos modelos democráticos na História. A participação direta permitiu a maior ingerência dos cidadãos nas decisões políticas da cidade e, apesar de impraticável hoje, oferece modelos para o melhor exercício da cidadania nos moldes atuais.\n\nTendo em vista esse modelo de democracia ateniense e a relação com o nosso modelo de democracia, assinale a alternativa correta:",
     [
-      "As democracias contemporâneas alcançaram o pleno exercício da cidadania nos moldes atenienses, pois a tecnologia substituiu o trabalho escravo e garantiu a todos o ócio necessário à participação política",
-      "A viabilidade da democracia direta em Atenas só foi possível graças à igualdade jurídica e social entre todos os habitantes, ao contrário das democracias modernas",
-      "O tempo livre (skholé) valorizado pelos gregos foi proibido nas democracias liberais contemporâneas, que exigem dedicação total à produção",
-      "O modelo ateniense comprova que a servidão de uma classe é pré-requisito inescapável para qualquer sistema político deliberativo direto",
-      "A participação direta na pólis exigia um tempo livre garantido pela exploração escravista, inviável hoje; contudo, a tecnologia moderna pode reduzir a jornada de trabalho e restituir ao cidadão tempo para um engajamento político mais ativo, ainda que não direto",
+      "As democracias contemporâneas alcançaram o pleno exercício da cidadania nos moldes atenienses, uma vez que a substituição do trabalho escravo pela tecnologia garantiu a todos os trabalhadores o ócio necessário para a participação nas formulações das leis",
+      "A viabilidade da democracia direta em Atenas só foi possível graças à igualdade jurídica e social entre os habitantes, contrastando com as democracias modernas, nas quais o conceito de cidadania foi significativamente reduzido",
+      "O tempo livre (skholé) valorizado pelos gregos foi institucionalmente proibido nas democracias liberais contemporâneas, pois a consolidação dos grandes Estados-nação exige que a população se dedique à produção tecnológica, delegando a soberania a representantes escolhidos por eleições livres e diretas",
+      "O modelo ateniense comprova que a servidão de uma classe é um pré-requisito inescapável para qualquer sistema político deliberativo direto, de modo que a automação tecnológica moderna falhou em proporcionar o tempo livre adequado, tornando o sufrágio universal atual mais excludente que a assembleia grega",
+      "A participação direta nas deliberações da pólis exigia um tempo livre garantido pela exploração escravista, dinâmica inviável em um Estado Democrático de Direito contemporâneo; contudo, a tecnologia moderna tem o potencial de reduzir a jornada de trabalho, restituindo ao cidadão o tempo necessário para um engajamento político mais ativo, ainda que não direto",
     ],
   ),
 
@@ -2350,8 +2365,8 @@ export const questoes: Questao[] = [
     true,
   ),
   q(
-    "a191q45",
-    "2019.1",
+    "a182q45",
+    A182,
     45,
     "Matemática",
     "geometria-espacial",
@@ -2430,6 +2445,93 @@ export const questoes: Questao[] = [
     "Um estudo realizado para analisar como células tumorais obtêm sua energia mostrou que a quebra da glicose (C₆H₁₂O₆) no citoplasma dessas células gera substâncias que permitem aos tumores invadirem o tecido normal, podendo provocar metástase (espalhamento de células cancerosas pelo corpo). O esquema da prova mostra a produção dessas substâncias.\n\nNesse estudo, verificou-se que a aplicação de uma substância capaz de neutralizar a acidez, deslocando o segundo equilíbrio químico no sentido do produto, foi capaz de evitar que o tumor provocasse metástase. Essa substância, presente na composição de fármacos destinados ao combate da azia, é o:",
     ["NH₄Cℓ", "MgCℓ₂", "NaHCO₃", "NaCℓ", "CH₃CH₂OH"],
     true,
+  ),
+
+  /* ───────── LEVA 21 — História que faltava no banco (Vargas/ditadura, escravidão e contratualistas) ───────── */
+
+  // Escravidão — Lei Áurea e as leis emancipacionistas (preenche o tópico "escravidao")
+  q(
+    "simq33esc",
+    SIM,
+    33,
+    "Humanas",
+    "escravidao",
+    "“A Lei Áurea não resultou de um ato de bondade da princesa Isabel. [...] Quando a lei foi assinada em 13 de maio de 1888, não fez mais do que reconhecer legalmente uma situação de fato. O sistema escravista já estava desarticulado pelas fugas em massa, pela recusa em trabalhar e pelo apoio de setores urbanos aos escravos rebelados. A abolição foi a consagração jurídica de um processo que a sociedade e os próprios escravos já haviam imposto na prática.”\n(Boris Fausto. História do Brasil.)\n\nNo trecho de Boris Fausto, historiador brasileiro, podemos ver que a Lei Áurea, de 1888, vista por tantos como um marco da abolição da escravidão no Brasil, não se trata de um movimento disruptivo, mas sim da consolidação de uma realidade factual.\n\nSobre o contexto em que se dá a assinatura da abolição, bem como suas consequências diretas e indiretas, está correto o que se afirma em:",
+    [
+      "A promulgação prévia da Lei dos Sexagenários e da Lei do Ventre Livre evidenciava o interesse humanitário da elite cafeeira em antecipar o fim do trabalho escravo, garantindo uma transição pacífica e financeiramente amparada para a população negra",
+      "As legislações que antecederam a Lei Áurea garantiram uma transição econômica e social segura para os ex-escravizados, uma vez que o Estado Imperial, através da Lei dos Sexagenários, previu a doação de terras e o pagamento de salários retroativos aos idosos recém-libertos",
+      "O fim do regime escravocrata foi orquestrado quase que exclusivamente por pressões financeiras da Inglaterra, que impôs à monarquia brasileira a criação de leis graduais, retirando dos escravizados qualquer protagonismo na desarticulação do sistema",
+      "A elite agrária, já prejudicada pelas constantes fugas em massa mencionadas no texto, exigia do Império uma abolição imediata e sem indenizações desde a aprovação da Lei do Ventre Livre, mas a Coroa optou por um processo lento para manter o apoio do incipiente setor industrial",
+      "As leis emancipacionistas, como a do Ventre Livre e a dos Sexagenários, fizeram parte de uma estratégia gradualista da elite política e agrária para adiar o fim do cativeiro e minimizar perdas econômicas para os senhores, sendo a Lei Áurea o atestado de falência desse controle estatal diante da mobilização e rebeldia escrava",
+    ],
+  ),
+
+  // Primeira República — condição feminina e papéis de gênero
+  q(
+    "p6q35br",
+    P6,
+    35,
+    "Humanas",
+    "brasil-republica-vargas",
+    "“Com base no comportamento feminino dos segmentos médios e elevados, acresce em relação às mulheres as prescrições dos juristas acerca da impropriedade de uma mulher honesta sair só. [...] Embora as mulheres mais ricas fossem estimuladas a frequentar as ruas em determinadas ocasiões, nos teatros, casas de chá, ou mesmo passeando nas novas avenidas, deveriam estar sempre acompanhadas.”\n(Rachel Soihet. “Mulheres pobres e violência no Brasil urbano”. In: Mary Del Priore (org.). História das mulheres no Brasil, 2015.)\n\nO excerto aborda a condição feminina no Brasil da Primeira República. As “prescrições” mencionadas estavam",
+    [
+      "de acordo com a definição de papéis sociais dos gêneros que proibia a presença feminina em espaços públicos",
+      "em desacordo com as leis nacionais que resultaram das mobilizações feministas promovidas pelas sufragistas",
+      "de acordo com as normas sociais que associavam as mulheres à esfera doméstica e os homens à esfera pública",
+      "em desacordo com os princípios republicanos que enfatizavam a igualdade de natureza de todos os brasileiros",
+      "de acordo com a hegemonia social da burguesia que permitia privilégios apenas às mulheres e aos homens ricos",
+    ],
+  ),
+
+  // Ditadura militar — abertura política lida numa canção (1980)
+  q(
+    "p2q35br",
+    P2,
+    35,
+    "Humanas",
+    "brasil-republica-vargas",
+    "Analise os versos da canção “Novo tempo”, lançada por Ivan Lins em 1980.\n\n“No novo tempo / Apesar dos castigos / Estamos crescidos / Estamos atentos / Estamos mais vivos / Pra nos socorrer [...] No novo tempo / Apesar dos castigos / Estamos em cena / Estamos nas ruas / Quebrando as algemas / Pra nos socorrer // No novo tempo / Apesar dos perigos / A gente se encontra / Cantando na praça / Fazendo pirraça / Pra sobreviver // Pra que nossa esperança / Seja mais que a vingança / Seja sempre um caminho / Que se deixa de herança”\n(Ivan Lins. Novo tempo, 1980.)\n\nConsiderando o momento histórico em que foi lançada, a canção apresenta uma mensagem sobre a",
+    [
+      "consolidação da democracia brasileira, marcada pela superação da repressão política e pela estabilização das instituições políticas",
+      "articulação da sociedade diante do declínio da ditadura militar, indicando o avanço das reivindicações por participação política",
+      "defesa da luta armada como estratégia prioritária para a substituição das estruturas políticas então vigentes",
+      "legitimação do governo autoritário, tendo em vista os resultados econômicos e sociais obtidos no período",
+      "alienação da população, com a substituição do debate político por manifestações culturais sem engajamento coletivo",
+    ],
+  ),
+
+  // Ditadura militar — censura, lenda urbana e violência de Estado
+  q(
+    "simq34br",
+    SIM,
+    34,
+    "Humanas",
+    "brasil-republica-vargas",
+    "A manchete do Diário de Pernambuco de 1º de fevereiro de 1976 traz a seguinte notícia:\n\n“Foi um corre-corre na rua, gente chamando a polícia, mulher chorando abraçada com o marido, irmãos e parentes, as mais piedosas e religiosas rezando nos pés dos santuários. A pobre moça, coitada, gemia, gritava, pedia proteção. Não era fácil, no entanto, agarrar a perna. Ágil, saltava para todos os lados. (...) A perna cabeluda somente se deu por vencida quando foi escutado o gemido do carro da polícia. (...) Nessa hora os policiais já vinham chegando. Juntaram-se aos guerreiros, saíram em busca da perna criminosa. (...) As moças choravam, os rapazes corriam para a Igreja, queriam se confessar. Teve cabeludo que raspou o cabelo, afrouxou as calças e vestiu terno. As mulheres cobriam as barriguinhas, encompridavam os vestidos. [...]”\n\nA lenda urbana da Perna Cabeluda surge em um dos períodos mais repressivos da ditadura civil-militar brasileira como forma de censura, para mascarar os atos de violência cometidos pelas forças policiais de Olinda, em especial, contra a população LGBTQIAPN+, que era o alvo prioritário dessa violência.\n\nQuanto à lenda da Perna Cabeluda e seu contexto, é correto afirmar que:",
+    [
+      "A ditadura pouco tinha a ganhar com o reforço de lendas urbanas como essa, que espalhavam o caos entre os cidadãos, dificultando o controle estatal",
+      "O regime militar se beneficiava com a disseminação dessas histórias à medida que esclareciam os desaparecimentos investigados pela polícia",
+      "A violência contra a parcela LGBTQIAPN+ é pontual no caso de Pernambuco, visto que o regime civil-militar não reforçava um padrão de moralidade",
+      "Essas lendas surgidas no período são pontuais e regionalistas, sendo uma expressão típica da região em que surgem, não encontrando eco em grandes centros urbanos do período",
+      "A criação de lendas urbanas era resultado indireto da censura e servia para acobertar a violência estatal, criando explicações fantasiosas e moralistas",
+    ],
+  ),
+
+  // Filosofia política — Hobbes e o contratualismo (Semana 7: Maquiavel e contratualistas)
+  q(
+    "simq32fp",
+    SIM,
+    32,
+    "Humanas",
+    "filosofia-politica",
+    "“É como se cada homem dissesse a cada homem: Autorizo e transfiro o meu direito de governar-me a mim mesmo a este homem, ou a esta assembleia de homens, com a condição de transferires a ele o teu direito, autorizando de maneira semelhante todas as suas ações. Feito isto, à multidão assim unida numa só pessoa se chama Estado.”\n(Thomas Hobbes. Leviatã ou Matéria, Forma e Poder de um Estado Eclesiástico e Civil.)\n\nHobbes é um dos três grandes filósofos Contratualistas e um teórico do Absolutismo. Contudo, sua obra não foi recebida com unanimidade, sendo criticada duramente, inclusive, por reis absolutistas.\n\nEssa crítica se deve ao fato de que:",
+    [
+      "O fundamento do poder absoluto do monarca, segundo Hobbes, deriva do pacto secular e racional firmado entre os indivíduos, e não da teoria do direito divino, como a de Jean Bodin, que tinha um viés dogmático e inquestionável",
+      "A teoria contratualista de Hobbes prevê a possibilidade legítima de rebelião constante dos súditos caso o monarca não garanta a igualdade social e a propriedade privada, o que ameaçava a estabilidade dos reinos",
+      "O autor propõe a submissão do poder civil e do Estado aos desígnios da Igreja, contrariando a centralização política e a autonomia religiosa que os reis absolutistas buscavam consolidar em seus territórios",
+      "A obra argumenta que a soberania pertence originariamente ao Parlamento, cabendo ao rei apenas uma função executiva limitada por uma constituição, modelo incompatível com o absolutismo praticado na Europa",
+      "O Leviatã defende que o estado de natureza humano é pacífico e naturalmente cooperativo, tornando a figura de um governante com poderes coercitivos e violentos uma intervenção desnecessária e tirânica",
+    ],
   ),
 ];
 
