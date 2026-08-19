@@ -472,18 +472,12 @@ export const semanas: Semana[] = [
         {
           dia: "Quarta",
           tipo: "matematica",
-          titulo: "Probabilidade e estatística — médio/difícil + revisão",
+          titulo: "Probabilidade e estatística — questões novas (Vunesp)",
           blocos: [
             bloco(
-              "Probabilidade e estatística — nível médio e difícil",
+              "Probabilidade e estatística — Vunesp (provas da UNESP)",
               "Matemática",
-              "Probabilidade e estatística: questões de nível médio e difícil. Revisão de financeira e funções.",
-              ["probabilidade", "estatistica"],
-            ),
-            bloco(
-              "Extra — Vunesp (provas da UNESP)",
-              "Matemática",
-              "Cinco questões da UNESP, feita pela mesma banca que faz a prova do Insper. Probabilidade a partir de tabela, dois lançamentos simultâneos, contagem no pior caso — os formatos que o Insper repete. Estas cinco só aparecem aqui.",
+              "Oito questões da UNESP, prova feita pela mesma banca que faz a do Insper. Todas novas: nenhuma delas aparece em outro dia do plano. Os formatos que o Insper repete — probabilidade a partir de tabela, dois lançamentos simultâneos, contagem no pior caso, porcentagem sobre dois grupos e média que cai ano a ano.",
               ["vunesp-extra"],
             ),
           ],

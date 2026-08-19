@@ -17,6 +17,7 @@ export type Prova =
   | "UNESP 2014"
   | "UNESP 2015"
   | "UNESP 2016"
+  | "UNESP 2019"
   | "UNESP 2020"
   | "UNESP 2025";
 

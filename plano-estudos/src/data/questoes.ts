@@ -2724,6 +2724,42 @@ export const questoes: Questao[] = [
     "O International Standard Book Number-13 (ISBN-13) é um sistema numérico de 13 dígitos usado para identificar livros. O 13º dígito (o mais à direita) é o dígito de verificação e, para determiná-lo, multiplicamos cada um dos doze dígitos anteriores, da esquerda para a direita, por 1 e 3 alternadamente. A soma desses doze produtos, acrescida do dígito de verificação, tem que ser o menor número não negativo que deixa resto zero na divisão por 10. O ISBN-13 do livro A Riqueza das Nações, de Adam Smith, sem o dígito de verificação, é 978852093907. O dígito de verificação do ISBN-13 desse livro é igual a",
     ["8", "7", "9", "6", "5"],
   ),
+  // Porcentagem sobre dois grupos — reconstruir o total da turma
+  q(
+    "un19q89",
+    "UNESP 2019",
+    89,
+    "Matemática",
+    "vunesp-extra",
+    "Em um dia de aula faltaram 3 alunas e 2 alunos porque os cinco estavam gripados. Dos alunos e alunas que foram à aula, 2 meninos e 1 menina também estavam gripados. Dentre os meninos presentes à aula, a porcentagem dos que estavam gripados era 8% e, dentre as meninas, a porcentagem das que estavam gripadas era 5%. Nos dias em que a turma está completa, a porcentagem de meninos nessa turma é de",
+    ["52%", "50%", "54%", "56%", "46%"],
+  ),
+  // Queda percentual repetida — média que cai ano a ano (usa logaritmo)
+  q(
+    "un14q90",
+    "UNESP 2014",
+    90,
+    "Matemática",
+    "vunesp-extra",
+    "Um estudo da CET sobre o trânsito paulistano apontou que, em 2012, a velocidade média nos principais corredores viários da cidade foi de 22,1 km/h no pico da manhã e de 18,5 km/h no pico da tarde — uma piora de 5% e 10% em relação a 2008, respectivamente. Caso a velocidade média continue decaindo nos mesmos percentuais pelos próximos anos, e sabendo que ln 2 ≈ 0,69, ln 3 ≈ 1,10, ln 5 ≈ 1,61 e ln 19 ≈ 2,94, os anos aproximados em que as velocidades médias nos picos da manhã e da tarde chegarão à metade daquelas observadas em 2012 serão, respectivamente,",
+    ["2028 e 2019", "2068 e 2040", "2022 e 2017", "2025 e 2018", "2057 e 2029"],
+  ),
+  // Média que cai linearmente — soma acumulada ano a ano
+  q(
+    "un20q89",
+    "UNESP 2020",
+    89,
+    "Matemática",
+    "vunesp-extra",
+    "O Ministério da Saúde recomenda que a ingestão diária de sal não ultrapasse 5 g, quantidade muito abaixo dos 12 g que é a média que o brasileiro ingere todos os dias. Além disso, o ministério estima que, para cada grama de sal reduzido na ingestão diária, o SUS economizaria R$ 3,2 milhões por ano. Considere que a ingestão média diária de sal no Brasil se reduza de 12 g, em 2019, para 5 g, em 2025, de forma linear, ano a ano. Nesse cenário, o SUS economizaria, até o final do ano de 2025, um valor entre",
+    [
+      "R$ 65 milhões e R$ 70 milhões",
+      "R$ 75 milhões e R$ 80 milhões",
+      "R$ 15 milhões e R$ 20 milhões",
+      "R$ 20 milhões e R$ 25 milhões",
+      "R$ 55 milhões e R$ 60 milhões",
+    ],
+  ),
 ];
 
 /** Retorna as questões cujo tópico está entre os tópicos informados. */
