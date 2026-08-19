@@ -1,4 +1,5 @@
 import type { Semana, Dia, BlocoEstudo, Area } from "./types";
+import { questoesPorTopicos } from "./questoes";
 
 /* Helpers para reduzir repetição nos dias de Matemática (Seg/Qua/Sex). */
 function mat(descricao: string, topicos: string[]): BlocoEstudo {
@@ -933,4 +934,25 @@ export const slugDia: Record<string, string> = {
 
 export function diaPorSlug(semana: Semana, slug: string): Dia | undefined {
   return semana.dias.find((d) => slugDia[d.dia] === slug);
+}
+
+/**
+ * Ids das questões que já apareceram em algum dia ANTERIOR a este, na ordem do
+ * plano (Semana 1 Segunda → Semana 12 Domingo). A página do dia usa isso para
+ * não repetir exercício que já foi feito.
+ */
+export function questoesJaVistas(numero: number, diaSlug: string): Set<string> {
+  const vistas = new Set<string>();
+  for (const semana of semanas) {
+    for (const dia of semana.dias) {
+      if (semana.numero === numero && slugDia[dia.dia] === diaSlug)
+        return vistas;
+      for (const bloco of dia.blocos) {
+        for (const questao of questoesPorTopicos(bloco.topicos)) {
+          vistas.add(questao.id);
+        }
+      }
+    }
+  }
+  return vistas;
 }

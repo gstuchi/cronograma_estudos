@@ -1,6 +1,12 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { semanas, getSemana, diaPorSlug, slugDia } from "@/data/plano";
+import {
+  semanas,
+  getSemana,
+  diaPorSlug,
+  slugDia,
+  questoesJaVistas,
+} from "@/data/plano";
 import { questoesPorTopicos } from "@/data/questoes";
 import { teoria } from "@/data/teoria";
 import { QuestionCard } from "@/components/question-card";
@@ -25,7 +31,8 @@ export default async function DiaPage({
   const dia = diaPorSlug(semana, diaSlug);
   if (!dia) notFound();
 
-  const vistas = new Set<string>();
+  // Questões já feitas em dias anteriores do plano — não se repetem aqui.
+  const vistas = questoesJaVistas(Number(numero), diaSlug);
 
   return (
     <main className="mx-auto max-w-3xl px-6 py-12">
@@ -146,8 +153,8 @@ export default async function DiaPage({
                 <div className="mt-6">
                   <h3 className="mb-4 text-sm font-bold uppercase tracking-wide text-ink-soft">
                     {novas.length}{" "}
-                    {novas.length === 1 ? "questão real" : "questões reais"} para
-                    treinar
+                    {novas.length === 1 ? "questão real" : "questões reais"}{" "}
+                    para treinar
                   </h3>
                   <div className="space-y-5">
                     {novas.map((q) => (
@@ -155,7 +162,15 @@ export default async function DiaPage({
                     ))}
                   </div>
                 </div>
-              ) : bloco.area === "Redação" ? null : (
+              ) : bloco.area === "Redação" ? null : todas.length > 0 ? (
+                <p className="mt-4 rounded-2xl bg-cream px-5 py-4 text-sm text-ink-soft">
+                  As {todas.length} questões deste tópico já apareceram em dias
+                  anteriores, então não se repetem aqui. Hoje é dia de{" "}
+                  <span className="font-semibold text-ink">revisão</span>: volte
+                  nos dias em que você as fez e refaça as que errou ou marcou
+                  como difíceis.
+                </p>
+              ) : (
                 <p className="mt-4 rounded-2xl bg-cream px-5 py-4 text-sm text-ink-soft">
                   Ainda não há questões reais deste tópico no banco — vou
                   adicionar mais nas próximas levas. 💪
