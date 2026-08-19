@@ -937,22 +937,59 @@ export function diaPorSlug(semana: Semana, slug: string): Dia | undefined {
 }
 
 /**
- * Ids das questões que já apareceram em algum dia ANTERIOR a este, na ordem do
- * plano (Semana 1 Segunda → Semana 12 Domingo). A página do dia usa isso para
- * não repetir exercício que já foi feito.
+ * Distribui as questões de cada tópico entre os dias da MESMA semana que usam
+ * esse tópico, em rodízio. Assim nenhum exercício se repete de um dia para o
+ * outro dentro da semana — e nenhum dia fica vazio, porque cada um recebe a
+ * sua fatia. Semanas diferentes distribuem de forma independente: as semanas
+ * de revisão voltam a usar o material inteiro, que é a função delas.
+ *
+ * Chave: `${semana}:${idDaQuestao}` → slug do dia que ficou com ela.
  */
-export function questoesJaVistas(numero: number, diaSlug: string): Set<string> {
-  const vistas = new Set<string>();
+function distribuirQuestoes(): Map<string, string> {
+  const destino = new Map<string, string>();
+
   for (const semana of semanas) {
+    const topicos = new Set<string>();
     for (const dia of semana.dias) {
-      if (semana.numero === numero && slugDia[dia.dia] === diaSlug)
-        return vistas;
       for (const bloco of dia.blocos) {
-        for (const questao of questoesPorTopicos(bloco.topicos)) {
-          vistas.add(questao.id);
-        }
+        bloco.topicos.forEach((t) => topicos.add(t));
       }
     }
+
+    for (const topico of topicos) {
+      const dias = semana.dias.filter((d) =>
+        d.blocos.some((b) => b.topicos.includes(topico)),
+      );
+      if (!dias.length) continue;
+
+      // O primeiro dia da semana a tocar no tópico é o dia de aprender: entra
+      // duas vezes no rodízio e fica com o dobro das questões.
+      const rodizio = [dias[0], ...dias];
+
+      questoesPorTopicos([topico]).forEach((questao, i) => {
+        const dia = rodizio[i % rodizio.length];
+        destino.set(`${semana.numero}:${questao.id}`, slugDia[dia.dia]);
+      });
+    }
   }
-  return vistas;
+
+  return destino;
+}
+
+const distribuicao = distribuirQuestoes();
+
+/** Questões que cabem a este dia — a fatia dele dentro da semana. */
+export function questoesDoBloco(
+  numero: number,
+  diaSlug: string,
+  topicos: string[],
+) {
+  return questoesPorTopicos(topicos).filter(
+    (q) => distribuicao.get(`${numero}:${q.id}`) === diaSlug,
+  );
+}
+
+/** Total de questões do tópico na semana, para a mensagem de "sem questões". */
+export function totalNaSemana(topicos: string[]): number {
+  return questoesPorTopicos(topicos).length;
 }

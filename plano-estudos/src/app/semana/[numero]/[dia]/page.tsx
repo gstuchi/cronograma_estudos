@@ -5,9 +5,9 @@ import {
   getSemana,
   diaPorSlug,
   slugDia,
-  questoesJaVistas,
+  questoesDoBloco,
+  totalNaSemana,
 } from "@/data/plano";
-import { questoesPorTopicos } from "@/data/questoes";
 import { teoria } from "@/data/teoria";
 import { QuestionCard } from "@/components/question-card";
 import { DayCompleteButton } from "@/components/completion";
@@ -31,8 +31,8 @@ export default async function DiaPage({
   const dia = diaPorSlug(semana, diaSlug);
   if (!dia) notFound();
 
-  // Questões já feitas em dias anteriores do plano — não se repetem aqui.
-  const vistas = questoesJaVistas(Number(numero), diaSlug);
+  // Evita repetir a mesma questão em dois blocos do mesmo dia.
+  const vistas = new Set<string>();
 
   return (
     <main className="mx-auto max-w-3xl px-6 py-12">
@@ -74,8 +74,8 @@ export default async function DiaPage({
 
       <div className="space-y-12">
         {dia.blocos.map((bloco, idx) => {
-          const todas = questoesPorTopicos(bloco.topicos);
-          const novas: Questao[] = todas.filter((q) => !vistas.has(q.id));
+          const doDia = questoesDoBloco(Number(numero), diaSlug, bloco.topicos);
+          const novas: Questao[] = doDia.filter((q) => !vistas.has(q.id));
           novas.forEach((q) => vistas.add(q.id));
           const teorias = bloco.topicos.map((t) => teoria[t]).filter(Boolean);
 
@@ -162,13 +162,14 @@ export default async function DiaPage({
                     ))}
                   </div>
                 </div>
-              ) : bloco.area === "Redação" ? null : todas.length > 0 ? (
+              ) : bloco.area === "Redação" ? null : totalNaSemana(
+                  bloco.topicos,
+                ) > 0 ? (
                 <p className="mt-4 rounded-2xl bg-cream px-5 py-4 text-sm text-ink-soft">
-                  As {todas.length} questões deste tópico já apareceram em dias
-                  anteriores, então não se repetem aqui. Hoje é dia de{" "}
+                  As questões deste tópico couberam aos outros dias da semana —
+                  são poucas para dividir entre todos. Hoje é dia de{" "}
                   <span className="font-semibold text-ink">revisão</span>: volte
-                  nos dias em que você as fez e refaça as que errou ou marcou
-                  como difíceis.
+                  nos dias em que você as fez e refaça as que errou.
                 </p>
               ) : (
                 <p className="mt-4 rounded-2xl bg-cream px-5 py-4 text-sm text-ink-soft">
