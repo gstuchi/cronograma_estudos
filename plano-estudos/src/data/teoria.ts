@@ -111,6 +111,19 @@ export const teoria: Record<string, Teoria> = {
     ],
     dica: "Pediu valor MÁXIMO ou MÍNIMO? Vá direto ao vértice (x_v = −b/2a) — e confira se querem o x_v ou o y_v. Problema com desconto/quantidade que se multiplicam quase sempre gera uma função quadrática. Tabela de valores? Teste os pares nas alternativas em vez de montar sistema.",
   },
+  "funcoes-avancado": {
+    titulo: "Funções — os quatro formatos difíceis do Insper",
+    pontos: [
+      "FORMATO 1 — máximo/mínimo pelo vértice. x_v = −b/2a e y_v = f(x_v). A pergunta decide qual dos dois é a resposta: “qual a DOSE / o preço / o tempo que dá o melhor resultado?” → x_v. “Qual a PRODUÇÃO máxima / o lucro máximo / a altura máxima?” → y_v. Se o enunciado limitar o domínio (ex.: 0 ≤ n ≤ 300), confira se o vértice cai dentro; caindo fora, o extremo está numa das pontas.",
+      "FORMATO 2 — inequação do 2º grau. Ache as raízes por Bhaskara, esboce a parábola e leia o intervalo: com a > 0 a parábola é NEGATIVA entre as raízes e POSITIVA fora delas; com a < 0 é o contrário. Escreva a resposta como intervalo e confira se os extremos entram (≤) ou não (<).",
+      "FORMATO 3 — montar a lei a partir do enunciado ou de uma tabela. Comece pelo valor em x = 0: é o b da reta ou o c da parábola. Depois pegue UM par (x, y) fácil e teste nas alternativas — quase sempre sobra uma só, e é mais rápido que montar sistema. Modelo linear: y = valor_inicial + taxa · (x − x_inicial); o erro campeão é multiplicar a taxa pelo ano cheio em vez do tempo decorrido.",
+      "FORMATO 4 — comparar duas funções. “A partir de quando A supera B?” / “quando os custos se igualam?”: resolva f(x) = g(x) para achar a fronteira e depois teste um valor antes e outro depois para ver quem fica por cima. Em questão de contrato (taxa fixa + valor por unidade), cada plano é uma reta: a fixa é o b e o valor por unidade é o a.",
+      "Interseção de duas parábolas: iguale f(x) = g(x) e resolva; as raízes dessa equação são as abscissas dos pontos de encontro. Para achar as ordenadas, substitua em qualquer uma das duas.",
+      "Coeficientes com letra (f(x) = kx² − 10kx + 3): mesmo sem saber k, o x_v = −b/2a só depende da razão entre b e a — o k some. Sempre tente simplificar antes de tentar descobrir a constante.",
+      "Função polinomial e resto: pelo teorema do resto, o resto da divisão de C(x) por (x − a) é C(a). Dividindo por (x − a)(x − b), o resto é do 1º grau (rx + s) — monte o sistema com C(a) e C(b).",
+    ],
+    dica: "Neste dia não é para aprender de novo: é para reconhecer o formato em até 15 segundos e ir direto na ferramenta. Antes de marcar, releia o que a questão PEDE — x_v ou y_v é a pegadinha número 1 do Insper.",
+  },
   sequencias: {
     titulo: "Sequências: progressão aritmética (PA) e geométrica (PG)",
     pontos: [

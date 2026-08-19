@@ -23,7 +23,9 @@ function diasMatematica(
       dia: "Segunda",
       tipo: "matematica",
       titulo: `${tema} — teoria + básico`,
-      blocos: [mat(`${tema}: teoria e exercícios introdutórios (4h).`, topicos)],
+      blocos: [
+        mat(`${tema}: teoria e exercícios introdutórios (4h).`, topicos),
+      ],
     },
     qua: {
       dia: "Quarta",
@@ -191,8 +193,8 @@ export const semanas: Semana[] = [
             bloco(
               "Funções — nível médio e difícil",
               "Matemática",
-              "Dia de subir o nível (3h). Foco nos quatro formatos que o Insper repete: achar máximo/mínimo pelo vértice, resolver inequação do 2º grau, MONTAR a lei da função a partir de um enunciado ou de uma tabela, e comparar duas funções para ver quando uma supera a outra. Antes de resolver, releia a teoria — em especial a diferença entre x_v e y_v.",
-              ["funcoes"],
+              "Dia de subir o nível (3h). Foco nos quatro formatos que o Insper repete: achar máximo/mínimo pelo vértice, resolver inequação do 2º grau, MONTAR a lei da função a partir de um enunciado ou de uma tabela, e comparar duas funções para ver quando uma supera a outra. Antes de resolver, releia a teoria — em especial a diferença entre x_v e y_v. As questões deste dia são OUTRAS: nenhuma delas apareceu na segunda-feira.",
+              ["funcoes-avancado"],
             ),
             bloco(
               "Revisão — porcentagem e financeira",
@@ -221,11 +223,23 @@ export const semanas: Semana[] = [
             ),
           ],
         },
-        m.sex,
+        {
+          dia: "Sexta",
+          tipo: "matematica",
+          titulo: "Fecha Funções + simulado curto",
+          blocos: [
+            bloco(
+              "Matemática",
+              "Matemática",
+              "Fechamento de Funções, questões mistas e simulado curto só de Matemática. Aqui voltam JUNTAS as questões de segunda (base) e as de quarta (médio/difícil) — é o dia de misturar tudo e ver o que ainda trava.",
+              ["funcoes", "funcoes-avancado"],
+            ),
+          ],
+        },
         sabado(
           "Bloco Matemática + Linguagens",
           "Bloco cronometrado de Matemática e Linguagens + correção.",
-          ["funcoes", "gramatica", "literatura-modernismo"],
+          ["funcoes", "funcoes-avancado", "gramatica", "literatura-modernismo"],
         ),
         domingo(2, "repertório"),
       ];
@@ -333,12 +347,9 @@ export const semanas: Semana[] = [
           tipo: "materias",
           titulo: "Filosofia antiga + Natureza (diagnóstico)",
           blocos: [
-            bloco(
-              "Filosofia antiga",
-              "Humanas",
-              "Platão e estoicismo.",
-              ["filosofia-antiga"],
-            ),
+            bloco("Filosofia antiga", "Humanas", "Platão e estoicismo.", [
+              "filosofia-antiga",
+            ]),
             bloco(
               "Natureza — diagnóstico",
               "Natureza",
@@ -377,10 +388,9 @@ export const semanas: Semana[] = [
           tipo: "materias",
           titulo: "Retomada pós-viagem — Geometria + Energia + Química",
           blocos: [
-            mat(
-              "Geometria espacial: teoria e exercícios introdutórios (4h).",
-              ["geometria-espacial"],
-            ),
+            mat("Geometria espacial: teoria e exercícios introdutórios (4h).", [
+              "geometria-espacial",
+            ]),
             bloco(
               "Geografia — Energia",
               "Humanas",
@@ -479,11 +489,12 @@ export const semanas: Semana[] = [
           ],
         },
         m.sex,
-        sabado(
-          "Bloco cronometrado",
-          "Bloco cronometrado + correção.",
-          ["probabilidade", "estatistica", "geopolitica", "cinematica"],
-        ),
+        sabado("Bloco cronometrado", "Bloco cronometrado + correção.", [
+          "probabilidade",
+          "estatistica",
+          "geopolitica",
+          "cinematica",
+        ]),
         domingo(6, "tecnologia / sociedade"),
       ];
     })(),
@@ -499,6 +510,7 @@ export const semanas: Semana[] = [
         "Questões mistas",
         [
           "funcoes",
+          "funcoes-avancado",
           "sequencias",
           "funcoes-especiais",
           "geometria-plana",
@@ -551,7 +563,13 @@ export const semanas: Semana[] = [
         sabado(
           "Bloco + leitura rápida",
           "Bloco de questões + treino de leitura rápida do texto-base.",
-          ["funcoes", "geometria-plana", "filosofia-politica", "genetica"],
+          [
+            "funcoes",
+            "funcoes-avancado",
+            "geometria-plana",
+            "filosofia-politica",
+            "genetica",
+          ],
         ),
         domingo(7, "cronometrada"),
       ];
@@ -568,6 +586,7 @@ export const semanas: Semana[] = [
         "Revisão dos erros",
         [
           "funcoes",
+          "funcoes-avancado",
           "sequencias",
           "funcoes-especiais",
           "geometria-plana",
@@ -626,7 +645,13 @@ export const semanas: Semana[] = [
               "Simulado",
               "Matemática",
               "Simulado 2026.2 completo, 5h cronometradas + correção profunda (classificar erro: conteúdo / atenção / tempo).",
-              ["funcoes", "geometria-plana", "fisiologia", "organica"],
+              [
+                "funcoes",
+                "funcoes-avancado",
+                "geometria-plana",
+                "fisiologia",
+                "organica",
+              ],
             ),
           ],
         },
@@ -675,12 +700,10 @@ export const semanas: Semana[] = [
           tipo: "materias",
           titulo: "Revisão Geografia + Ecologia/Evolução",
           blocos: [
-            bloco(
-              "Revisão Geografia",
-              "Humanas",
-              "Cartografia e demografia.",
-              ["cartografia", "demografia"],
-            ),
+            bloco("Revisão Geografia", "Humanas", "Cartografia e demografia.", [
+              "cartografia",
+              "demografia",
+            ]),
             bloco(
               "Biologia — Ecologia, evolução, imunologia",
               "Natureza",
@@ -771,7 +794,13 @@ export const semanas: Semana[] = [
     dias: (() => {
       const m = diasMatematica(
         "Refazer erradas + fórmulas",
-        ["geometria-plana", "financeira", "funcoes", "probabilidade"],
+        [
+          "geometria-plana",
+          "financeira",
+          "funcoes",
+          "funcoes-avancado",
+          "probabilidade",
+        ],
         "tudo",
       );
       return [
