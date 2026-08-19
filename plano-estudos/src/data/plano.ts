@@ -203,12 +203,6 @@ export const semanas: Semana[] = [
               "Revisão da Semana 1 (1h). Refaça as questões de porcentagem, juros e lucro sem olhar a teoria antes; só volte nela no que travar. O objetivo é manter o conteúdo vivo, não aprender de novo.",
               ["financeira"],
             ),
-            bloco(
-              "Extra — probabilidade e estatística (Vunesp)",
-              "Matemática",
-              "Cinco questões da UNESP, a mesma banca que faz a prova do Insper. Não são de funções: servem para você não chegar zerada em probabilidade e estatística, que caem todo ano. Faça sem pressa.",
-              ["vunesp-extra"],
-            ),
           ],
         },
         {
@@ -451,7 +445,7 @@ export const semanas: Semana[] = [
     dias: (() => {
       const m = diasMatematica(
         "Probabilidade e estatística",
-        ["probabilidade", "estatistica", "vunesp-extra"],
+        ["probabilidade", "estatistica"],
         "financeira e funções",
       );
       return [
@@ -475,7 +469,25 @@ export const semanas: Semana[] = [
             ),
           ],
         },
-        m.qua,
+        {
+          dia: "Quarta",
+          tipo: "matematica",
+          titulo: "Probabilidade e estatística — médio/difícil + revisão",
+          blocos: [
+            bloco(
+              "Probabilidade e estatística — nível médio e difícil",
+              "Matemática",
+              "Probabilidade e estatística: questões de nível médio e difícil. Revisão de financeira e funções.",
+              ["probabilidade", "estatistica"],
+            ),
+            bloco(
+              "Extra — Vunesp (provas da UNESP)",
+              "Matemática",
+              "Cinco questões da UNESP, feita pela mesma banca que faz a prova do Insper. Probabilidade a partir de tabela, dois lançamentos simultâneos, contagem no pior caso — os formatos que o Insper repete. Estas cinco só aparecem aqui.",
+              ["vunesp-extra"],
+            ),
+          ],
+        },
         {
           dia: "Quinta",
           tipo: "materias",
