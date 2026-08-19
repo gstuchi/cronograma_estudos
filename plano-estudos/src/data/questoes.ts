@@ -2629,6 +2629,101 @@ export const questoes: Questao[] = [
     "Em uma urna são colocados cartões idênticos: um cartão com o número 1, dois cartões com o número 2, três cartões com o número 3, e assim sucessivamente, até cem cartões com o número 100, totalizando 1 + 2 + 3 + … + 100 = 5 050 cartões. A quantidade mínima de cartões que devem ser retirados aleatoriamente dessa urna para que se tenha certeza de que pelo menos 10 dos cartões retirados tenham um mesmo número é",
     ["865", "253", "55", "1 001", "11"],
   ),
+
+  /* ───────── Leva nova — Semana 2 (Quarta e Sexta) ───────── */
+
+  // Função definida por partes + distância em linha reta (Pitágoras)
+  q(
+    "i18q29",
+    "2018.2",
+    29,
+    "Matemática",
+    "fechamento-misto",
+    "Uma empresa entrega gratuitamente seus produtos em endereços localizados até o raio de 18,5 km do seu depósito. Para distâncias que superam esse raio, a empresa nada cobra pelos primeiros 18,5 km e cobra R$ 25,00 por quilômetro que exceda os 18,5 km iniciais. Rodrigo fez uma compra nessa empresa e solicitou a entrega em local distante 12 km a leste e 16 km ao sul do depósito. Admitindo ser possível ir do depósito ao local de entrega em linha reta, o valor que Rodrigo terá que pagar pelo transporte da mercadoria que comprou é de",
+    ["R$ 27,00", "R$ 38,50", "R$ 35,00", "R$ 39,00", "R$ 37,50"],
+  ),
+  // Modelagem pesada: hora normal, hora extra e ritmo de produção (nível difícil)
+  q(
+    "i18q47",
+    "2018.2",
+    47,
+    "Matemática",
+    "fechamento-misto",
+    "Os únicos três programadores de uma empresa de tecnologia trabalham 6 horas por dia, recebendo R$ 40,00 por hora trabalhada. Em regime de hora extra, esses programadores podem trabalhar duas horas além das seis, e as horas extras são remuneradas com 50% de acréscimo em relação ao valor da hora normal. Essa empresa fechou um contrato para a entrega de 66 aplicativos em cinco dias. Os três programadores farão regime de 8 horas diárias de 2ª a 5ª feira e, na 6ª feira, combinaram de iniciar o trabalho às 7h e trabalhar até o término do serviço, com remuneração de R$ 80,00 por hora que exceda as 8 horas de trabalho. Faz parte do combinado uma pausa não remunerada de 1 hora de almoço, das 12h às 13h.\n\nConsiderando ritmo constante de trabalho de cada programador fazendo 1 aplicativo a cada 2 horas, o custo de mão de obra desse serviço e o horário em que ele estará concluído na 6ª feira são, respectivamente,",
+    [
+      "R$ 6.360,00 e 20h00",
+      "R$ 6.360,00 e 20h30",
+      "R$ 6.210,00 e 19h30",
+      "R$ 6.060,00 e 19h30",
+      "R$ 6.210,00 e 21h00",
+    ],
+  ),
+  // Imposto por faixas — alíquota de faixa x alíquota efetiva
+  q(
+    "a191q32",
+    "2019.1",
+    32,
+    "Matemática",
+    "financeira",
+    "A alíquota DE FAIXA do Imposto de Renda é a porcentagem aplicada conforme o rendimento; a alíquota EFETIVA é a razão entre o imposto total devido e o rendimento total. A base de cálculo é o total de rendimentos menos as deduções legais. Sobre a base de cálculo aplica-se a alíquota de faixa e, do resultado, subtrai-se a parcela a deduzir. Tabela do IRPF:\n\nAté R$ 22.847,76 → isento\nDe R$ 22.847,77 a R$ 33.919,80 → 7,5% (deduzir R$ 1.713,58)\nDe R$ 33.919,81 a R$ 45.012,60 → 15% (deduzir R$ 4.257,57)\nDe R$ 45.012,61 a R$ 55.976,16 → 22,5% (deduzir R$ 7.633,51)\nAcima de R$ 55.976,16 → 27,5% (deduzir R$ 10.432,32)\n\nSuponha que um contribuinte tenha recebido rendimentos de R$ 60.000,00 no último ano e tenha optado pelo modelo simplificado, que aplica um desconto de 20% sobre o total de rendimentos para obter a base de cálculo. O valor da alíquota efetiva do IRPF desse contribuinte é, aproximadamente,",
+    ["2,5%", "4,6%", "9,7%", "10,1%", "5,3%"],
+  ),
+  // Reparticao de um total com relacoes entre as partes (sistema + porcentagem)
+  q(
+    "a191q33",
+    "2019.1",
+    33,
+    "Matemática",
+    "financeira",
+    "Uma banda internacional realizou um show no Brasil no qual o valor arrecadado com a venda de ingressos totalizou 1,75 milhão de dólares. Esse valor tem como destino o pagamento de impostos, o pagamento de custos fixos, e o restante é dividido entre a agência que promoveu o show e a banda que o executou. Nesse show, o valor destinado aos custos fixos foi o triplo do valor utilizado para o pagamento de impostos, e a agência recebeu um sexto do valor destinado à banda. Sabendo-se que o valor destinado a impostos e custos fixos, juntos, supera o valor destinado à agência e à banda em 770 mil dólares, o percentual do valor arrecadado que foi destinado à banda é igual a",
+    ["61%", "10%", "24%", "37%", "28%"],
+  ),
+  // Fracoes do preco antes e depois de retirar o imposto
+  q(
+    "a191q42",
+    "2019.1",
+    42,
+    "Matemática",
+    "financeira",
+    "Uma instituição social sem fins lucrativos lançou uma revista como meio de arrecadar dinheiro. O valor dessa revista é composto, de modo não igualitário, pelo custo de fabricação, pelos impostos incidentes, e o valor restante — que corresponde a 5/12 do valor da revista — é destinado à instituição. Para baixar o valor da revista e conseguir maior número de vendas, foi feito um acordo que eliminou integralmente o imposto incidente. Com isso, o valor destinado à instituição passou a corresponder a 5/11 do novo valor da revista. Sabendo-se que o custo de fabricação é R$ 2,10, é correto dizer que, com a retirada do imposto, o valor da revista baixou",
+    ["R$ 0,25", "R$ 0,35", "R$ 0,45", "R$ 0,55", "R$ 0,65"],
+  ),
+  // Proporção em cadeia — dois fatores de conversão no mesmo problema
+  q(
+    "a191q41",
+    "2019.1",
+    41,
+    "Matemática",
+    "fechamento-misto",
+    "Empresas têm desenvolvido pesquisas para transformar resíduos da cana-de-açúcar em celulose e papel. Cada tonelada de cana gera cerca de 120 quilos de massa seca de palha, sendo que o limite de retirada de palha da lavoura é de 80% (os 20% restantes ficam no campo). Enquanto a indústria de celulose comum usa cerca de 14 toneladas de eucalipto para produzir uma tonelada de papel, com o uso da palha da cana são necessárias somente 3,7 toneladas dessa palha. Considere a safra de uma pequena produção em que foram colhidas aproximadamente 22,2 mil toneladas de cana-de-açúcar. Se toda a palha dessa safra, respeitando o limite de retirada, fosse destinada à produção de papel, isso evitaria o corte de, aproximadamente,",
+    [
+      "8 mil toneladas de eucalipto",
+      "4 mil toneladas de eucalipto",
+      "10 mil toneladas de eucalipto",
+      "6 mil toneladas de eucalipto",
+      "2 mil toneladas de eucalipto",
+    ],
+  ),
+  // Geometria analítica — três retas, vértices e área do triângulo
+  q(
+    "a191q48",
+    "2019.1",
+    48,
+    "Matemática",
+    "fechamento-misto",
+    "A triangulação por estações de rastreamento é usada para confirmar a presença de uma ave monitorada em certo local: cada antena define uma reta, e a região coberta é o triângulo formado por elas. Um grupo de pesquisadores analisa a movimentação de pássaros no entorno de uma gruta com três antenas, cujas retas são:\n\nANTENA 1 → r: 4y + x − 29 = 0\nANTENA 2 → s: y − x − 1 = 0\nANTENA 3 → t: y + 4x − 11 = 0\n\nSabendo que, no sistema de coordenadas utilizado, a distância linear unitária corresponde a 10 metros no espaço real, a área de cobertura dessa telemetria é igual a",
+    ["300 m²", "900 m²", "750 m²", "105 m²", "75 m²"],
+  ),
+  // Aritmética aplicada — dígito verificador do ISBN-13
+  q(
+    "i18q46",
+    "2018.2",
+    46,
+    "Matemática",
+    "fechamento-misto",
+    "O International Standard Book Number-13 (ISBN-13) é um sistema numérico de 13 dígitos usado para identificar livros. O 13º dígito (o mais à direita) é o dígito de verificação e, para determiná-lo, multiplicamos cada um dos doze dígitos anteriores, da esquerda para a direita, por 1 e 3 alternadamente. A soma desses doze produtos, acrescida do dígito de verificação, tem que ser o menor número não negativo que deixa resto zero na divisão por 10. O ISBN-13 do livro A Riqueza das Nações, de Adam Smith, sem o dígito de verificação, é 978852093907. O dígito de verificação do ISBN-13 desse livro é igual a",
+    ["8", "7", "9", "6", "5"],
+  ),
 ];
 
 /** Retorna as questões cujo tópico está entre os tópicos informados. */

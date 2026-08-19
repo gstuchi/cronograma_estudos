@@ -232,8 +232,8 @@ export const semanas: Semana[] = [
             bloco(
               "Matemática",
               "Matemática",
-              "Fechamento de Funções, questões mistas e simulado curto só de Matemática. Aqui voltam JUNTAS as questões de segunda (base) e as de quarta (médio/difícil) — é o dia de misturar tudo e ver o que ainda trava.",
-              ["funcoes", "funcoes-avancado"],
+              "Fechamento de Funções e simulado curto só de Matemática (4h). Além das questões que sobraram da semana, este dia tem questões PRÓPRIAS de modelagem: ler um enunciado comprido, traduzir em função e chegar no número. Cronometre: 5 minutos por questão.",
+              ["fechamento-misto", "funcoes", "funcoes-avancado"],
             ),
           ],
         },
