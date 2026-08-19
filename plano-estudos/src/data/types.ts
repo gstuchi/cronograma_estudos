@@ -1,11 +1,7 @@
 export type Area =
-  | "Matemática"
-  | "Linguagens"
-  | "Humanas"
-  | "Natureza"
-  | "Redação";
+  "Matemática" | "Linguagens" | "Humanas" | "Natureza" | "Redação";
 
-/** Identificação da prova de origem (todas reais do Insper). */
+/** Identificação da prova de origem — todas reais, do Insper ou da UNESP (mesma banca, Vunesp). */
 export type Prova =
   | "2026.1 (cad. 001)"
   | "Simulado oficial 2026.1"
@@ -16,7 +12,13 @@ export type Prova =
   | "2019.1"
   | "2018.2"
   | "2018"
-  | "2017.2";
+  | "2017.2"
+  /* Provas da UNESP — mesma banca (Vunesp), usadas como reforço */
+  | "UNESP 2014"
+  | "UNESP 2015"
+  | "UNESP 2016"
+  | "UNESP 2020"
+  | "UNESP 2025";
 
 export interface Questao {
   id: string;
@@ -34,13 +36,7 @@ export interface Questao {
 }
 
 export type DiaSemana =
-  | "Segunda"
-  | "Terça"
-  | "Quarta"
-  | "Quinta"
-  | "Sexta"
-  | "Sábado"
-  | "Domingo";
+  "Segunda" | "Terça" | "Quarta" | "Quinta" | "Sexta" | "Sábado" | "Domingo";
 
 export type TipoDia = "matematica" | "materias" | "simulado" | "redacao";
 

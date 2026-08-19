@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import type { Questao } from "@/data/types";
-import { corArea } from "@/lib/ui";
+import { corArea, rotuloProva } from "@/lib/ui";
 
 const letras = ["A", "B", "C", "D", "E"];
 
@@ -24,10 +24,8 @@ export function QuestionCard({ questao }: { questao: Questao }) {
   async function copiar() {
     const texto =
       `${questao.enunciado}\n\n` +
-      questao.alternativas
-        .map((a, i) => `(${letras[i]}) ${a}`)
-        .join("\n") +
-      `\n\n(Questão ${questao.numero} — Insper ${questao.prova}) ` +
+      questao.alternativas.map((a, i) => `(${letras[i]}) ${a}`).join("\n") +
+      `\n\n(Questão ${questao.numero} — ${rotuloProva(questao.prova)}) ` +
       `Pode me ajudar a resolver e explicar?`;
     try {
       await navigator.clipboard.writeText(texto);
@@ -52,7 +50,7 @@ export function QuestionCard({ questao }: { questao: Questao }) {
           {questao.area}
         </span>
         <span className="text-xs font-medium text-ink-soft">
-          Insper {questao.prova} · questão {questao.numero}
+          {rotuloProva(questao.prova)} · questão {questao.numero}
         </span>
         {questao.temFigura && !questao.imagem && (
           <span className="rounded-full bg-[#FDF1D6] px-3 py-1 text-xs font-semibold text-[#92600A]">
@@ -69,14 +67,17 @@ export function QuestionCard({ questao }: { questao: Questao }) {
         // eslint-disable-next-line @next/next/no-img-element
         <img
           src={questao.imagem}
-          alt={`Figura da questão ${questao.numero} (Insper ${questao.prova})`}
+          alt={`Figura da questão ${questao.numero} (${rotuloProva(questao.prova)})`}
           className="mt-4 w-full rounded-2xl border border-line bg-white"
         />
       )}
 
       <ol className="mt-4 space-y-2">
         {questao.alternativas.map((alt, i) => (
-          <li key={i} className="flex gap-3 text-[15px] leading-relaxed text-ink">
+          <li
+            key={i}
+            className="flex gap-3 text-[15px] leading-relaxed text-ink"
+          >
             <span className="flex h-6 w-6 flex-none items-center justify-center rounded-full border border-line text-xs font-bold text-ink-soft">
               {letras[i]}
             </span>

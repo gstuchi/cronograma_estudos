@@ -25,3 +25,8 @@ export const diaCurto: Record<string, string> = {
   Sábado: "Sáb",
   Domingo: "Dom",
 };
+
+/** Rótulo da prova: as do Insper levam o prefixo; as da UNESP já se identificam. */
+export function rotuloProva(prova: string): string {
+  return prova.startsWith("UNESP") ? `${prova} (Vunesp)` : `Insper ${prova}`;
+}

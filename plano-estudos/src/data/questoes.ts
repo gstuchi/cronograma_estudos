@@ -2576,6 +2576,59 @@ export const questoes: Questao[] = [
       "ou x é igual a 36, ou x < 23",
     ],
   ),
+
+  /* ───────── UNESP (mesma banca — Vunesp): probabilidade e estatística ───────── */
+
+  // Probabilidade condicional montada a partir de dois grupos com percentuais diferentes
+  q(
+    "un14q86",
+    "UNESP 2014",
+    86,
+    "Matemática",
+    "probabilidade",
+    "Em um condomínio residencial há 120 casas e 230 terrenos sem edificações. Em um determinado mês, entre as casas, 20% dos proprietários estão com as taxas de condomínio atrasadas; entre os proprietários de terreno, esse percentual é de 10%. De posse de todos os boletos individuais de cobrança das taxas em atraso do mês, o administrador escolhe um boleto ao acaso. A probabilidade de que o boleto escolhido seja de um proprietário de terreno sem edificação é de",
+    ["24/350", "24/47", "47/350", "23/350", "23/47"],
+  ),
+  // Probabilidade a partir de uma tabela de percentuais (espaço amostral reduzido)
+  q(
+    "un15q90",
+    "UNESP 2015",
+    90,
+    "Matemática",
+    "estatistica",
+    "Uma loja de departamentos fez uma pesquisa de opinião com 1 000 consumidores para monitorar a qualidade de atendimento de seus serviços. Um dos consumidores que opinaram foi sorteado para receber um prêmio pela participação. A tabela mostra os resultados percentuais registrados:\n\nótimo: 25% · regular: 43% · péssimo: 17% · não opinaram: 15%\n\nSe cada consumidor votou uma única vez, a probabilidade de o consumidor sorteado estar entre os que opinaram e ter votado na categoria péssimo é, aproximadamente,",
+    ["20%", "30%", "26%", "29%", "23%"],
+  ),
+  // Probabilidade com dois lançamentos independentes + média aritmética
+  q(
+    "un16q87",
+    "UNESP 2016",
+    87,
+    "Matemática",
+    "probabilidade",
+    "Um dado convencional e uma moeda, ambos não viciados, serão lançados simultaneamente. Uma das faces da moeda está marcada com o número 3 e a outra com o número 6. A probabilidade de que a média aritmética entre o número obtido da face do dado e o da face da moeda esteja entre 2 e 4 é igual a",
+    ["1/3", "2/3", "1/2", "3/4", "1/4"],
+  ),
+  // Probabilidade de um par ordenado dentro de um conjunto reduzido de casos
+  q(
+    "un20q63",
+    "UNESP 2020",
+    63,
+    "Matemática",
+    "probabilidade",
+    "O Aedes aegypti é o mosquito transmissor de quatro tipos de dengue, além de zika, chikungunya e febre amarela. Uma pessoa contraiu febre amarela, tratou-se e, algum tempo depois, contraiu dengue tipo 2. Supondo que essa pessoa resida em uma cidade onde circulam com a mesma prevalência os vírus causadores de todas essas doenças, e que essa pessoa venha a adquirir duas delas, a probabilidade de que essas doenças sejam dengue e chikungunya, nessa ordem, é",
+    ["25%", "5%", "15%", "10%", "30%"],
+  ),
+  // Contagem — princípio da casa dos pombos (pior caso)
+  q(
+    "un25q85",
+    "UNESP 2025",
+    85,
+    "Matemática",
+    "probabilidade",
+    "Em uma urna são colocados cartões idênticos: um cartão com o número 1, dois cartões com o número 2, três cartões com o número 3, e assim sucessivamente, até cem cartões com o número 100, totalizando 1 + 2 + 3 + … + 100 = 5 050 cartões. A quantidade mínima de cartões que devem ser retirados aleatoriamente dessa urna para que se tenha certeza de que pelo menos 10 dos cartões retirados tenham um mesmo número é",
+    ["865", "253", "55", "1 001", "11"],
+  ),
 ];
 
 /** Retorna as questões cujo tópico está entre os tópicos informados. */
