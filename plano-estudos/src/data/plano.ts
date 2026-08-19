@@ -203,6 +203,12 @@ export const semanas: Semana[] = [
               "Revisão da Semana 1 (1h). Refaça as questões de porcentagem, juros e lucro sem olhar a teoria antes; só volte nela no que travar. O objetivo é manter o conteúdo vivo, não aprender de novo.",
               ["financeira"],
             ),
+            bloco(
+              "Extra — probabilidade e estatística (Vunesp)",
+              "Matemática",
+              "Cinco questões da UNESP, a mesma banca que faz a prova do Insper. Não são de funções: servem para você não chegar zerada em probabilidade e estatística, que caem todo ano. Faça sem pressa.",
+              ["vunesp-extra"],
+            ),
           ],
         },
         {
@@ -445,7 +451,7 @@ export const semanas: Semana[] = [
     dias: (() => {
       const m = diasMatematica(
         "Probabilidade e estatística",
-        ["probabilidade", "estatistica"],
+        ["probabilidade", "estatistica", "vunesp-extra"],
         "financeira e funções",
       );
       return [
