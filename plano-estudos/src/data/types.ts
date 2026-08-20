@@ -17,9 +17,13 @@ export type Prova =
   | "UNESP 2014"
   | "UNESP 2015"
   | "UNESP 2016"
+  | "UNESP 2017"
   | "UNESP 2019"
   | "UNESP 2020"
-  | "UNESP 2025";
+  | "UNESP 2023"
+  | "UNESP 2024"
+  | "UNESP 2025"
+  | "UNESP 2026";
 
 export interface Questao {
   id: string;

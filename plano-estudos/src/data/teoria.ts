@@ -331,4 +331,34 @@ export const teoria: Record<string, Teoria> = {
     ],
     dica: "Classifique pelo tipo dos átomos: metal + ametal = iônica; ametal + ametal = covalente; metal + metal = metálica. E leia com atenção se a questão fala em INTRA ou INTER molecular — trocar os dois é o erro mais frequente do tema.",
   },
+  "sociologia-genero": {
+    titulo: "Violência de gênero, patriarcado e desigualdade",
+    pontos: [
+      "Sexo × gênero: sexo é a diferença biológica; GÊNERO é a construção social e histórica dos papéis de “masculino” e “feminino”. Por ser construído, varia no tempo e no espaço — e pode ser mudado. É essa distinção que sustenta quase toda alternativa correta da banca.",
+      "Patriarcado: sistema de organização social que concentra a autoridade nos homens e naturaliza a divisão entre espaço PÚBLICO (rua, política, guerra, trabalho remunerado — masculino) e espaço PRIVADO (casa, cuidado, maternidade — feminino). Aparece da Idade Média (Georges Duby) ao Brasil colonial (Gilberto Freyre, Casa-grande e senzala).",
+      "A norma nunca descreveu a realidade das mulheres pobres: escravizadas, forras e livres sempre trabalharam na rua, no comércio e, com a industrialização, nas fábricas — só na indústria têxtil chegaram a mais da metade da força de trabalho. Ou seja, o “lugar da mulher em casa” era um estereótipo de ELITE, e a contradição entre norma e prática é tema recorrente da Vunesp.",
+      "Divisão sexual do trabalho e DUPLA JORNADA: o trabalho doméstico e de cuidado é não remunerado e recai sobre as mulheres, somando-se ao emprego formal. Consequências mensuráveis: diferença salarial para a mesma função, maior informalidade e “teto de vidro” (poucas em cargos de liderança).",
+      "Violência de gênero é um CONTÍNUO, não um acidente: vai do assédio e da violência psicológica e patrimonial até o feminicídio. Marcos legais no Brasil — Lei Maria da Penha (Lei 11.340/2006), que tipifica cinco formas de violência doméstica (física, psicológica, sexual, patrimonial e moral), e a Lei do Feminicídio (Lei 13.104/2015), que qualifica o homicídio de mulher por razões da condição de sexo feminino.",
+      "“Cultura do estupro”: conceito sociológico — a violência sexual não é desvio individual de “monstros”, nem doença psiquiátrica, nem problema exclusivo dos pobres; é efeito de normas culturais que culpam a vítima, sexualizam o corpo feminino e naturalizam o domínio masculino. Explicações pelo indivíduo, pelo psiquismo ou pela pobreza são justamente as leituras que a banca apresenta como insuficientes.",
+      "INTERSECCIONALIDADE (Kimberlé Crenshaw; bell hooks; no Brasil, Lélia Gonzalez e Sueli Carneiro): gênero não age sozinho — cruza com raça e classe. A mulher negra e pobre acumula desvantagens que não se explicam somando “machismo + racismo” separadamente. O feminismo branco que apagou a raça do debate é a crítica central de bell hooks.",
+      "Conquistas de direitos no Brasil, em ordem: voto feminino (1932), Estatuto da Mulher Casada (1962, que acaba com a tutela jurídica do marido), Constituição de 1988 (igualdade entre homens e mulheres em direitos e deveres), Lei Maria da Penha (2006) e Lei do Feminicídio (2015).",
+    ],
+    dica:
+      "A alternativa correta quase sempre é a que trata o fenômeno como ESTRUTURAL (padrão social, histórico e cultural) ou aponta uma CONTRADIÇÃO entre a norma e a prática. Elimine sem medo o que reduz tudo a caso isolado, a “monstros”, a desvio psiquiátrico, a escolha individual, à pobreza ou à “natureza feminina” — e desconfie de alternativas que dizem que uma lei ou a industrialização “resolveu” ou “alterou radicalmente” o problema.",
+  },
+  "literatura-prosa": {
+    titulo: "Prosa realista: Machado de Assis e o Naturalismo",
+    pontos: [
+      "Marco inicial: 1881, Memórias Póstumas de Brás Cubas. A prosa abandona o herói idealizado e o final feliz do Romantismo e passa a analisar com distanciamento crítico a burguesia, o casamento por interesse, o favor e a hipocrisia social do Segundo Reinado.",
+      "O NARRADOR MACHADIANO é a marca mais cobrada: intruso e metalinguístico. Ele interrompe a história para conversar com você (“leitor amigo”), comenta como está escrevendo, se desculpa pelo capítulo curto e digride. Em Brás Cubas é um “defunto autor” — escreve depois de morto, o que lhe dá liberdade total para o cinismo.",
+      "Ironia e pessimismo em vez de sermão: Machado não condena o personagem, ele o expõe. O “Humanitismo” de Quincas Borba — “Ao vencido, ódio ou compaixão; ao vencedor, as batatas” — é uma PARÓDIA do darwinismo social: a teoria pretende provar que guerra, peste e miséria são benéficas. Machado a coloca na boca de um louco para ridicularizá-la.",
+      "Obras-chave de Machado: Memórias Póstumas de Brás Cubas (1881), Quincas Borba (1891), Dom Casmurro (1899) — narrador NÃO CONFIÁVEL, Bentinho conta a história e a traição de Capitu nunca se confirma — e Esaú e Jacó (1904), ambientado na Proclamação da República, útil como documento histórico do fim do Império.",
+      "NATURALISMO: leva o Realismo ao extremo com o DETERMINISMO — o indivíduo é produto do meio, da raça e do momento. Personagens-tipo movidos por instinto, linguagem crua, narrador em 3ª pessoa com pretensão “científica”. Aluísio Azevedo, O Cortiço (1890): o cortiço cresce como um organismo vivo e o próprio ambiente degrada quem mora nele.",
+      "Como separar os dois na prova: Realismo machadiano = análise psicológica + ironia + narrador que se mostra e fala com o leitor. Naturalismo = ambiente determinando o comportamento + zoomorfização (o personagem descrito como animal) + instinto, doença e patologia.",
+      "Em Portugal, o correspondente é Eça de Queirós (O Primo Basílio, O Crime do Padre Amaro): crítica à burguesia lisboeta, ao adultério e ao clero.",
+      "Pegadinha frequente da Vunesp: Memórias de um sargento de milícias, de Manuel Antônio de Almeida, é ROMANTISMO cômico/satírico — não Realismo — e vem sempre na mesma lista de alternativas que Brás Cubas e O Cortiço. Da mesma forma, prosa com neologismos e oralidade poética é Guimarães Rosa (Modernismo), não Machado.",
+    ],
+    dica:
+      "Se o narrador para a narrativa para falar com você, comentar a própria escrita ou zombar de uma teoria científica, é Machado/Realismo. Se o texto descreve o ambiente coletivo e sujo determinando o comportamento das pessoas, é Naturalismo/Aluísio Azevedo. E cuidado: “conta a própria vida em 1ª pessoa” por si só não é Realismo — o que caracteriza Machado é a IRONIA e a consciência de estar escrevendo.",
+  },
 };

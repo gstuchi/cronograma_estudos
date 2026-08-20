@@ -485,18 +485,18 @@ export const semanas: Semana[] = [
         {
           dia: "Quinta",
           tipo: "materias",
-          titulo: "Sociologia + Prosa realista",
+          titulo: "Violência de gênero + Prosa realista (Machado)",
           blocos: [
             bloco(
-              "Sociologia — Violência de gênero",
+              "Sociologia — Violência de gênero e desigualdade",
               "Humanas",
-              "Violência de gênero e atualidades.",
+              "Teoria completa do tema (sexo × gênero, patriarcado, divisão sexual do trabalho, dupla jornada, cultura do estupro, interseccionalidade e os marcos legais brasileiros) e seis questões reais: uma do Insper 2026.2 sobre feminicídio e cinco da UNESP — cultura do estupro (2017), bell hooks e a interseccionalidade raça/gênero (2023), trabalho feminino na industrialização (2026), mulheres pobres no espaço urbano colonial (2024) e a divisão público/doméstico na Idade Média (2019). Todas novas: nenhuma aparece em outro dia do plano.",
               ["sociologia-genero"],
             ),
             bloco(
-              "Literatura — Prosa realista",
+              "Literatura — Prosa realista (Machado e o Naturalismo)",
               "Linguagens",
-              "Prosa realista.",
+              "Teoria completa da prosa realista — o narrador machadiano intruso e metalinguístico, a ironia, o Humanitismo como paródia do darwinismo social, o determinismo naturalista de Aluísio Azevedo e as pegadinhas de escola literária — e cinco questões reais da UNESP: as marcas da prosa madura de Machado (2024), três sobre o trecho de Quincas Borba (2020: sentido figurado, alusão irônica ao darwinismo e relações sintáticas) e Esaú e Jacó na Proclamação da República (2026), que é de Humanas mas cai a partir do texto literário.",
               ["literatura-prosa"],
             ),
           ],

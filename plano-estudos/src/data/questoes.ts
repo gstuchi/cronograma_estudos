@@ -2760,6 +2760,172 @@ export const questoes: Questao[] = [
       "R$ 55 milhões e R$ 60 milhões",
     ],
   ),
+
+  /* ───────── UNESP (mesma banca — Vunesp): violência de gênero e desigualdade ───────── */
+
+  // Cultura do estupro — o enfoque estrutural/antropológico contra as leituras individualizantes
+  q(
+    "un17q56",
+    "UNESP 2017",
+    56,
+    "Humanas",
+    "sociologia-genero",
+    "“Em maio deste ano, a divulgação do vídeo de uma moça desacordada, vítima de um estupro coletivo, provocou grande indignação na população. Num primeiro momento, prevaleceu a revolta diante da barbárie e a percepção de que o machismo, base da chamada ‘cultura do estupro’, persiste na sociedade. Passado o primeiro momento, as opiniões divergentes começaram a surgir. Entre os que não veem o machismo como propulsor de crimes desse tipo estão aqueles (e aquelas!) que consideraram os autores do ato uns ‘monstros’, o que faz do episódio um caso isolado, perpetrado por pessoas más. Houve quem analisasse o fato do ponto de vista da psicologia, sugerindo que, num estupro coletivo, o que importa é o grupo, não a mulher (como ocorre nos trotes contra calouros e na agressão entre torcidas de futebol). Mais uma vez, temos uma reflexão que se propõe explicar os fatos à luz do indivíduo e seu psiquismo. Outros deslocam o problema para as classes sociais menos favorecidas. São os que costumam ficar horrorizados com a existência de favelas, ambientes onde meninas dançam com pouca roupa ao som das letras machistas do funk.”\n\n(Thaís Nicoleti. “Discursos em torno da ‘cultura do estupro’”. www.uol.com.br, 09.06.2016. Adaptado.)\n\nConsiderando o conjunto dos argumentos mobilizados no texto para explicar a violência contra a mulher na sociedade atual, é correto afirmar que",
+    [
+      "a “cultura do estupro” é um conceito educacional relacionado sobretudo com o baixo nível de escolarização da população",
+      "as origens e responsabilidades por tais acontecimentos devem ser atribuídas tanto aos agentes quanto às vítimas da agressão",
+      "a “cultura do estupro” é um conceito científico, relacionado com desvios comportamentais de natureza psiquiátrica",
+      "os episódios de barbárie social são provocados exclusivamente pelas desigualdades materiais geradas pelo capitalismo",
+      "a abordagem opõe um enfoque antropológico, baseado em questões de gênero, a argumentos de natureza moral, psicológica e social",
+    ],
+  ),
+  // Interseccionalidade — gênero e raça no movimento feminista (bell hooks)
+  q(
+    "un23q41",
+    "UNESP 2023",
+    41,
+    "Humanas",
+    "sociologia-genero",
+    "“Nenhum grupo de mulheres brancas conheceu melhor a diferença entre seu próprio status e o status das mulheres negras do que o grupo de mulheres brancas politicamente conscientes e ativistas na luta pelos direitos civis. Ainda assim, várias dessas mulheres deslocaram-se das lutas pelos direitos civis para as lutas pela libertação da mulher e lideraram um movimento feminista em que suprimiram e negaram a consciência sobre as diferenças que viram e ouviram.\n\nElas entraram para o movimento feminista apagando e negando a diferença, sem pensar em raça e gênero juntos, mas eliminando raça do cenário.”\n\n(bell hooks. O feminismo é para todo mundo: políticas arrebatadoras, 2018. Adaptado.)\n\nAo abordar aspectos do Movimento pelos Direitos Civis nos Estados Unidos da década de 1960, o excerto",
+    [
+      "aponta o insucesso das reivindicações de igualdade de raça e gênero e a persistência de padrões históricos de desigualdade na sociedade norte-americana",
+      "lamenta a ausência de uma história de mobilizações feministas e negras e de uma disposição das mulheres brancas para atuar em defesa das conquistas de direitos sociais",
+      "identifica a ocorrência em paralelo de ações afirmativas das mulheres e dos negros e a falta de conexão entre esses dois campos de reivindicação de direitos",
+      "caracteriza a mudança radical por que passou a sociedade norte-americana no período e o nascimento de interconexões entre os movimentos negro e feminista",
+      "enfatiza a importância da estratégia política do ativismo feminista e sua influência sobre as mobilizações posteriores de reivindicação de direitos da população negra",
+    ],
+  ),
+  // Norma de gênero × realidade do trabalho feminino na industrialização brasileira
+  q(
+    "un26q40",
+    "UNESP 2026",
+    40,
+    "Humanas",
+    "sociologia-genero",
+    "“A norma oficial ditava que a mulher devia ser resguardada em casa, ocupando-se dos afazeres domésticos, enquanto os homens asseguravam o sustento da família trabalhando no espaço da rua. Longe de retratar a realidade, tratava-se de um estereótipo calcado nos valores da elite colonial [...]. Com a industrialização, [as mulheres] chegaram, junto com as crianças, a compor mais da metade da força de trabalho em certas indústrias, notadamente nas de tecidos. As estatísticas sobre o Rio Grande do Sul em 1900 mostram que cerca de 42% da população economicamente ativa era feminina [...]. No censo de 1920 [...], ainda 49,4% da população economicamente ativa (PEA) do estado e 50,8% da PEA em Porto Alegre constavam como feminina. Na indústria, as mulheres ocupavam 28,4% das vagas no estado, e 29,95% na capital.”\n\n(Cláudia Fonseca. “Ser mulher, mãe e pobre”. In: Mary Del Priore (org.). História das mulheres no Brasil, 2015.)\n\nOs dados apresentados no excerto mostram que",
+    [
+      "os papéis dos gêneros no Brasil, da passagem do século XIX para o XX, reproduziam padrões de comportamento de origem europeia, impostos ao Brasil durante o Período Republicano",
+      "havia uma contradição entre a participação das populações masculina e feminina no mercado de trabalho e as convenções sociais predominantes no Brasil das décadas iniciais do século XX",
+      "existia um contraste entre as leis trabalhistas que proibiam a presença feminina nas indústrias e as necessidades das famílias pobres que precisavam dos rendimentos das mulheres trabalhadoras",
+      "a industrialização transformou o mercado de trabalho brasileiro do início do Período Republicano e alterou radicalmente a percepção acerca do papel e do lugar das mulheres na sociedade",
+      "predominava o emprego de mão de obra feminina na indústria têxtil brasileira do princípio do século XX, devido à maior especialização e facilidade das mulheres no manejo de tecidos",
+    ],
+  ),
+  // Mulheres pobres e o espaço urbano colonial — gênero cruzado com classe e escravidão
+  q(
+    "un24q34",
+    "UNESP 2024",
+    34,
+    "Humanas",
+    "sociologia-genero",
+    "“O espaço urbano é onde proliferavam a pobreza e certa autonomia dos desqualificados sociais, bastante incômoda para as autoridades. Era justamente este o espaço social das mulheres pobres, livres, forras e escravizadas. Circulavam pelas fontes públicas, tanques, lavadouros, pontes, ruas e praças da cidade, onde era jogado o lixo das casas e o mato crescia a ponto de ocultar escravizados fugidos: o seu espaço social era justamente o ponto de interseção onde se alternavam e se sobrepunham as áreas de convívio das vizinhanças e dos forasteiros; a do fisco municipal e a do pequeno comércio clandestino; as margens da escravidão e do trabalho livre, o espaço do trabalho doméstico e o de sua extensão ou comercialização pelas ruas…”\n\n(Maria Odila Leite da Silva Dias. “Mulheres sem história”. In: Revista de História, 1983. Adaptado.)\n\nAo tratar de São Paulo do século XVIII, o excerto estabelece um paralelo entre a condição das mulheres no espaço urbano e",
+    [
+      "a situação de abandono das crianças pobres da colônia",
+      "a constituição de um padrão ideal de família burguesa",
+      "o prevalecimento dos interesses políticos da metrópole",
+      "a área de indefinição social, política ou econômica",
+      "os setores da sociedade defensores de propostas identitárias",
+    ],
+  ),
+  // Divisão dos espaços público (masculino) e doméstico (feminino) na Idade Média
+  q(
+    "un19q32",
+    "UNESP 2019",
+    32,
+    "Humanas",
+    "sociologia-genero",
+    "“Por muitíssimo tempo escreveu-se a história sem se preocupar com as mulheres. No século XII assim como hoje, masculino e feminino não andam um sem o outro. As damas de Guînes e as damas de Ardres tiveram todas por marido um ás da guerra, senhor de uma fortaleza que seu mais remoto ancestral havia edificado.”\n\n(Georges Duby. Damas do século XII: a lembrança das ancestrais, 1997. Adaptado.)\n\nO texto trata de relações desenvolvidas num meio social específico, durante a Idade Média ocidental. Nele,",
+    [
+      "as mulheres passavam a maior parte de seu tempo nas igrejas, o que incluía o trabalho de orientação religiosa, e os homens atravessavam as noites em tabernas e restaurantes",
+      "os homens controlavam os espaços públicos, o que incluía as ações militares, e as mulheres, confinadas ao espaço doméstico, eram associadas à maternidade e, ocasionalmente, à santidade",
+      "os homens responsabilizavam-se pelos assuntos culturais, o que incluía a instrução dos filhos, e as mulheres dedicavam-se ao preparo das refeições cotidianas e, ocasionalmente, de banquetes",
+      "as mulheres eram obrigadas a pagar impostos, o que incluía o dízimo, e os homens, livres de qualquer tributo, conseguiam acumular mais bens e, ocasionalmente, enriquecer",
+      "os homens dedicavam-se ao comércio, o que incluía deslocamentos para regiões afastadas de casa, e as mulheres incumbiam-se do trabalho nas lavouras e, ocasionalmente, na forja de metais",
+    ],
+  ),
+
+  /* ───────── UNESP (mesma banca — Vunesp): prosa realista ───────── */
+
+  // As marcas da prosa madura de Machado: metalinguagem + interpelação do leitor
+  q(
+    "un24q19",
+    "UNESP 2024",
+    19,
+    "Linguagens",
+    "literatura-prosa",
+    "Leia o trecho da crônica de Luis Fernando Verissimo.\n\n“Esta ideia para um conto de terror é tão terrível que, logo depois de tê-la, me arrependi. Mas já estava tida, não adiantava mais. Você, leitor, no entanto, tem uma escolha. Pode parar aqui, e se poupar, ou ler até o fim e provavelmente nunca mais dormir. Vejo que decidiu continuar. Muito bem, vamos em frente. Talvez, posta no papel, a ideia perca um pouco do seu poder de susto. Mas não posso garantir nada. É assim: [...]\n\nVocê, leitor, já deve estar sentindo o que vai acontecer. Pare de ler, leitor. Eu não posso parar de escrever. As ideias não podem ser desperdiçadas, mesmo que nos custem amigos, a vida ou o sono. Imagine se Shakespeare tivesse se horrorizado com suas próprias ideias e deixado de escrevê-las, por puro comedimento. Não que eu queira me comparar a Shakespeare. Shakespeare era bem mais magro. Tenho que exercer este ofício, esta danação. Você, no entanto, não é obrigado a me acompanhar, leitor. [...] Você ainda está lendo. Você é pior do que eu, leitor. Você tinha escolha.”\n\nNa composição de sua crônica, Luis Fernando Verissimo lança mão dos seguintes procedimentos estilísticos que caracterizam a prosa madura do escritor Machado de Assis:",
+    [
+      "inclusão do leitor na narrativa e recurso à metalinguagem",
+      "estilo digressivo e discurso apoiado em argumentos científicos",
+      "discurso socialmente engajado e recurso à intertextualidade",
+      "argumentação de teor moralizante e interlocução explícita com o leitor",
+      "discurso de caráter místico e recurso ao sobrenatural",
+    ],
+  ),
+  // Quincas Borba — linguagem figurada dentro da prosa machadiana
+  q(
+    "un20q15",
+    "UNESP 2020",
+    15,
+    "Linguagens",
+    "literatura-prosa",
+    "Leia o trecho de uma fala do personagem Quincas Borba, extraída do romance Quincas Borba, de Machado de Assis, publicado originalmente em 1891.\n\n“— [...] O encontro de duas expansões, ou a expansão de duas formas, pode determinar a supressão de uma delas; mas, rigorosamente, não há morte, há vida, porque a supressão de uma é condição da sobrevivência da outra, e a destruição não atinge o princípio universal e comum. Daí o caráter conservador e benéfico da guerra. Supõe tu um campo de batatas e duas tribos famintas. As batatas apenas chegam para alimentar uma das tribos, que assim adquire forças para transpor a montanha e ir à outra vertente, onde há batatas em abundância; mas, se as duas tribos dividirem em paz as batatas do campo, não chegam a nutrir-se suficientemente e morrem de inanição. A paz, nesse caso, é a destruição; a guerra é a conservação. Uma das tribos extermina a outra e recolhe os despojos. Daí a alegria da vitória, os hinos, aclamações, recompensas públicas e todos os demais efeitos das ações bélicas. Se a guerra não fosse isso, tais demonstrações não chegariam a dar-se, pelo motivo real de que o homem só comemora e ama o que lhe é aprazível ou vantajoso, e pelo motivo racional de que nenhuma pessoa canoniza uma ação que virtualmente a destrói. Ao vencido, ódio ou compaixão; ao vencedor, as batatas. [...] E, todavia, esse suposto mal é um benefício, não só porque elimina os organismos fracos, incapazes de resistência, como porque dá lugar à observação, à descoberta da droga curativa. A higiene é filha de podridões seculares; devemo-la a milhões de corrompidos e infectos. Nada se perde, tudo é ganho.”\n\n(Quincas Borba, 2016.)\n\nEstá empregado em sentido figurado o termo sublinhado em:",
+    [
+      "“nenhuma pessoa CANONIZA uma ação que virtualmente a destrói”",
+      "“a SUPRESSÃO de uma é condição da sobrevivência da outra”",
+      "“Uma das tribos EXTERMINA a outra e recolhe os despojos”",
+      "“Daí o caráter CONSERVADOR e benéfico da guerra”",
+      "“não chegam a NUTRIR-SE suficientemente e morrem de inanição”",
+    ],
+  ),
+  // O Humanitismo como paródia — a ironia machadiana contra o darwinismo social
+  q(
+    "un20q16",
+    "UNESP 2020",
+    16,
+    "Linguagens",
+    "literatura-prosa",
+    "Considere o mesmo trecho da fala de Quincas Borba (romance Quincas Borba, de Machado de Assis, 1891), em que o personagem defende que “a paz, nesse caso, é a destruição; a guerra é a conservação”, que a guerra tem “caráter conservador e benéfico”, que as pestes trazem benefício porque eliminam “os organismos fracos, incapazes de resistência”, e conclui: “Ao vencido, ódio ou compaixão; ao vencedor, as batatas.”\n\nConsiderando o contexto histórico de produção, verifica-se no trecho uma alusão irônica",
+    [
+      "à teoria darwiniana",
+      "à filosofia idealista",
+      "à ideologia capitalista",
+      "à filosofia iluminista",
+      "à ideologia socialista",
+    ],
+  ),
+  // Relações sintáticas dentro do texto machadiano — leitura fina do período
+  q(
+    "un20q17",
+    "UNESP 2020",
+    17,
+    "Linguagens",
+    "literatura-prosa",
+    "Ainda sobre o trecho da fala de Quincas Borba (Machado de Assis, 1891):\n\nEm “mas, rigorosamente, não há morte, há vida, PORQUE a supressão de uma é condição da sobrevivência da outra” e “As batatas APENAS CHEGAM PARA alimentar uma das tribos”, os termos destacados estabelecem relação, respectivamente, de",
+    [
+      "consequência e conformidade",
+      "causa e conformidade",
+      "conformidade e consequência",
+      "causa e finalidade",
+      "consequência e finalidade",
+    ],
+  ),
+  // Esaú e Jacó — a prosa realista como documento do fim do Império (questão de Humanas)
+  q(
+    "un26q36",
+    "UNESP 2026",
+    36,
+    "Humanas",
+    "literatura-prosa",
+    "Analise o excerto do romance Esaú e Jacó, de Machado de Assis, publicado originalmente em 1904.\n\n“— Mas o que é que há? perguntou Aires.\n— A república está proclamada.\n— Já há governo?\n— Penso que já; mas diga-me V. Ex.ª: ouviu alguém acusar-me jamais de atacar o governo? Ninguém. Entretanto... Uma fatalidade! Venha em meu socorro. Excelentíssimo. Ajude-me a sair deste embaraço. A tabuleta está pronta, o nome todo pintado. — ‘Confeitaria do Império’, a tinta é viva e bonita. O pintor teima em que lhe pague o trabalho, para então fazer outro. Eu, se a obra não estivesse acabada, mudava de título, por mais que me custasse, mas hei de perder o dinheiro que gastei? V. Ex.ª crê que, se ficar ‘Império’, venham quebrar-me as vidraças?\n— Isso não sei.\n— Realmente, não há motivo; é o nome da casa, nome de trinta anos, ninguém a conhece de outro modo.\n— Mas pode por ‘Confeitaria da República’...\n— Lembrou-me isso, em caminho, mas também me lembrou que, se daqui a um ou dous meses, houver nova reviravolta, fico no ponto em que estou hoje, e perco outra vez o dinheiro.”\n\n(Machado de Assis. Obra completa, 1986.)\n\nO excerto mostra um diálogo do proprietário de uma confeitaria com outro personagem, o Conselheiro Aires. No diálogo, o dono da confeitaria expressa",
+    [
+      "sua oposição à alta dos preços, resultante da inflação e da desvalorização da moeda dos últimos anos do Império",
+      "sua preocupação com as reações políticas do povo, derivada das violentas rebeliões populares republicanas",
+      "seu desconforto com a mudança de regime político, apresentada como prejudicial às suas preocupações monetárias",
+      "seu alheamento em relação ao debate político, restrito à época aos partidos políticos e aos membros do parlamento nacional",
+      "sua insatisfação com a Proclamação da República, justificada por sua histórica adesão política ao modelo monárquico",
+    ],
+  ),
 ];
 
 /** Retorna as questões cujo tópico está entre os tópicos informados. */
