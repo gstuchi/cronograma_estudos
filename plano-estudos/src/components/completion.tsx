@@ -1,20 +1,11 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { isDayDone, setDayDone, weekDoneCount } from "@/lib/progress";
-
-function useProgressTick() {
-  const [, setTick] = useState(0);
-  useEffect(() => {
-    const h = () => setTick((t) => t + 1);
-    window.addEventListener("progress-change", h);
-    window.addEventListener("storage", h);
-    return () => {
-      window.removeEventListener("progress-change", h);
-      window.removeEventListener("storage", h);
-    };
-  }, []);
-}
+import {
+  setDayDone,
+  useDayDone,
+  useHydrated,
+  useWeekDoneCount,
+} from "@/lib/progress";
 
 /** Botão grande para marcar um dia como concluído (página do dia). */
 export function DayCompleteButton({
@@ -24,24 +15,14 @@ export function DayCompleteButton({
   numero: number;
   slug: string;
 }) {
-  const [done, setDone] = useState(false);
-  const [mounted, setMounted] = useState(false);
-  useProgressTick();
+  const done = useDayDone(numero, slug);
+  const hydrated = useHydrated();
 
-  useEffect(() => {
-    setMounted(true);
-    setDone(isDayDone(numero, slug));
-  }, [numero, slug]);
-
-  if (!mounted) return null;
+  if (!hydrated) return null;
 
   return (
     <button
-      onClick={() => {
-        const novo = !done;
-        setDone(novo);
-        setDayDone(numero, slug, novo);
-      }}
+      onClick={() => setDayDone(numero, slug, !done)}
       className={`flex cursor-pointer items-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold transition-colors duration-200 ${
         done
           ? "bg-[#15803D] text-white hover:bg-[#136B34]"
@@ -70,9 +51,7 @@ export function DayDoneCheck({
   numero: number;
   slug: string;
 }) {
-  const [done, setDone] = useState(false);
-  useProgressTick();
-  useEffect(() => setDone(isDayDone(numero, slug)), [numero, slug]);
+  const done = useDayDone(numero, slug);
 
   if (!done) return null;
   return (
@@ -102,31 +81,23 @@ export function WeekProgressBadge({
   slugs: string[];
 }) {
   const total = slugs.length;
-  const [feitos, setFeitos] = useState(0);
-  const [mounted, setMounted] = useState(false);
-  useProgressTick();
+  const feitos = useWeekDoneCount(numero, slugs);
 
-  useEffect(() => {
-    setMounted(true);
-    setFeitos(weekDoneCount(numero, slugs));
-    // recalcula quando o progresso muda
-  });
-
-  const completa = mounted && feitos === total && total > 0;
+  const completa = feitos === total && total > 0;
   const pct = total ? (feitos / total) * 100 : 0;
 
   return (
     <div className="mt-4">
       <div className="mb-1.5 flex items-center justify-between text-xs font-semibold">
         <span className={completa ? "text-[#15803D]" : "text-ink-soft"}>
-          {completa ? "Semana concluída ✓" : `${mounted ? feitos : 0}/${total} dias`}
+          {completa ? "Semana concluída ✓" : `${feitos}/${total} dias`}
         </span>
       </div>
       <div className="h-1.5 w-full overflow-hidden rounded-full bg-line">
         <div
           className="h-full rounded-full transition-all duration-300"
           style={{
-            width: `${mounted ? pct : 0}%`,
+            width: `${pct}%`,
             background: completa ? "#15803D" : "#E4002B",
           }}
         />

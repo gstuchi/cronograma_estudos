@@ -1,5 +1,7 @@
 "use client";
 
+import { useSyncExternalStore } from "react";
+
 /** Conclusão de dias de estudo — persistida no navegador (localStorage). */
 
 const key = (numero: number, slug: string) => `done:dia:${numero}:${slug}`;
@@ -17,4 +19,45 @@ export function setDayDone(numero: number, slug: string, done: boolean) {
 
 export function weekDoneCount(numero: number, slugs: string[]): number {
   return slugs.filter((s) => isDayDone(numero, s)).length;
+}
+
+/* O localStorage é tratado como store externo: os componentes leem via
+   useSyncExternalStore e re-renderizam quando o progresso muda nesta aba
+   (progress-change) ou em outra (storage). No servidor o snapshot é sempre
+   "nada feito", então o HTML estático não depende do navegador. */
+
+function subscribe(onChange: () => void) {
+  window.addEventListener("progress-change", onChange);
+  window.addEventListener("storage", onChange);
+  return () => {
+    window.removeEventListener("progress-change", onChange);
+    window.removeEventListener("storage", onChange);
+  };
+}
+
+export function useDayDone(numero: number, slug: string): boolean {
+  return useSyncExternalStore(
+    subscribe,
+    () => isDayDone(numero, slug),
+    () => false,
+  );
+}
+
+export function useWeekDoneCount(numero: number, slugs: string[]): number {
+  return useSyncExternalStore(
+    subscribe,
+    () => weekDoneCount(numero, slugs),
+    () => 0,
+  );
+}
+
+const noop = () => () => {};
+
+/** true só depois da hidratação — para não mostrar estado antes de ler o navegador. */
+export function useHydrated(): boolean {
+  return useSyncExternalStore(
+    noop,
+    () => true,
+    () => false,
+  );
 }
