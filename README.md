@@ -22,7 +22,7 @@ de provas anteriores organizadas dia a dia.
 - **Progresso salvo no navegador:** dias concluídos e questões feitas ficam no
   `localStorage`, sem login.
 
-## Rodando localmente
+## Rodando localment
 
 ```bash
 cd plano-estudos
