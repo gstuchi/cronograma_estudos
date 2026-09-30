@@ -21,7 +21,7 @@ de provas anteriores organizadas dia a dia.
   enunciado pronto para colar numa conversa.
 - **Progresso salvo no navegador:** dias concluídos e questões feitas ficam no
   `localStorage`, sem login.
-dadadadadada
+
 ## Rodando localmente
 
 ```bash
