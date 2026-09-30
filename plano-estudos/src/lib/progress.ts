@@ -21,6 +21,20 @@ export function weekDoneCount(numero: number, slugs: string[]): number {
   return slugs.filter((s) => isDayDone(numero, s)).length;
 }
 
+/** Questões marcadas como "já fiz" — mesma ideia, uma chave por questão. */
+
+const keyQuestao = (id: string) => `feita:${id}`;
+
+export function isQuestaoFeita(id: string): boolean {
+  if (typeof window === "undefined") return false;
+  return localStorage.getItem(keyQuestao(id)) === "1";
+}
+
+export function setQuestaoFeita(id: string, feita: boolean) {
+  localStorage.setItem(keyQuestao(id), feita ? "1" : "0");
+  window.dispatchEvent(new CustomEvent("progress-change"));
+}
+
 /* O localStorage é tratado como store externo: os componentes leem via
    useSyncExternalStore e re-renderizam quando o progresso muda nesta aba
    (progress-change) ou em outra (storage). No servidor o snapshot é sempre
@@ -48,6 +62,14 @@ export function useWeekDoneCount(numero: number, slugs: string[]): number {
     subscribe,
     () => weekDoneCount(numero, slugs),
     () => 0,
+  );
+}
+
+export function useQuestaoFeita(id: string): boolean {
+  return useSyncExternalStore(
+    subscribe,
+    () => isQuestaoFeita(id),
+    () => false,
   );
 }
 

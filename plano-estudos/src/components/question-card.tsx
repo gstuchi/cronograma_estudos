@@ -1,24 +1,18 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import type { Questao } from "@/data/types";
+import { setQuestaoFeita, useQuestaoFeita } from "@/lib/progress";
 import { corArea, rotuloProva } from "@/lib/ui";
 
 const letras = ["A", "B", "C", "D", "E"];
 
 export function QuestionCard({ questao }: { questao: Questao }) {
-  const [feita, setFeita] = useState(false);
+  const feita = useQuestaoFeita(questao.id);
   const [copiado, setCopiado] = useState(false);
-  const storageKey = `feita:${questao.id}`;
-
-  useEffect(() => {
-    setFeita(localStorage.getItem(storageKey) === "1");
-  }, [storageKey]);
 
   function toggleFeita() {
-    const novo = !feita;
-    setFeita(novo);
-    localStorage.setItem(storageKey, novo ? "1" : "0");
+    setQuestaoFeita(questao.id, !feita);
   }
 
   async function copiar() {
