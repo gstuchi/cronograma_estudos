@@ -1,0 +1,9 @@
+# macOS
+.DS_Store
+
+# Python (scripts da skill em .claude/skills)
+__pycache__/
+*.py[cod]
+
+# Configurações locais do Claude Code
+.claude/settings.local.json
