@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# plano-estudos
 
-## Getting Started
+Site do cronograma de 12 semanas para o vestibular do Insper. Feito com
+Next.js (App Router), React 19, Tailwind CSS 4 e Framer Motion. Todas as
+páginas são geradas estaticamente no build.
 
-First, run the development server:
+## Comandos
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install     # dependências
+npm run dev     # servidor de desenvolvimento em http://localhost:3000
+npm run build   # build de produção (gera as páginas de todas as semanas e dias)
+npm run start   # serve o build
+npm run lint    # ESLint
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Estrutura
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+src/
+├── app/
+│   ├── page.tsx                      # home: as 12 semanas agrupadas por fase
+│   └── semana/[numero]/
+│       ├── page.tsx                  # dias de uma semana
+│       └── [dia]/page.tsx            # teoria + questões do dia
+├── components/
+│   ├── completion.tsx                # marcar dia como concluído e progresso da semana
+│   └── question-card.tsx             # card de questão (copiar para o Claude, "já fiz")
+├── data/
+│   ├── types.ts                      # tipos: Semana, Dia, BlocoEstudo, Questao
+│   ├── plano.ts                      # o cronograma em si
+│   ├── questoes.ts                   # questões reais, ligadas a tópicos
+│   └── teoria.ts                     # resumo de teoria por tópico
+└── lib/
+    ├── progress.ts                   # progresso no localStorage + hooks
+    └── ui.ts                         # cores por área e rótulos
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Como os dados se ligam
 
-## Learn More
+Cada bloco de estudo em `plano.ts` lista **tópicos** (slugs como
+`financeira` ou `interpretacao`). A página do dia usa esses slugs para puxar
+a teoria correspondente em `teoria.ts` e as questões com o mesmo `topico` em
+`questoes.ts`.
 
-To learn more about Next.js, take a look at the following resources:
+Para adicionar uma questão, use o helper `q(...)` em `questoes.ts` com a
+prova de origem, o número, a área, o tópico, o enunciado e as alternativas.
+Se ela depende de figura, passe `temFigura` e o caminho da imagem em
+`public/questoes/`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Progresso
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Dias concluídos (`done:dia:<semana>:<dia>`) e questões feitas
+(`feita:<id>`) ficam no `localStorage` do navegador. Os componentes leem
+esses valores com `useSyncExternalStore` (veja `lib/progress.ts`), então a
+tela atualiza na hora, inclusive quando algo muda em outra aba.
