@@ -32,5 +32,5 @@ npm run dev
 
 Abre em [http://localhost:3000](http://localhost:3000). Mais detalhes em
 [`plano-estudos/README.md`](plano-estudos/README.md).
-insper r
+
 isso e para o insper
