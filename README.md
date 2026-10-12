@@ -30,7 +30,7 @@ npm install
 npm run dev
 ```
 
-Abre em [http://localhost:3000](http://localhost:3000).
+Abre em [http://localhost:3000
 [`plano-estudos/README.md`](plano-estudos/README.md).
 
 isso e para o insper
