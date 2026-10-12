@@ -30,7 +30,7 @@ npm install
 npm run dev
 ```
 
-Abre em [http://loca
+Abr
 
 
 isso e para o insper
