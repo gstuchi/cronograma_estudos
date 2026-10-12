@@ -30,7 +30,7 @@ npm install
 npm run dev
 ```
 
-Abr
+A
 
 
 isso e para o insper
