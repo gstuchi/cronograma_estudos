@@ -31,7 +31,8 @@ npm run dev
 ```
 
 Abre em [http://localhost:3000
-[`plano-estudos/README.md`](plano-estudos/README.md).
+[`plano-estudos/README.md`](plano-
+
 
 isso e para o insper
 
