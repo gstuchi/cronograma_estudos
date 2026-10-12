@@ -19,7 +19,7 @@ de provas anteriores organizadas dia a dia.
   de provas da UNESP (mesma banca, Vunesp), ligadas ao tópico do dia. Não há
   gabarito de propósito. O botão *Tirar dúvida com o Claude* copia o
   enunciado pronto para colar numa conversa.
-- **Progresso salvo no navegador:** dias concluídos e questões feitas ficam no
+- **Progresso salvo no navegador:** dias concluídos e questões feitas ficam n
   `localStorage`, sem login.
 
 ## Rodando localment
